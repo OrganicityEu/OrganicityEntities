@@ -1,11 +1,10 @@
-package oc.entityhandlers.attributes;
+package eu.organicity.entities.handler.attributes;
 
 import com.amaxilatis.orion.OrionClient;
-import oc.entityhandlers.metadata.Metadata;
-import oc.namespace.OrganicityAttributeTypes;
+import eu.organicity.entities.handler.metadata.Metadata;
+import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

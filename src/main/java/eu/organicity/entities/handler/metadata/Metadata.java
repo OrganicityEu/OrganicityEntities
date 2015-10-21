@@ -1,8 +1,7 @@
-package oc.entityhandlers.metadata;
+package eu.organicity.entities.handler.metadata;
 
 import com.amaxilatis.orion.OrionClient;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**

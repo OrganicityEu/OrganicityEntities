@@ -1,6 +1,6 @@
-package oc.entityhandlers.attributes;
+package eu.organicity.entities.handler.attributes;
 
-import oc.namespace.OrganicityAttributeTypes;
+import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 
 /**
  * Created by etheodor on 20/10/2015.

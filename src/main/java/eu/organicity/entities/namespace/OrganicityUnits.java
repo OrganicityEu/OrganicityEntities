@@ -1,4 +1,4 @@
-package oc.namespace;
+package eu.organicity.entities.namespace;
 
 public class OrganicityUnits {
     static public enum Units {

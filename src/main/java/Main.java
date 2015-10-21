@@ -1,18 +1,18 @@
 
 import com.amaxilatis.orion.OrionClient;
-import oc.entityhandlers.attributes.Attribute;
-import oc.entityhandlers.attributes.Position;
-import oc.entityhandlers.entities.IoTDevice;
-import oc.entityhandlers.metadata.Datatype;
-import oc.namespace.OrganicityAttributeTypes;
-import oc.namespace.OrganicityDatatypes;
-import oc.namespace.OrganicityEntityTypes;
-import oc.namespace.OrganicityUnits;
+import eu.organicity.entities.handler.attributes.Attribute;
+import eu.organicity.entities.handler.attributes.Position;
+import eu.organicity.entities.handler.entities.IoTDevice;
+import eu.organicity.entities.handler.metadata.Datatype;
+import eu.organicity.entities.namespace.OrganicityAttributeTypes;
+import eu.organicity.entities.namespace.OrganicityDatatypes;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
+import eu.organicity.entities.namespace.OrganicityUnits;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(oc.namespace.OrganicityDatatypes.DATATYPES.NUMERIC.getUrn());
+        System.out.println(OrganicityDatatypes.DATATYPES.NUMERIC.getUrn());
         System.out.println(OrganicityUnits.Units.METRE.getUrn());
         System.out.println(OrganicityAttributeTypes.Types.TEMPERATURE.getUrn());
 

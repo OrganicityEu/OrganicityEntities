@@ -1,6 +1,6 @@
-package oc.entityhandlers.entities;
+package eu.organicity.entities.handler.entities;
 
-import oc.namespace.OrganicityEntityTypes;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 /**
  * Created by etheodor on 20/10/2015.

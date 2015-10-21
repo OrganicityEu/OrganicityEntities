@@ -1,6 +1,6 @@
-package oc.entityhandlers.metadata;
+package eu.organicity.entities.handler.metadata;
 
-import oc.namespace.OrganicityDatatypes;
+import eu.organicity.entities.namespace.OrganicityDatatypes;
 
 /**
  * Created by etheodor on 20/10/2015.

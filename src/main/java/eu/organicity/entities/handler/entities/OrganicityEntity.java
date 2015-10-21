@@ -1,8 +1,8 @@
-package oc.entityhandlers.entities;
+package eu.organicity.entities.handler.entities;
 
 import com.amaxilatis.orion.model.OrionContextElement;
-import oc.entityhandlers.attributes.Attribute;
-import oc.namespace.OrganicityEntityTypes;
+import eu.organicity.entities.handler.attributes.Attribute;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.util.ArrayList;
 import java.util.List;
