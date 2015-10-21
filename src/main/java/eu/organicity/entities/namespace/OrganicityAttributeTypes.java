@@ -41,6 +41,8 @@ public class OrganicityAttributeTypes {
             return uom;
         }
 
-
+        public OrganicityDatatypes.DATATYPES getType() {
+            return type;
+        }
     }
 }

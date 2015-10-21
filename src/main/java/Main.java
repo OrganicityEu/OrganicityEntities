@@ -9,6 +9,8 @@ import eu.organicity.entities.namespace.OrganicityDatatypes;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 import eu.organicity.entities.namespace.OrganicityUnits;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,19 +21,23 @@ public class Main {
         System.out.println(OrganicityAttributeTypes.Types.BATTERY_LEVEL.getUrn());
         System.out.println(OrganicityEntityTypes.EntityType.IOT_DEVICE.getUrn());
 
-        IoTDevice iot=new IoTDevice("1123");
-        Attribute a=new Attribute(OrganicityAttributeTypes.Types.BATTERY_LEVEL,"90%");
-        Datatype dm=new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
+        IoTDevice iot = new IoTDevice("1123");
+        Attribute a = new Attribute(OrganicityAttributeTypes.Types.BATTERY_LEVEL, "90%");
+        Datatype dm = new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
         a.addMetadata(dm);
         iot.addAttribute(a);
-        Position p=new Position("1.1,3.1");
+        Position p = new Position("1.1,3.1");
         iot.addAttribute(p);
+
+
+        iot.setTimestamp(new Date());
+
 
         System.out.println(iot.toString());
 
 
-        String serverUrl="http://orion.lab.fi-ware.org:1026/";
-        String token="#your token here#";
+        String serverUrl = "http://orion.lab.fi-ware.org:1026/";
+        String token = "#your token here#";
         OrionClient client = new OrionClient(serverUrl, "");
 
     }

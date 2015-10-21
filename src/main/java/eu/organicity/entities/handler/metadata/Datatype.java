@@ -8,8 +8,7 @@ import eu.organicity.entities.namespace.OrganicityDatatypes;
 public class Datatype extends Metadata {
 
 
-
     public Datatype(OrganicityDatatypes.DATATYPES type) {
-        super(type.getName(), type.getUrn(), "");
+        super("datatype", type.getUrn(), type.getName());
     }
 }

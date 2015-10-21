@@ -20,6 +20,9 @@ public class Attribute {
     public Attribute(OrganicityAttributeTypes.Types attributeType, String value) {
         this.attributeType = attributeType;
         this.value = value;
+
+        Metadata metadata = new Metadata("unit", attributeType.getUom().getUrn(), attributeType.getUom().getName());
+        this.addMetadata(metadata);
     }
 
 
