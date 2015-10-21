@@ -1,7 +1,6 @@
 
 import com.amaxilatis.orion.OrionClient;
 import eu.organicity.entities.handler.attributes.Attribute;
-import eu.organicity.entities.handler.attributes.Position;
 import eu.organicity.entities.handler.entities.IoTDevice;
 import eu.organicity.entities.handler.metadata.Datatype;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
@@ -26,11 +25,9 @@ public class Main {
         Datatype dm = new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
         a.addMetadata(dm);
         iot.addAttribute(a);
-        Position p = new Position("1.1, 3.1");
-        iot.addAttribute(p);
-
 
         iot.setTimestamp(new Date());
+        iot.setPosition(1.1, 3.1);
 
 
         System.out.println(iot.toString());

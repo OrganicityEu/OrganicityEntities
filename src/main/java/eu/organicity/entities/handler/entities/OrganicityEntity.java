@@ -20,11 +20,15 @@ public class OrganicityEntity {
     String id;
     OrganicityEntityTypes.EntityType entityType;
     private Date date;
+    private Double latitude;
+    private Double longitude;
 
     public OrganicityEntity(String id, OrganicityEntityTypes.EntityType entityType) {
         this.id = id;
         this.entityType = entityType;
         this.date = null;
+        this.latitude = null;
+        this.longitude = null;
     }
 
     public OrionContextElement getContextElement() {
@@ -41,11 +45,19 @@ public class OrganicityEntity {
             df.setTimeZone(tz);
             element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:datatype:ISO8601", df.format(date)));
         }
+        if (latitude != null && longitude != null) {
+            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
+        }
         return element;
     }
 
     public void setTimestamp(final Date date) {
         this.date = date;
+    }
+
+    public void setPosition(double latitude, double longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public void addAttribute(Attribute a) {
