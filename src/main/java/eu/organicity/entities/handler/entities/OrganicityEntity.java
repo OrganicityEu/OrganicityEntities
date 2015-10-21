@@ -39,7 +39,7 @@ public class OrganicityEntity {
             TimeZone tz = TimeZone.getTimeZone("UTC");
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'");
             df.setTimeZone(tz);
-            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:x-ogc:def:trs:IDAS:1.0:ISO8601", df.format(date)));
+            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:datatype:ISO8601", df.format(date)));
         }
         return element;
     }
