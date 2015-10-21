@@ -26,7 +26,7 @@ public class Main {
         Datatype dm = new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
         a.addMetadata(dm);
         iot.addAttribute(a);
-        Position p = new Position("1.1,3.1");
+        Position p = new Position("1.1, 3.1");
         iot.addAttribute(p);
 
 
