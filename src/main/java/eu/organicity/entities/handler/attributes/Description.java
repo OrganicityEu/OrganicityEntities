@@ -6,10 +6,10 @@ import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 /**
  * Created by etheodor on 20/10/2015.
  */
-public class Position extends Attribute {
+public class Description extends Attribute {
 
-    public Position(String value) {
-        super(OrganicityAttributeTypes.Types.POSITION, value);
-        this.addMetadata(new WGS84());
+    public Description(String value) {
+        super(OrganicityAttributeTypes.Types.DESCRIPTION, value);
+        this.setMetadata(null);
     }
 }

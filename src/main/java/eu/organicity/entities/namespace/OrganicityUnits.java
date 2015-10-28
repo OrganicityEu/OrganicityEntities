@@ -16,6 +16,7 @@ public class OrganicityUnits {
         LITRE_PER_100_KILOMETERS("litrePer100Kilometers", "urn:oc:uom:litrePer100Kilometers"),
         LUX("lux", "urn:oc:uom:lux"),
         METRE_PER_SECOND("metrePerSecond", "urn:oc:uom:metrePerSecond"),
+        MILIGRAM_PER_CUBIC_METRE("miligramPerCubicMetre", "urn:oc:uom:miligramPerCubicMetre"),
         MICROGRAM_PER_CUBIC_METRE("microgramPerCubicMetre", "urn:oc:uom:microgramPerCubicMetre"),
         MILILITER_PER_HOUR("mililiterPerHour", "urn:oc:uom:mililiterPerHour"),
         MILIVOLT_PER_METRE("milivoltPerMetre", "urn:oc:uom:milivoltPerMetre"),
@@ -24,7 +25,9 @@ public class OrganicityUnits {
         SCALE("scale", "urn:oc:uom:scale"),
         VEHICLE_PER_MINUTE("vehiclePerMinute", "urn:oc:uom:vehiclePerMinute"),
         WATT_PER_SQUARE_METER("wattPerSquareMeter", "urn:oc:uom:wattPerSquareMeter"),
-        LAT_LONG_POSITION("LatLongPosition", "urn:oc:uom:LatLongPosition");
+        LAT_LONG_POSITION("coords", "coords"),
+        NOT_APPLIED("NOT APPLIED", "NOT APPLIED");
+
 
         private final String name;
         private final String urn;

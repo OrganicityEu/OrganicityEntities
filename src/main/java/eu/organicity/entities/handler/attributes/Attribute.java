@@ -20,7 +20,6 @@ public class Attribute {
     public Attribute(OrganicityAttributeTypes.Types attributeType, String value) {
         this.attributeType = attributeType;
         this.value = value;
-
         Metadata metadata = new Metadata("unit", attributeType.getUom().getUrn(), attributeType.getUom().getName());
         this.addMetadata(metadata);
     }
@@ -45,9 +44,10 @@ public class Attribute {
 
     public Map<String, Object> getAttribute() {
         List<Map<String, String>> metadatas = new ArrayList<Map<String, String>>();
-        for (Metadata m : metadata) {
-            metadatas.add(m.getMetadata());
-        }
+        if (metadata != null)
+            for (Metadata m : metadata) {
+                metadatas.add(m.getMetadata());
+            }
         return OrionClient.createAttributeWithMetadata(this.attributeType.getName(), this.attributeType.getUrn(), value, metadatas);
     }
 
