@@ -21,7 +21,7 @@ public class OrganicityAttributeTypes {
         SULPHUR_DIOXIDE("chemicalAgentAtmosphericConcentration:SO2", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:SO2", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         OXYGEN_CONCENTRATION("chemicalAgentAtmosphericConcentration:O3", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:O3", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         NITROGEN_OXIDE("chemicalAgentAtmosphericConcentration:NO", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:NO", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
-
+        DEVICE_TEMPERATURE("temperature:device", "urn:oc:atributeType:temperature:device", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES("chemicalAgentAtmosphericConcentration:airParticles", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticles", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING);
 
