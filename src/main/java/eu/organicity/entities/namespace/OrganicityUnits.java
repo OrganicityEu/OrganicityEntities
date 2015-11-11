@@ -2,6 +2,8 @@ package eu.organicity.entities.namespace;
 
 public class OrganicityUnits {
     static public enum Units {
+        VOLTS("volts", "urn:oc:uom:volts"),
+        PPM("ppm", "urn:oc:uom:ppm"),
         METRE("metre", "urn:oc:uom:metre"),
         KGR("kilogram", "urn:oc:uom:kilogram"),
         BAR("bar", "urn:oc:uom:bar"),

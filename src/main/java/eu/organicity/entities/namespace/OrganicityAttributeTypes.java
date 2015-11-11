@@ -13,6 +13,7 @@ public class OrganicityAttributeTypes {
         SOLAR_RADIATION("solarRadiation", "urn:oc:attributeType:solarRadiation", OrganicityUnits.Units.WATT_PER_SQUARE_METER, OrganicityDatatypes.DATATYPES.NUMERIC),
         RAINFALL("rainfall", "urn:oc:attributeType:rainfall", OrganicityUnits.Units.MILILITER_PER_HOUR, OrganicityDatatypes.DATATYPES.NUMERIC),
         BATTERY_LEVEL("batteryLevel", "urn:oc:attributeType:batteryLevel", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        BATTERY_VOLTAGE("batteryVoltage", "urn:oc:attributeType:batteryVoltage", OrganicityUnits.Units.VOLTS, OrganicityDatatypes.DATATYPES.NUMERIC),
         ILLUMINANCE("illuminance", "urn:oc:attributeType:illuminance", OrganicityUnits.Units.LUX, OrganicityDatatypes.DATATYPES.NUMERIC),
         DIRECTION_AZIMUTH("direction:azimuth", "urn:oc:attributeType:direction:azimuth", OrganicityUnits.Units.DEGREE_ANGLE, OrganicityDatatypes.DATATYPES.NUMERIC),
         POSITION("position", "urn:oc:attributeType:position", OrganicityUnits.Units.LAT_LONG_POSITION, OrganicityDatatypes.DATATYPES.STRING),
@@ -21,8 +22,12 @@ public class OrganicityAttributeTypes {
         SULPHUR_DIOXIDE("chemicalAgentAtmosphericConcentration:SO2", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:SO2", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         OXYGEN_CONCENTRATION("chemicalAgentAtmosphericConcentration:O3", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:O3", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         NITROGEN_OXIDE("chemicalAgentAtmosphericConcentration:NO", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:NO", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        METHANE("chemicalAgentAtmosphericConcentration:CH4", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:CH4", OrganicityUnits.Units.PPM, OrganicityDatatypes.DATATYPES.NUMERIC),
+        LPG("chemicalAgentAtmosphericConcentration:LPG", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:LPG", OrganicityUnits.Units.PPM, OrganicityDatatypes.DATATYPES.NUMERIC),
         DEVICE_TEMPERATURE("temperature:device", "urn:oc:attributeType:temperature:device", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES("chemicalAgentAtmosphericConcentration:airParticles", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticles", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        PARTICLES10("chemicalAgentAtmosphericConcentration:airParticlesPM10", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM10", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        PARTICLES25("chemicalAgentAtmosphericConcentration:airParticlesPM25", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM25", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING);
 
         private final String name;
