@@ -52,5 +52,12 @@ public class OrganicityAttributeTypes {
         public OrganicityDatatypes.DATATYPES getType() {
             return type;
         }
+
+        public static Types getAttibuteType(String urn) {
+            for (Types entry : Types.values()) {
+                if (entry.getUrn().equals(urn)) return entry;
+            }
+            return null;
+        }
     }
 }
