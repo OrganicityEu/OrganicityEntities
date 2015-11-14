@@ -22,6 +22,7 @@ public class OrganicityEntity {
     private Date date;
     private Double latitude;
     private Double longitude;
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
     public OrganicityEntity(String id, OrganicityEntityTypes.EntityType entityType) {
         this.id = id;
@@ -40,9 +41,6 @@ public class OrganicityEntity {
             element.getAttributes().add(attribute.getAttribute());
         }
         if (date != null) {
-            TimeZone tz = TimeZone.getTimeZone("UTC");
-            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-            df.setTimeZone(tz);
             element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:datatype:ISO8601", df.format(date)));
         }
         if (latitude != null && longitude != null) {
