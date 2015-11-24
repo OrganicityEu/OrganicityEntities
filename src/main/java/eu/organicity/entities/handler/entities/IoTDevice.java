@@ -7,6 +7,10 @@ import eu.organicity.entities.namespace.OrganicityEntityTypes;
  */
 public class IoTDevice extends OrganicityEntity {
 
+    public IoTDevice() {
+        super(OrganicityEntityTypes.EntityType.IOT_DEVICE);
+    }
+
     public IoTDevice(String id) {
         super(id, OrganicityEntityTypes.EntityType.IOT_DEVICE);
     }

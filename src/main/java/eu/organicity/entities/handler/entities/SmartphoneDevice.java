@@ -7,6 +7,10 @@ import eu.organicity.entities.namespace.OrganicityEntityTypes;
  */
 public class SmartphoneDevice extends OrganicityEntity {
 
+    public SmartphoneDevice() {
+        super(OrganicityEntityTypes.EntityType.SMARTPHONE);
+    }
+
     public SmartphoneDevice(String id) {
         super(id, OrganicityEntityTypes.EntityType.SMARTPHONE);
     }

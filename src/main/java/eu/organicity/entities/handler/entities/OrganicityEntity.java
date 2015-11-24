@@ -16,13 +16,21 @@ import java.util.TimeZone;
  */
 public class OrganicityEntity {
 
-    List<Attribute> attributes = new ArrayList<Attribute>();
+    final List<Attribute> attributes = new ArrayList<>();
     String id;
     OrganicityEntityTypes.EntityType entityType;
     private Date date;
     private Double latitude;
     private Double longitude;
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+
+    public OrganicityEntity(OrganicityEntityTypes.EntityType entityType) {
+        this.id = null;
+        this.entityType = entityType;
+        this.date = null;
+        this.latitude = null;
+        this.longitude = null;
+    }
 
     public OrganicityEntity(String id, OrganicityEntityTypes.EntityType entityType) {
         this.id = id;
@@ -47,6 +55,10 @@ public class OrganicityEntity {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
         }
         return element;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 
     public void setTimestamp(final Date date) {
