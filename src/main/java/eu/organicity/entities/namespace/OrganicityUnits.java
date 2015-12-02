@@ -6,6 +6,7 @@ public class OrganicityUnits {
         PPM("ppm", "urn:oc:uom:ppm"),
         METRE("metre", "urn:oc:uom:metre"),
         KGR("kilogram", "urn:oc:uom:kilogram"),
+        MBAR("millibar", "urn:oc:uom:mbar"),
         BAR("bar", "urn:oc:uom:bar"),
         CENTIBAR("centibar", "urn:oc:uom:centibar"),
         DECIBEL("decibel", "urn:oc:uom:decibel"),

@@ -5,7 +5,7 @@ public class OrganicityAttributeTypes {
 
         //SENSING TYPES
         TEMPERATURE("temperature:ambient", "urn:oc:attributeType:temperature:ambient", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
-        ATMOSPHERIC_PRESSURE("atmosphericPressure", "urn:oc:attributeType:atmosphericPressure", OrganicityUnits.Units.BAR, OrganicityDatatypes.DATATYPES.NUMERIC),
+        ATMOSPHERIC_PRESSURE("atmosphericPressure", "urn:oc:attributeType:atmosphericPressure", OrganicityUnits.Units.MBAR, OrganicityDatatypes.DATATYPES.NUMERIC),
         WIND_DIRECTION("windDirection", "urn:oc:attributeType:windDirection", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
         SOUND_PRESSURE_LEVEL("soundPressureLevel:ambient", "urn:oc:attributeType:soundPressureLevel:ambient", OrganicityUnits.Units.DECIBEL, OrganicityDatatypes.DATATYPES.NUMERIC),
         WIND_SPEED("windSpeed", "urn:oc:attributeType:windSpeed", OrganicityUnits.Units.KILLOMETRE_PER_HOUR, OrganicityDatatypes.DATATYPES.NUMERIC),
