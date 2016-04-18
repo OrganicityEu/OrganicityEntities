@@ -9,6 +9,6 @@ public class Origin extends Attribute {
 
     public Origin(String value) {
         super(OrganicityAttributeTypes.Types.ORIGIN, value);
-        this.setMetadata(null);
+        this.setMetadatas(null);
     }
 }

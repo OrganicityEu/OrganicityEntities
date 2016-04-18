@@ -12,9 +12,9 @@ public class Datasource extends Attribute {
 
     public Datasource(String value, Boolean internal, String type) {
         super(OrganicityAttributeTypes.Types.DATASOURCE, value);
-        if (internal == true)
+        if (internal) {
             this.addMetadata(new DatasourceInternal());
-        else {
+        } else {
             this.addMetadata(new DatasourceExternal());
             this.addMetadata(new Mediatype(type));
         }
