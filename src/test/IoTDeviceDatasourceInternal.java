@@ -17,12 +17,8 @@ public class IoTDeviceDatasourceInternal {
 
         // Adding classic attributes
         Attribute a = new Attribute(OrganicityAttributeTypes.Types.BATTERY_LEVEL, "0.90");
-        Datatype dm = new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
-        a.addMetadata(dm);
         iot.addAttribute(a);
         a = new Attribute(OrganicityAttributeTypes.Types.TEMPERATURE, "24");
-        dm = new Datatype(OrganicityDatatypes.DATATYPES.NUMERIC);
-        a.addMetadata(dm);
         iot.addAttribute(a);
 
         // Adding Position
