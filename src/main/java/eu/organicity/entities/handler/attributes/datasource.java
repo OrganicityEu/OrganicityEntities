@@ -12,6 +12,7 @@ public class Datasource extends Attribute {
 
     public Datasource(String value, Boolean internal, String type) {
         super(OrganicityAttributeTypes.Types.DATASOURCE, value);
+        this.getMetadata().clear();
         if (internal == true)
             this.addMetadata(new DatasourceInternal());
         else {

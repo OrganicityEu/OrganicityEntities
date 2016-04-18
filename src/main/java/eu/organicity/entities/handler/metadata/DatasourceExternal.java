@@ -7,6 +7,6 @@ import eu.organicity.entities.namespace.OrganicityDatatypes;
  */
 public class DatasourceExternal extends Metadata {
     public DatasourceExternal() {
-        super("datasource", OrganicityDatatypes.DATATYPES.BOOLEAN.getUrn(), "false");
+        super("datasourceInternal", OrganicityDatatypes.DATATYPES.BOOLEAN.getUrn(), "false");
     }
 }
