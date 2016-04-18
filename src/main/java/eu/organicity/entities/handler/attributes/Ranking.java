@@ -9,6 +9,6 @@ public class Ranking extends Attribute {
 
     public Ranking(String value) {
         super(OrganicityAttributeTypes.Types.RANKING, value);
-        this.setMetadata(null);
+        this.setMetadatas(null);
     }
 }

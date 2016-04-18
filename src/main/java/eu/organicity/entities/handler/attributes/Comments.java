@@ -9,6 +9,6 @@ public class Comments extends Attribute {
 
     public Comments(String value) {
         super(OrganicityAttributeTypes.Types.COMMENTS, value);
-        this.setMetadata(null);
+        this.setMetadatas(null);
     }
 }

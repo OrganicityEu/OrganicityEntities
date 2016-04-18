@@ -12,10 +12,10 @@ public class Datasource extends Attribute {
 
     public Datasource(String value, Boolean internal, String type) {
         super(OrganicityAttributeTypes.Types.DATASOURCE, value);
-        this.getMetadata().clear();
-        if (internal == true)
+        this.getMetadatas().clear();
+        if (internal){
             this.addMetadata(new DatasourceInternal());
-        else {
+        } else {
             this.addMetadata(new DatasourceExternal());
             this.addMetadata(new Mediatype(type));
         }

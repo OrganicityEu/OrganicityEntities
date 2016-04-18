@@ -10,6 +10,6 @@ public class Description extends Attribute {
 
     public Description(String value) {
         super(OrganicityAttributeTypes.Types.DESCRIPTION, value);
-        this.setMetadata(null);
+        this.setMetadatas(null);
     }
 }

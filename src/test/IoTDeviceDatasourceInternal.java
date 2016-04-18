@@ -1,16 +1,8 @@
-import com.amaxilatis.orion.OrionClient;
 import eu.organicity.entities.handler.attributes.*;
 import eu.organicity.entities.handler.entities.IoTDevice;
 import eu.organicity.entities.handler.metadata.Datatype;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityDatatypes;
-import eu.organicity.entities.namespace.OrganicityEntityTypes;
-import eu.organicity.entities.namespace.OrganicityUnits;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.geojson.Feature;
-import org.geojson.FeatureCollection;
-import org.geojson.GeoJsonObject;
 import org.geojson.Point;
 
 import java.io.IOException;
@@ -44,7 +36,7 @@ public class IoTDeviceDatasourceInternal {
         iot.addAttribute(a);
 
         // Adding Datasource
-        a = new Datasource("http://146.489.16.982:1026/v1/contextEntities/",true,null);
+        a = new Datasource("http://146.489.16.982:1026/v1/contextEntities/", true, null);
         iot.addAttribute(a);
 
         // Adding Ranking
