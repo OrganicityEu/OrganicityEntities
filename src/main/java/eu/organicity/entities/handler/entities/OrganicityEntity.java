@@ -5,6 +5,7 @@ import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -60,7 +61,8 @@ public class OrganicityEntity {
         }
 
         if (area != null) {
-            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "area", area, "location", "string", "GeoJson"));
+            area= URLEncoder.encode(area);
+            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "area", area, "area", "string", "GeoJson"));
         }
 
         return element;
