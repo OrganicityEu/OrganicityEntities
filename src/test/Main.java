@@ -1,4 +1,3 @@
-
 import com.amaxilatis.orion.OrionClient;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.entities.IoTDevice;

@@ -7,6 +7,8 @@ public class OrganicityDatatypes {
         STRING("string", "urn:oc:datatype:string"),
         BOOLEAN("boolean", "urn:oc:datatype:boolean"),
         COORDINATES("coordinates", "urn:oc:datatype:coordinates"),
+        GEOJSON("geoJson", "urn:oc:datatype:geoJson"),
+        URL("url", "urn:oc:datatype:url"),
         DATETIME("datetime", "urn:oc:datatype:iso8691");
 
         private final String name;

@@ -20,8 +20,10 @@ public class OrganicityEntity {
     String id;
     OrganicityEntityTypes.EntityType entityType;
     private Date date;
-    private Double latitude;
-    private Double longitude;
+    private Double latitude; // Encoded in WGS84
+    private Double longitude; // Encoded in WGS84
+    private String area; //Encoded in GeoJSON
+
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
     public OrganicityEntity(OrganicityEntityTypes.EntityType entityType) {
@@ -30,6 +32,7 @@ public class OrganicityEntity {
         this.date = null;
         this.latitude = null;
         this.longitude = null;
+        this.area = null;
     }
 
     public OrganicityEntity(String id, OrganicityEntityTypes.EntityType entityType) {
@@ -38,6 +41,7 @@ public class OrganicityEntity {
         this.date = null;
         this.latitude = null;
         this.longitude = null;
+        this.area = null;
     }
 
     public OrionContextElement getContextElement() {
@@ -54,6 +58,11 @@ public class OrganicityEntity {
         if (latitude != null && longitude != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
         }
+
+        if (area != null) {
+            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "area", area, "location", "string", "GeoJson"));
+        }
+
         return element;
     }
 
@@ -70,9 +79,14 @@ public class OrganicityEntity {
         this.longitude = longitude;
     }
 
+    public void setArea(String area) {
+        this.area = area; //todo: possible add GeoJson Validations
+    }
+
     public void addAttribute(Attribute a) {
         attributes.add(a);
     }
+
 
     @Override
     public String toString() {

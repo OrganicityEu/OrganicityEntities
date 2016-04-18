@@ -16,7 +16,6 @@ public class OrganicityAttributeTypes {
         BATTERY_VOLTAGE("batteryVoltage", "urn:oc:attributeType:batteryVoltage", OrganicityUnits.Units.VOLTS, OrganicityDatatypes.DATATYPES.NUMERIC),
         ILLUMINANCE("illuminance", "urn:oc:attributeType:illuminance", OrganicityUnits.Units.LUX, OrganicityDatatypes.DATATYPES.NUMERIC),
         DIRECTION_AZIMUTH("direction:azimuth", "urn:oc:attributeType:direction:azimuth", OrganicityUnits.Units.DEGREE_ANGLE, OrganicityDatatypes.DATATYPES.NUMERIC),
-        POSITION("position", "urn:oc:attributeType:position", OrganicityUnits.Units.LAT_LONG_POSITION, OrganicityDatatypes.DATATYPES.STRING),
         CARBON_MONOXIDE("chemicalAgentAtmosphericConcentration:CO", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:CO", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         NITROGEN_DIOXIDE("chemicalAgentAtmosphericConcentration:NO2", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:NO2", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         SULPHUR_DIOXIDE("chemicalAgentAtmosphericConcentration:SO2", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:SO2", OrganicityUnits.Units.MICROGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
@@ -28,7 +27,15 @@ public class OrganicityAttributeTypes {
         PARTICLES("chemicalAgentAtmosphericConcentration:airParticles", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticles", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES10("chemicalAgentAtmosphericConcentration:airParticlesPM10", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM10", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES25("chemicalAgentAtmosphericConcentration:airParticlesPM25", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM25", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
-        DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING);
+
+        //Other Attributes
+        DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
+        POSITION("position", "urn:oc:attributeType:position", OrganicityUnits.Units.LAT_LONG_POSITION, OrganicityDatatypes.DATATYPES.STRING),
+        COMMENTS("comments", "urn:oc:attributeType:comments", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
+        RANKING("ranking", "urn:oc:attributeType:ranking", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.NUMERIC),
+        ORIGIN("origin", "urn:oc:attributeType:origin", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
+        DATASOURCE("datasource", "urn:oc:attributeType:datasource", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
+        ;
 
         private final String name;
         private final String urn;
