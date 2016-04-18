@@ -48,7 +48,7 @@ public class IoTDeviceDatasourceInternal {
         iot.addAttribute(a);
 
         // Adding Datasource
-        a = new Datasource("http://146.169.46.162:1026/v1/contextEntities/",true,null);
+        a = new Datasource("http://146.489.16.982:1026/v1/contextEntities/",true,null);
         iot.addAttribute(a);
 
         // Adding Ranking
@@ -61,6 +61,6 @@ public class IoTDeviceDatasourceInternal {
 
         System.out.println(iot.toString());
 
-        System.out.println(iot.getContextElement().toString());
+        System.out.println(new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(iot.getContextElement()));
     }
 }
