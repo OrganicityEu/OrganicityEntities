@@ -62,7 +62,7 @@ public class OrganicityEntity {
 
         if (area != null) {
             area= URLEncoder.encode(area);
-            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "area", area, "area", "string", "GeoJson"));
+            element.getAttributes().add(OrionClient.createAttributeWithMetadata("area", "string", area, "mediatype", "string", "GeoJson"));
         }
 
         return element;

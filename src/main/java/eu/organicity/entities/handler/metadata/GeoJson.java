@@ -5,6 +5,6 @@ package eu.organicity.entities.handler.metadata;
  */
 public class GeoJson extends Metadata {
     public GeoJson() {
-        super("location", "string", "GeoJson");
+        super("area", "string", "GeoJson");
     }
 }
