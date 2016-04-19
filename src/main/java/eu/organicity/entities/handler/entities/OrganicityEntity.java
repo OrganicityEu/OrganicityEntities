@@ -54,7 +54,7 @@ public class OrganicityEntity {
             element.getAttributes().add(attribute.getAttribute());
         }
         if (date != null) {
-            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:datatype:ISO8601", df.format(date)));
+            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "ISO8601", df.format(date)));
         }
         if (latitude != null && longitude != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
