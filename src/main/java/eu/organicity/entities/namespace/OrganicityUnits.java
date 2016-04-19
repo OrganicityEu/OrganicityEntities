@@ -24,12 +24,16 @@ public class OrganicityUnits {
         MILILITER_PER_HOUR("mililiterPerHour", "urn:oc:uom:mililiterPerHour"),
         MILIVOLT_PER_METRE("milivoltPerMetre", "urn:oc:uom:milivoltPerMetre"),
         PERCENT("percent", "urn:oc:uom:percent"),
+        FRACTION("fraction", "urn:oc:uom:fraction"),
+        COUNT("count", "urn:oc:uom:count"),
         REVOLUTION_PER_MINUTE("revolutionPerMinute", "urn:oc:uom:revolutionPerMinute"),
         SCALE("scale", "urn:oc:uom:scale"),
         VEHICLE_PER_MINUTE("vehiclePerMinute", "urn:oc:uom:vehiclePerMinute"),
         WATT_PER_SQUARE_METER("wattPerSquareMeter", "urn:oc:uom:wattPerSquareMeter"),
         LAT_LONG_POSITION("coords", "coords"),
-        NOT_APPLIED("NOT APPLIED", "NOT APPLIED");
+        NOT_APPLIED("NOT APPLIED", "NOT APPLIED"),
+        POPULATION_DENSITY("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),
+        MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds");
 
 
         private final String name;
