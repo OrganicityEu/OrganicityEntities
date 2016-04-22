@@ -33,7 +33,7 @@ public class OrganicityAttributeTypes {
         HOUSEHOLD_INCOME("boroughProfile:householdIncome","urn:oc:attributeType:boroughProfile:householdIncome",OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
         MEDIAN_HOUSE_PRICE("boroughProfile:medianHousePrice","urn:oc:attributeType:boroughProfile:medianHousePrice",OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
         FRACTION_GREENSPACE("boroughProfile:fractionGreenspace","urn:oc:attributeType:boroughProfile:fractionGreenspace",OrganicityUnits.Units.FRACTION, OrganicityDatatypes.DATATYPES.NUMERIC),
-        //CARBON_EMISSION("boroughProfile:carbonEmission","urn:oc:attributeType:boroughProfile:carbonEmission",OrganicityUnits.Units., OrganicityDatatypes.DATATYPES.NUMERIC),
+        CARBON_EMISSION("boroughProfile:carbonEmission","urn:oc:attributeType:boroughProfile:carbonEmission",OrganicityUnits.Units.KILOTONNE, OrganicityDatatypes.DATATYPES.NUMERIC),
         CARS_PER_HOUSEHOLD("boroughProfile:carsPerHousehold","urn:oc:attributeType:boroughProfile:carsPerHousehold",OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
         WALK_5X_WEEK("boroughProfile:walk5xWeek","urn:oc:attributeType:boroughProfile:walk5xWeek",OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
         CYCLE_1X_WEEK("boroughProfile:cycle1xWeek","urn:oc:attributeType:boroughProfile:cycle1xWeek",OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),

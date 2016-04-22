@@ -15,6 +15,7 @@ public class OrganicityUnits {
         INDEX("index", "urn:oc:uom:index"),
         KILOMETRE("kilometre", "urn:oc:uom:kilometre"),
         KILLOMETRE_PER_HOUR("kilometrePerHour", "urn:oc:uom:kilometrePerHour"),
+        KILOTONNE("kilotonne","urn:oc:uom:kilotonne"),
         LITRE("litre", "urn:oc:uom:litre"),
         LITRE_PER_100_KILOMETERS("litrePer100Kilometers", "urn:oc:uom:litrePer100Kilometers"),
         LUX("lux", "urn:oc:uom:lux"),
