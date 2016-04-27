@@ -62,13 +62,15 @@ public class OrganicityEntity {
 
         if (area != null) {
             area = URLEncoder.encode(area);
-            Attribute a = new Attribute(OrganicityAttributeTypes.Types.AREA, "GeoJson");
-            a.getMetadatas().clear();
+            com.amaxilatis.orion.model.Attribute a=OrionClient.createAttribute("area", "string", "GeoJson");
+            if (a.getMetadatas()==null){
+                a.setMetadatas(new ArrayList<>());
+            }
             List<String> parts = split(area, 30 * 1024);
             int i=0;
             for (String part : parts) {
                 com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area", "part"+i++, part);
-                a.addMetadata(m);
+                a.getMetadatas().add(m);
             }
             element.getAttributes().add(a);
         }

@@ -36,7 +36,7 @@ public class BoroughProfileImporter {
             // Adding Area-GeoJson
             isNull(feature.getGeometry());
             String area = feature.getGeometry().toString();
-            area = compress(area);
+            //area = compress(area);
             boroughProfile.setArea(area);
 
             // Adding Origin
