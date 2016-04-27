@@ -3,6 +3,7 @@ package eu.organicity.entities.handler.entities;
 import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
+import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.net.URLEncoder;
@@ -44,7 +45,7 @@ public class OrganicityEntity {
         this.area = null;
     }
 
-    public OrionContextElement getContextElement() {
+    public OrionContextElement getContextElement() throws Exception {
         OrionContextElement element = new OrionContextElement();
         element.setId(id);
         element.setType(entityType.getUrn());
@@ -61,10 +62,15 @@ public class OrganicityEntity {
 
         if (area != null) {
             area = URLEncoder.encode(area);
-            if (area.length() > 32 * 1024) {
-                // area="";
+            Attribute a = new Attribute(OrganicityAttributeTypes.Types.AREA, "GeoJson");
+            a.getMetadatas().clear();
+            List<String> parts = split(area, 30 * 1024);
+            int i=0;
+            for (String part : parts) {
+                com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area", "part"+i++, part);
+                a.addMetadata(m);
             }
-            element.getAttributes().add(OrionClient.createAttributeWithMetadata("area", "string", area, "mediatype", "string", "GeoJson"));
+            element.getAttributes().add(a);
         }
 
         return element;
@@ -99,6 +105,14 @@ public class OrganicityEntity {
                 ", id='" + id + '\'' +
                 ", entityType=" + entityType +
                 '}';
+    }
+
+    public static List<String> split(String text, int size) {
+        List<String> ret = new ArrayList<String>((text.length() + size - 1) / size);
+        for (int start = 0; start < text.length(); start += size) {
+            ret.add(text.substring(start, Math.min(text.length(), start + size)));
+        }
+        return ret;
     }
 
 }

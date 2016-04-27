@@ -23,6 +23,10 @@ public class Attribute extends com.amaxilatis.orion.model.Attribute {
         this.getMetadatas().add(metadata);
     }
 
+    public Attribute(String name, String type, String value) {
+        super(name, type, value);
+    }
+
 
     public com.amaxilatis.orion.model.Attribute getAttribute() {
         return OrionClient.createAttributeWithMetadata(this.attributeType.getName(), this.attributeType.getUrn(), getValue(), getMetadatas());

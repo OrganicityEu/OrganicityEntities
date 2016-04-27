@@ -14,9 +14,11 @@ import eu.organicity.entities.namespace.OrganicityAttributeTypes.Types;
 import org.geojson.Feature;
 import org.geojson.FeatureCollection;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
+import java.util.zip.GZIPOutputStream;
 
 public class BoroughProfileImporter {
 
@@ -34,6 +36,7 @@ public class BoroughProfileImporter {
             // Adding Area-GeoJson
             isNull(feature.getGeometry());
             String area = feature.getGeometry().toString();
+            area = compress(area);
             boroughProfile.setArea(area);
 
             // Adding Origin
@@ -73,7 +76,7 @@ public class BoroughProfileImporter {
     }
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         if (args.length < 2) {
             System.err.println("Error: insufficient argument count!");
@@ -145,5 +148,17 @@ public class BoroughProfileImporter {
             a = a + s.charAt(i);
         }
         return a;
+    }
+
+    public static String compress(String str) throws IOException {
+        if (str == null || str.length() == 0) {
+            return str;
+        }
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        GZIPOutputStream gzip = new GZIPOutputStream(out);
+        gzip.write(str.getBytes());
+        gzip.close();
+        String outStr = out.toString("UTF-8");
+        return outStr;
     }
 }

@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class IoTDeviceDatasourceInternal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
 
         IoTDevice iot = new IoTDevice("urn:oc:entity:london:environmental:park1:weatherstation123");
