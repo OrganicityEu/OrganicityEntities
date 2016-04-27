@@ -1,8 +1,6 @@
 import eu.organicity.entities.handler.attributes.*;
 import eu.organicity.entities.handler.entities.IoTDevice;
-import eu.organicity.entities.handler.metadata.Datatype;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
-import eu.organicity.entities.namespace.OrganicityDatatypes;
 import org.geojson.Point;
 
 import java.io.IOException;

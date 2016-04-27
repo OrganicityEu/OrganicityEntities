@@ -1,6 +1,5 @@
 package eu.organicity.entities.handler.attributes;
 
-import eu.organicity.entities.handler.metadata.WGS84;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 
 /**

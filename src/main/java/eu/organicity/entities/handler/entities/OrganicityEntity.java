@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.TimeZone;
 
 /**
  * Created by etheodor on 20/10/2015.
@@ -61,7 +60,10 @@ public class OrganicityEntity {
         }
 
         if (area != null) {
-            area= URLEncoder.encode(area);
+            area = URLEncoder.encode(area);
+            if (area.length() > 32 * 1024) {
+                // area="";
+            }
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("area", "string", area, "mediatype", "string", "GeoJson"));
         }
 
@@ -98,4 +100,5 @@ public class OrganicityEntity {
                 ", entityType=" + entityType +
                 '}';
     }
+
 }

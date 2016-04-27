@@ -29,24 +29,23 @@ public class OrganicityAttributeTypes {
         PARTICLES25("chemicalAgentAtmosphericConcentration:airParticlesPM25", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM25", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
 
         // Boroughs
-        POPULATION_DENSITY("boroughProfile:populationDensity","urn:oc:attributeType:boroughProfile:populationDensity",OrganicityUnits.Units.POPULATION_DENSITY, OrganicityDatatypes.DATATYPES.NUMERIC),
-        HOUSEHOLD_INCOME("boroughProfile:householdIncome","urn:oc:attributeType:boroughProfile:householdIncome",OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
-        MEDIAN_HOUSE_PRICE("boroughProfile:medianHousePrice","urn:oc:attributeType:boroughProfile:medianHousePrice",OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
-        FRACTION_GREENSPACE("boroughProfile:fractionGreenspace","urn:oc:attributeType:boroughProfile:fractionGreenspace",OrganicityUnits.Units.FRACTION, OrganicityDatatypes.DATATYPES.NUMERIC),
-        CARBON_EMISSION("boroughProfile:carbonEmission","urn:oc:attributeType:boroughProfile:carbonEmission",OrganicityUnits.Units.KILOTONNE, OrganicityDatatypes.DATATYPES.NUMERIC),
-        CARS_PER_HOUSEHOLD("boroughProfile:carsPerHousehold","urn:oc:attributeType:boroughProfile:carsPerHousehold",OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
-        WALK_5X_WEEK("boroughProfile:walk5xWeek","urn:oc:attributeType:boroughProfile:walk5xWeek",OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
-        CYCLE_1X_WEEK("boroughProfile:cycle1xWeek","urn:oc:attributeType:boroughProfile:cycle1xWeek",OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
-        FRACTION_OBESE("boroughProfile:fractionObese","urn:oc:attributeType:boroughProfile:fractionObese",OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
-        
+        POPULATION_DENSITY("boroughProfile:populationDensity", "urn:oc:attributeType:boroughProfile:populationDensity", OrganicityUnits.Units.POPULATION_DENSITY, OrganicityDatatypes.DATATYPES.NUMERIC),
+        HOUSEHOLD_INCOME("boroughProfile:householdIncome", "urn:oc:attributeType:boroughProfile:householdIncome", OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
+        MEDIAN_HOUSE_PRICE("boroughProfile:medianHousePrice", "urn:oc:attributeType:boroughProfile:medianHousePrice", OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
+        FRACTION_GREENSPACE("boroughProfile:fractionGreenspace", "urn:oc:attributeType:boroughProfile:fractionGreenspace", OrganicityUnits.Units.FRACTION, OrganicityDatatypes.DATATYPES.NUMERIC),
+        CARBON_EMISSION("boroughProfile:carbonEmission", "urn:oc:attributeType:boroughProfile:carbonEmission", OrganicityUnits.Units.KILOTONNE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        CARS_PER_HOUSEHOLD("boroughProfile:carsPerHousehold", "urn:oc:attributeType:boroughProfile:carsPerHousehold", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        WALK_5X_WEEK("boroughProfile:walk5xWeek", "urn:oc:attributeType:boroughProfile:walk5xWeek", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        CYCLE_1X_WEEK("boroughProfile:cycle1xWeek", "urn:oc:attributeType:boroughProfile:cycle1xWeek", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        FRACTION_OBESE("boroughProfile:fractionObese", "urn:oc:attributeType:boroughProfile:fractionObese", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
+
         //Other Attributes
         DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
         POSITION("position", "urn:oc:attributeType:position", OrganicityUnits.Units.LAT_LONG_POSITION, OrganicityDatatypes.DATATYPES.STRING),
         COMMENTS("comments", "urn:oc:attributeType:comments", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
         RANKING("ranking", "urn:oc:attributeType:ranking", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.NUMERIC),
         ORIGIN("origin", "urn:oc:attributeType:origin", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
-        DATASOURCE("datasource", "urn:oc:attributeType:datasource", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
-        ;
+        DATASOURCE("datasource", "urn:oc:attributeType:datasource", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),;
 
         private final String name;
         private final String urn;
