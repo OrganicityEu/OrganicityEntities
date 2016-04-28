@@ -3,7 +3,6 @@ package eu.organicity.entities.handler.entities;
 import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
-import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.net.URLEncoder;
@@ -62,14 +61,14 @@ public class OrganicityEntity {
 
         if (area != null) {
             area = URLEncoder.encode(area);
-            com.amaxilatis.orion.model.Attribute a=OrionClient.createAttribute("area", "string", "GeoJson");
-            if (a.getMetadatas()==null){
+            com.amaxilatis.orion.model.Attribute a = OrionClient.createAttribute("area", "string", "GeoJson");
+            if (a.getMetadatas() == null) {
                 a.setMetadatas(new ArrayList<>());
             }
-            List<String> parts = split(area, 30 * 1024);
-            int i=0;
+            List<String> parts = split(area, 10024);
+            int i = 0;
             for (String part : parts) {
-                com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area", "part"+i++, part);
+                com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area" +i, "part" + i++, part);
                 a.getMetadatas().add(m);
             }
             element.getAttributes().add(a);
@@ -117,4 +116,15 @@ public class OrganicityEntity {
         return ret;
     }
 
+    public List<Attribute> getAttributes() {
+        return attributes;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public String getId() {
+        return id;
+    }
 }
