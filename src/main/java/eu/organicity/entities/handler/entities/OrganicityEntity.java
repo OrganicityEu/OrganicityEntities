@@ -65,7 +65,7 @@ public class OrganicityEntity {
             if (a.getMetadatas() == null) {
                 a.setMetadatas(new ArrayList<>());
             }
-            List<String> parts = split(area, 10024);
+            List<String> parts = split(area, 512);
             int i = 0;
             for (String part : parts) {
                 com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area" +i, "part" + i++, part);
