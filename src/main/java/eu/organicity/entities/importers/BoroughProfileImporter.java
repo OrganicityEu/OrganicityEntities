@@ -28,10 +28,18 @@ public class BoroughProfileImporter {
             // Adding Area-GeoJson
             isNull(feature.getGeometry());
             String area = feature.getGeometry().toString();
-
+            
+            
             //area = compress(area);
             boroughProfile.setArea(area);
 
+            // FIXME: Add a borough name to the boroughProfile object
+            // name can be found in feature.getProperties().get("name").toString();
+            
+            // FIXME: Add centroid to the boroughProfile object ... the lat/long can be found in
+            // latitude can be found in feature.getProperties().get("latitude");
+            // longitude can be found in feature.getProperties().get("longitude");
+            
             // Adding Origin
             Origin origin = new Origin("http://organicity.eu/cities/london/");
             boroughProfile.addAttribute(origin);
