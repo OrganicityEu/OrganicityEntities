@@ -39,6 +39,7 @@ public class BoroughProfileImporter {
             // FIXME: Add centroid to the boroughProfile object ... the lat/long can be found in
             // latitude can be found in feature.getProperties().get("latitude");
             // longitude can be found in feature.getProperties().get("longitude");
+            boroughProfile.setPosition(Double.parseDouble(feature.getProperties().get("latitude").toString()), Double.parseDouble(feature.getProperties().get("longitude").toString()) );
             
             // Adding Origin
             Origin origin = new Origin("http://organicity.eu/cities/london/");

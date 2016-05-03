@@ -15,6 +15,7 @@ import org.geojson.FeatureCollection;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.security.SecureRandom;
 import java.util.*;
 import java.util.zip.GZIPOutputStream;
 
@@ -35,8 +36,8 @@ public class BoroughProfileImporterTest {
         List<BoroughProfile> profiles = BoroughProfileImporter.process(jsonInputFilename);
 
         for (BoroughProfile boroughProfile : profiles) {
+            boroughProfile.setArea(randomString(80000));
             String payload = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValueAsString(boroughProfile.getContextElement());
-            System.out.println(payload);
             if (performPost) {
                 try {
                     post(serverUrl, payload);
@@ -60,7 +61,7 @@ public class BoroughProfileImporterTest {
                 "\n}\n\n\n\n\n\r";
 
         System.out.println(entity);
-        HttpResponse<String> response = Unirest.post(server)
+       /* HttpResponse<String> response = Unirest.post(server)
                 .header("accept", "application/json")
                 .header("Content-Type", "application/json")
                 .body(entity)
@@ -69,7 +70,7 @@ public class BoroughProfileImporterTest {
         if (response.getStatus() != 200 || response.getBody().contains("errorCode")) {
             throw new RuntimeException("Failed : HTTP error code : "
                     + response.getStatus() + response.getBody());
-        }
+        }*/
     }
 
     private String wrap(String s, Integer l) {
@@ -104,5 +105,15 @@ public class BoroughProfileImporterTest {
         gzip.close();
         String outStr = out.toString("UTF-8");
         return outStr;
+    }
+
+    static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    static SecureRandom rnd = new SecureRandom();
+
+    static String randomString(int len) {
+        StringBuilder sb = new StringBuilder(len);
+        for (int i = 0; i < len; i++)
+            sb.append(AB.charAt(rnd.nextInt(AB.length())));
+        return sb.toString();
     }
 }
