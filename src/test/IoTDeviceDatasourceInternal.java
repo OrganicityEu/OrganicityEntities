@@ -1,8 +1,6 @@
 import eu.organicity.entities.handler.attributes.*;
 import eu.organicity.entities.handler.entities.IoTDevice;
-import eu.organicity.entities.handler.metadata.Datatype;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
-import eu.organicity.entities.namespace.OrganicityDatatypes;
 import org.geojson.Point;
 
 import java.io.IOException;
@@ -10,7 +8,7 @@ import java.util.Date;
 
 public class IoTDeviceDatasourceInternal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
 
         IoTDevice iot = new IoTDevice("urn:oc:entity:london:environmental:park1:weatherstation123");

@@ -5,7 +5,6 @@ import com.amaxilatis.orion.model.Metadata;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by etheodor on 20/10/2015.
@@ -22,6 +21,10 @@ public class Attribute extends com.amaxilatis.orion.model.Attribute {
         Metadata metadata = new Metadata("unit", attributeType.getUom().getUrn(), attributeType.getUom().getName());
         this.setMetadatas(new ArrayList<>());
         this.getMetadatas().add(metadata);
+    }
+
+    public Attribute(String name, String type, String value) {
+        super(name, type, value);
     }
 
 

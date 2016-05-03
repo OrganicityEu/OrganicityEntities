@@ -10,7 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.TimeZone;
 
 /**
  * Created by etheodor on 20/10/2015.
@@ -45,7 +44,7 @@ public class OrganicityEntity {
         this.area = null;
     }
 
-    public OrionContextElement getContextElement() {
+    public OrionContextElement getContextElement() throws Exception {
         OrionContextElement element = new OrionContextElement();
         element.setId(id);
         element.setType(entityType.getUrn());
@@ -61,8 +60,18 @@ public class OrganicityEntity {
         }
 
         if (area != null) {
-            area= URLEncoder.encode(area);
-            element.getAttributes().add(OrionClient.createAttributeWithMetadata("area", "string", area, "mediatype", "string", "GeoJson"));
+            area = URLEncoder.encode(area);
+            com.amaxilatis.orion.model.Attribute a = OrionClient.createAttribute("area", "string", "GeoJson");
+            if (a.getMetadatas() == null) {
+                a.setMetadatas(new ArrayList<>());
+            }
+            List<String> parts = split(area, 512);
+            int i = 0;
+            for (String part : parts) {
+                com.amaxilatis.orion.model.Metadata m = new com.amaxilatis.orion.model.Metadata("area" +i, "part" + i++, part);
+                a.getMetadatas().add(m);
+            }
+            element.getAttributes().add(a);
         }
 
         return element;
@@ -97,5 +106,25 @@ public class OrganicityEntity {
                 ", id='" + id + '\'' +
                 ", entityType=" + entityType +
                 '}';
+    }
+
+    public static List<String> split(String text, int size) {
+        List<String> ret = new ArrayList<String>((text.length() + size - 1) / size);
+        for (int start = 0; start < text.length(); start += size) {
+            ret.add(text.substring(start, Math.min(text.length(), start + size)));
+        }
+        return ret;
+    }
+
+    public List<Attribute> getAttributes() {
+        return attributes;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public String getId() {
+        return id;
     }
 }
