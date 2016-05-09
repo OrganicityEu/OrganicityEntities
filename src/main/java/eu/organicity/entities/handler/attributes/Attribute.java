@@ -29,7 +29,10 @@ public class Attribute extends com.amaxilatis.orion.model.Attribute {
 
 
     public com.amaxilatis.orion.model.Attribute getAttribute() {
-        return OrionClient.createAttributeWithMetadata(this.attributeType.getName(), this.attributeType.getUrn(), getValue(), getMetadatas());
+        if (this.attributeType != null)
+            return OrionClient.createAttributeWithMetadata(this.attributeType.getName(), this.attributeType.getUrn(), getValue(), getMetadatas());
+        else
+            return OrionClient.createAttributeWithMetadata(this.getName(), this.getType(), getValue(), getMetadatas());
     }
 
     public void addMetadata(final Metadata m) {
@@ -41,11 +44,19 @@ public class Attribute extends com.amaxilatis.orion.model.Attribute {
 
     @Override
     public String toString() {
-        return "Attribute{" +
-                "name='" + this.attributeType.getName() + '\'' +
-                ", value='" + getValue() + '\'' +
-                ", type='" + this.attributeType.getUrn() + '\'' +
-                ", metadata=" + getMetadatas() +
-                '}';
+        if (this.attributeType != null)
+            return "Attribute{" +
+                    "name='" + this.attributeType.getName() + '\'' +
+                    ", value='" + getValue() + '\'' +
+                    ", type='" + this.attributeType.getUrn() + '\'' +
+                    ", metadata=" + getMetadatas() +
+                    '}';
+        else
+            return "Attribute{" +
+                    "name='" + this.getName() + '\'' +
+                    ", value='" + getValue() + '\'' +
+                    ", type='" + this.getType() + '\'' +
+                    ", metadata=" + getMetadatas() +
+                    '}';
     }
 }
