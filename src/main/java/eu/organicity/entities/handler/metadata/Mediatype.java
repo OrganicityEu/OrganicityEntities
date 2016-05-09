@@ -1,5 +1,6 @@
 package eu.organicity.entities.handler.metadata;
 
+import com.amaxilatis.orion.model.Metadata;
 import eu.organicity.entities.namespace.OrganicityDatatypes;
 
 /**
