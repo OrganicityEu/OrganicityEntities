@@ -4,7 +4,8 @@ public class OrganicityEntityTypes {
     static public enum EntityType {
         IOT_DEVICE("IotDevice", "urn:oc:entityType:iotdevice"),
         SMARTPHONE("smartphone", "urn:oc:entityType:smartphone"),
-        BOROUGH("borough", "urn:oc:entityType:borough");
+        BOROUGH("borough", "urn:oc:entityType:borough"),
+        WEATHER_STATION("borough", "urn:oc:entityType:weatherstation");
 
         private final String name;
         private final String urn;
