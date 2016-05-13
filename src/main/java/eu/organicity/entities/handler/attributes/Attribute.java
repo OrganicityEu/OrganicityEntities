@@ -42,6 +42,10 @@ public class Attribute extends com.amaxilatis.orion.model.Attribute {
         getMetadatas().add(m);
     }
 
+    public OrganicityAttributeTypes.Types getAttributeType(){
+        return attributeType;
+    }
+
     @Override
     public String toString() {
         if (this.attributeType != null)

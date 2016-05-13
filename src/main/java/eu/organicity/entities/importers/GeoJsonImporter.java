@@ -58,15 +58,19 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
                 Map<String, String> attributeAttributes = (Map<String, String>) attribute.get("attributes");
                 Map<String, Double> attributeValues = (Map<String, Double>) attribute.get("values");
 
-                // Find the latest timed value
-                TreeSet<String> valueTimes = new TreeSet<String>(attributeValues.keySet());
-                String latestTime = valueTimes.last();
+                if (attributeValues.size() > 0) {
+                    // The attribute has some values
 
-                // Adding classic attributes
-                Attribute a = new Attribute(OrganicityAttributeTypes.Types.getAttibuteType(attributeAttributes.get("urn")), String.valueOf(attributeValues.get(latestTime)));
-                Metadata m = new Metadata("TimeInstant", "ISO8601", latestTime);
-                a.addMetadata(m);
-                boroughProfile.addAttribute(a);
+                    // Find the latest timed value
+                    TreeSet<String> valueTimes = new TreeSet<String>(attributeValues.keySet());
+                    String latestTime = valueTimes.last();
+
+                    // Adding classic attributes
+                    Attribute a = new Attribute(OrganicityAttributeTypes.Types.getAttibuteType(attributeAttributes.get("urn")), String.valueOf(attributeValues.get(latestTime)));
+                    Metadata m = new Metadata("TimeInstant", "ISO8601", latestTime);
+                    a.addMetadata(m);
+                    boroughProfile.addAttribute(a);
+                }
             }
             profiles.add(boroughProfile);
         }

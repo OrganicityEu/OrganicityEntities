@@ -128,4 +128,8 @@ public class OrganicityEntity {
     public String getId() {
         return id;
     }
+
+    public OrganicityEntityTypes.EntityType getEntityType(){
+        return entityType;
+    }
 }
