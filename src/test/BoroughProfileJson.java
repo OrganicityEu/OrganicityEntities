@@ -3,7 +3,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import eu.organicity.entities.handler.entities.BoroughProfile;
+import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.importers.BoroughProfileImporter;
 
 import java.io.ByteArrayOutputStream;
@@ -26,9 +26,10 @@ public class BoroughProfileJson {
         String jsonInputFilename = args[0];
         Boolean performPost = Boolean.parseBoolean(args[2]);
 
-        List<BoroughProfile> profiles = BoroughProfileImporter.process(jsonInputFilename);
+        BoroughProfileImporter importer = new BoroughProfileImporter();
+        List<OrganicityEntity> profiles = importer.process(jsonInputFilename);
 
-        for (BoroughProfile boroughProfile : profiles) {
+        for (OrganicityEntity boroughProfile : profiles) {
             boroughProfile.setArea(randomString(20000));
             String payload = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValueAsString(boroughProfile.getContextElement());
             jsonPrint(payload);

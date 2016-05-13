@@ -39,6 +39,14 @@ public class OrganicityAttributeTypes {
         CYCLE_1X_WEEK("boroughProfile:cycle1xWeek", "urn:oc:attributeType:boroughProfile:cycle1xWeek", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
         FRACTION_OBESE("boroughProfile:fractionObese", "urn:oc:attributeType:boroughProfile:fractionObese", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
 
+        // Manual traffic counts
+        DAILY_PEDAL_CYCLE_COUNT("trafficCount:dailyPedalCycleCount", "urn:oc:attributeType:trafficCount:dailyPedalCycleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        DAILY_MOTORCYCLE_COUNT("trafficCount:dailyMotorcycleCount", "urn:oc:attributeType:trafficCount:dailyMotorcycleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        DAILY_CAR_TAXI_COUNT("trafficCount:dailyCarTaxiCount", "urn:oc:attributeType:trafficCount:dailyCarTaxiCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        DAILY_BUS_COACH_COUNT("trafficCount:dailyBusCoachCount", "urn:oc:attributeType:trafficCount:dailyBusCoachCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        DAILY_LIGHT_GOODS_VEHICLE_COUNT("trafficCount:dailyLightGoodsVehicleCount", "urn:oc:attributeType:trafficCount:dailyLightGoodsVehicleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        DAILY_HEAVY_GOODS_VEHICLE_COUNT("trafficCount:dailyHeavyGoodsVehicleCount", "urn:oc:attributeType:trafficCount:dailyHeavyGoodsVehicleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
+
         //Other Attributes
         DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
         AREA("area", "urn:oc:attributeType:area", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
