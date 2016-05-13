@@ -3,6 +3,7 @@ package eu.organicity.entities.handler.entities;
 import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
+import eu.organicity.entities.handler.attributes.Datasource;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.net.URLEncoder;
@@ -23,6 +24,8 @@ public class OrganicityEntity {
     private Double latitude; // Encoded in WGS84
     private Double longitude; // Encoded in WGS84
     private String area; //Encoded in GeoJSON
+    private String datasourceUrl;
+    private Boolean datasourceInternal;
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
@@ -33,6 +36,7 @@ public class OrganicityEntity {
         this.latitude = null;
         this.longitude = null;
         this.area = null;
+
     }
 
     public OrganicityEntity(String id, OrganicityEntityTypes.EntityType entityType) {
@@ -42,6 +46,8 @@ public class OrganicityEntity {
         this.latitude = null;
         this.longitude = null;
         this.area = null;
+        this.datasourceUrl = null;
+        this.datasourceInternal = null;
     }
 
     public OrionContextElement getContextElement() throws Exception {
@@ -57,6 +63,10 @@ public class OrganicityEntity {
         }
         if (latitude != null && longitude != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
+        }
+        if (datasourceUrl != null && datasourceInternal != null) {
+            element.getAttributes().add(OrionClient.createAttributeWithMetadata("datasource", "urn:oc:attributeType:datasource", datasourceUrl
+                    , "datasourceInternal", "urn:oc:datatype:boolean", String.valueOf(datasourceInternal).toLowerCase()));
         }
 
         if (area != null) {
@@ -89,6 +99,11 @@ public class OrganicityEntity {
     public void setPosition(double latitude, double longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
+    }
+
+    public void setDatasource(final boolean internal, final String url) {
+        this.datasourceUrl = url;
+        this.datasourceInternal = internal;
     }
 
     public void setArea(String area) {

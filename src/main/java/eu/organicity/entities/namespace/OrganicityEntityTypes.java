@@ -5,7 +5,8 @@ public class OrganicityEntityTypes {
         IOT_DEVICE("IotDevice", "urn:oc:entityType:iotdevice"),
         SMARTPHONE("smartphone", "urn:oc:entityType:smartphone"),
         BOROUGH("borough", "urn:oc:entityType:borough"),
-        MANUAL_COUNTER("ManualCounter", "urn:oc:entityType:manualCounter");
+        MANUAL_COUNTER("ManualCounter", "urn:oc:entityType:manualCounter"),
+        WEATHER_STATION("borough", "urn:oc:entityType:weatherstation");
 
         private final String name;
         private final String urn;
