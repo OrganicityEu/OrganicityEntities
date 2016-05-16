@@ -12,7 +12,7 @@ public class ManualCountProfileImporterTest {
 
         if (args.length < 1) {
             System.err.println("Error: insufficient argument count!");
-            System.err.println("Usage: BoroughProfileImporter jsonInputFilename");
+            System.err.println("Usage: TrafficCount+ProfileImporter jsonInputFilename");
             System.exit(1);
         }
 
