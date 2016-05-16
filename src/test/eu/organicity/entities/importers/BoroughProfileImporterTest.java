@@ -1,6 +1,8 @@
 package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
@@ -61,5 +63,4 @@ public class BoroughProfileImporterTest {
                 .orElse(null);
         assertEquals("2005-12-31T23:59:59", timestamp.getValue());  // NOTE: This value can change if we update the json file
     }
-
 }

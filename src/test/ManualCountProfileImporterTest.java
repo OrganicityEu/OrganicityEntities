@@ -5,7 +5,7 @@ import eu.organicity.entities.importers.BoroughProfileImporter;
 
 import java.util.List;
 
-public class BoroughProfileImporterTest {
+public class ManualCountProfileImporterTest {
 
 
     public static void main(String[] args) throws Exception {

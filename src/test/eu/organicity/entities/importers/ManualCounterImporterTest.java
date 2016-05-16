@@ -1,6 +1,8 @@
 package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
@@ -27,7 +29,7 @@ public class ManualCounterImporterTest {
     }
 
     @Test
-    public void testProcess() throws Exception{
+    public void testProcess() throws Exception {
         ManualCounterImporter importer = new ManualCounterImporter();
 
         String jsonFileName = this.getClass().getResource("/entityImport/organicity-traffic-counts.json").getPath();
@@ -42,7 +44,7 @@ public class ManualCounterImporterTest {
                 .findAny()
                 .orElse(null);
         assertNotNull(entity);
-        assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6879",entity.getId());
+        assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6879", entity.getId());
         assertEquals(OrganicityEntityTypes.EntityType.MANUAL_COUNTER, entity.getEntityType());
 
         // Get Light goods vehicle count
@@ -70,4 +72,16 @@ public class ManualCounterImporterTest {
         assertNull(nullAttribute);
     }
 
+    @Test
+    public void printAllProcess() throws Exception {
+        ManualCounterImporter importer = new ManualCounterImporter();
+        String jsonFileName = this.getClass().getResource("/resources/entityImport/organicity-traffic-counts.json").getPath();
+        List<OrganicityEntity> entities = importer.process(jsonFileName);
+
+
+        for (OrganicityEntity boroughProfile : entities) {
+            String payload = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT).writeValueAsString(boroughProfile.getContextElement());
+            System.out.println(payload);
+        }
+    }
 }
