@@ -19,7 +19,7 @@ public class ManualCountProfileImporterTest {
         String jsonInputFilename = args[0];
 
 
-        BoroughProfileImporter importer = new BoroughProfileImporter();
+        ManualCounterImporter importer = new ManualCounterImporter();
         List<OrganicityEntity> profiles = importer.process(jsonInputFilename);
 
         for (OrganicityEntity boroughProfile : profiles) {

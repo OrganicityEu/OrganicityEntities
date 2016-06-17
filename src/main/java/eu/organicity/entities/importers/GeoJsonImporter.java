@@ -27,7 +27,7 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
         for (Feature feature : featureCollection.getFeatures()) {
             String id = feature.getProperties().get("id").toString();
             isNull(id);
-            OrganicityEntity boroughProfile = initialiseEntity(id);
+            OrganicityEntity entity = initialiseEntity(id);
 
             // Adding Area-GeoJson
             isNull(feature.getGeometry());
@@ -35,22 +35,20 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
 
 
             //area = compress(area);
-            boroughProfile.setArea(area);
+            entity.setArea(area);
 
             // FIXME: Add a borough name to the boroughProfile object
             // name can be found in feature.getProperties().get("name").toString();
 
-            // FIXME: Add centroid to the boroughProfile object ... the lat/long can be found in
-            // latitude can be found in feature.getProperties().get("latitude");
-            // longitude can be found in feature.getProperties().get("longitude");
-            boroughProfile.setPosition(Double.parseDouble(feature.getProperties().get("latitude").toString()), Double.parseDouble(feature.getProperties().get("longitude").toString()) );
+            // Add centroid to the entity object
+            entity.setPosition(Double.parseDouble(feature.getProperties().get("latitude").toString()), Double.parseDouble(feature.getProperties().get("longitude").toString()) );
 
             // Adding Origin
             Origin origin = new Origin("http://organicity.eu/cities/london/");
-            boroughProfile.addAttribute(origin);
+            entity.addAttribute(origin);
 
             // Adding last update
-            boroughProfile.setTimestamp(new Date());
+            entity.setTimestamp(new Date());
 
             Map<String, Object> attributes = (Map<String, Object>) feature.getProperties().get("attributes");
             for (String attributeKey : attributes.keySet()) {
@@ -69,10 +67,10 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
                     Attribute a = new Attribute(OrganicityAttributeTypes.Types.getAttibuteType(attributeAttributes.get("urn")), String.valueOf(attributeValues.get(latestTime)));
                     Metadata m = new Metadata("TimeInstant", "ISO8601", latestTime);
                     a.addMetadata(m);
-                    boroughProfile.addAttribute(a);
+                    entity.addAttribute(a);
                 }
             }
-            profiles.add(boroughProfile);
+            profiles.add(entity);
         }
         return profiles;
     }

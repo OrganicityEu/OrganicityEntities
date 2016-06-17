@@ -16,7 +16,7 @@ public interface OrganicityEntityImporter {
      * @param resourceFileName is the location of the file-based resource
      * @return a list of OrganicityEntities listed in the resource
      */
-    List<OrganicityEntity> process(String resourceFileName) throws IOException;
+    List<OrganicityEntity> process(String resourceFileName) throws Exception;
 
     OrganicityEntity initialiseEntity(String id);
 }

@@ -6,7 +6,10 @@ public class OrganicityEntityTypes {
         SMARTPHONE("smartphone", "urn:oc:entityType:smartphone"),
         BOROUGH("borough", "urn:oc:entityType:borough"),
         MANUAL_COUNTER("ManualCounter", "urn:oc:entityType:manualCounter"),
-        WEATHER_STATION("Weatherstation", "urn:oc:entityType:weatherstation");
+        WEATHER_STATION("Weatherstation", "urn:oc:entityType:weatherstation"),
+        // Transport
+        TRANSPORT_STATION("TransportStation", "urn:oc:entityType:transportStation")
+        ;
 
         private final String name;
         private final String urn;

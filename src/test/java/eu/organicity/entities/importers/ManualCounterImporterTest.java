@@ -7,6 +7,7 @@ import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -73,6 +74,7 @@ public class ManualCounterImporterTest {
     }
 
     @Test
+    @Ignore //This is not a unit test
     public void printAllProcess() throws Exception {
         ManualCounterImporter importer = new ManualCounterImporter();
         String jsonFileName = this.getClass().getResource("/resources/entityImport/organicity-traffic-counts.json").getPath();

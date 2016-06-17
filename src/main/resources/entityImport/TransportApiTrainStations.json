@@ -1,0 +1,3485 @@
+{
+  "source": "http://fcc.transportapi.com/v3/uk/train/stations/near.json?lat=51.507222&lon=-0.1275",
+  "stations": [
+    {
+      "station_code": "CHX",
+      "atcocode": null,
+      "tiploc_code": "CHRX",
+      "name": "London Charing Cross",
+      "mode": "train",
+      "longitude": -0.124802,
+      "latitude": 51.508026,
+      "distance": 207
+    },
+    {
+      "station_code": "WAT",
+      "atcocode": null,
+      "tiploc_code": "WATRLMN",
+      "name": "London Waterloo",
+      "mode": "train",
+      "longitude": -0.113109,
+      "latitude": 51.503297,
+      "distance": 1087
+    },
+    {
+      "station_code": "WAE",
+      "atcocode": null,
+      "tiploc_code": "WLOE",
+      "name": "London Waterloo East",
+      "mode": "train",
+      "longitude": -0.108898,
+      "latitude": 51.504074,
+      "distance": 1334
+    },
+    {
+      "station_code": "BFR",
+      "atcocode": null,
+      "tiploc_code": "BLFR",
+      "name": "London Blackfriars",
+      "mode": "train",
+      "longitude": -0.103332,
+      "latitude": 51.511808,
+      "distance": 1749
+    },
+    {
+      "station_code": "VIC",
+      "atcocode": null,
+      "tiploc_code": "VICTRIE",
+      "name": "London Victoria",
+      "mode": "train",
+      "longitude": -0.144544,
+      "latitude": 51.495256,
+      "distance": 1778
+    },
+    {
+      "station_code": "CTK",
+      "atcocode": null,
+      "tiploc_code": "CTMSLNK",
+      "name": "City Thameslink",
+      "mode": "train",
+      "longitude": -0.10359,
+      "latitude": 51.513934,
+      "distance": 1815
+    },
+    {
+      "station_code": "ZFD",
+      "atcocode": null,
+      "tiploc_code": "FRNDNLT",
+      "name": "Farringdon (London)",
+      "mode": "train",
+      "longitude": -0.105205,
+      "latitude": 51.520165,
+      "distance": 2110
+    },
+    {
+      "station_code": "VXH",
+      "atcocode": null,
+      "tiploc_code": "VAUXHLM",
+      "name": "Vauxhall",
+      "mode": "train",
+      "longitude": -0.12289,
+      "latitude": 51.486188,
+      "distance": 2361
+    },
+    {
+      "station_code": "EUS",
+      "atcocode": null,
+      "tiploc_code": "EUSTON",
+      "name": "London Euston",
+      "mode": "train",
+      "longitude": -0.133924,
+      "latitude": 51.528135,
+      "distance": 2367
+    },
+    {
+      "station_code": "EPH",
+      "atcocode": null,
+      "tiploc_code": "ELPHNAC",
+      "name": "Elephant & Castle",
+      "mode": "train",
+      "longitude": -0.098726,
+      "latitude": 51.494027,
+      "distance": 2474
+    },
+    {
+      "station_code": "ZBB",
+      "atcocode": null,
+      "tiploc_code": "BRBCNLT",
+      "name": "Barbican",
+      "mode": "train",
+      "longitude": -0.0981,
+      "latitude": 51.5201,
+      "distance": 2488
+    },
+    {
+      "station_code": "STP",
+      "atcocode": null,
+      "tiploc_code": "STPANCI",
+      "name": "London St Pancras International",
+      "mode": "train",
+      "longitude": -0.1253,
+      "latitude": 51.5303,
+      "distance": 2571
+    },
+    {
+      "station_code": "SPX",
+      "atcocode": null,
+      "tiploc_code": "STPANCI",
+      "name": "London St Pancras International",
+      "mode": "train",
+      "longitude": -0.1253,
+      "latitude": 51.5303,
+      "distance": 2571
+    },
+    {
+      "station_code": "CST",
+      "atcocode": null,
+      "tiploc_code": "CANONST",
+      "name": "London Cannon Street",
+      "mode": "train",
+      "longitude": -0.090293,
+      "latitude": 51.511381,
+      "distance": 2616
+    },
+    {
+      "station_code": "KGX",
+      "atcocode": null,
+      "tiploc_code": "KNGX",
+      "name": "London Kings Cross",
+      "mode": "train",
+      "longitude": -0.122926,
+      "latitude": 51.530882,
+      "distance": 2650
+    },
+    {
+      "station_code": "LBG",
+      "atcocode": null,
+      "tiploc_code": "LNDNBDE",
+      "name": "London Bridge",
+      "mode": "train",
+      "longitude": -0.086088,
+      "latitude": 51.505107,
+      "distance": 2876
+    },
+    {
+      "station_code": "MOG",
+      "atcocode": null,
+      "tiploc_code": "MRGT",
+      "name": "Moorgate (Great Northern)",
+      "mode": "train",
+      "longitude": -0.088943,
+      "latitude": 51.51849,
+      "distance": 2948
+    },
+    {
+      "station_code": "MYB",
+      "atcocode": null,
+      "tiploc_code": "MARYLBN",
+      "name": "London Marylebone",
+      "mode": "train",
+      "longitude": -0.162911,
+      "latitude": 51.522522,
+      "distance": 2983
+    },
+    {
+      "station_code": "OLD",
+      "atcocode": null,
+      "tiploc_code": "OLDST",
+      "name": "Old Street",
+      "mode": "train",
+      "longitude": -0.088535,
+      "latitude": 51.52583,
+      "distance": 3399
+    },
+    {
+      "station_code": "FST",
+      "atcocode": null,
+      "tiploc_code": "FENCHRS",
+      "name": "London Fenchurch Street",
+      "mode": "train",
+      "longitude": -0.078897,
+      "latitude": 51.511644,
+      "distance": 3399
+    },
+    {
+      "station_code": "LST",
+      "atcocode": null,
+      "tiploc_code": "LIVST",
+      "name": "London Liverpool Street",
+      "mode": "train",
+      "longitude": -0.081426,
+      "latitude": 51.517989,
+      "distance": 3406
+    },
+    {
+      "station_code": "PAD",
+      "atcocode": null,
+      "tiploc_code": "PADTON",
+      "name": "London Paddington",
+      "mode": "train",
+      "longitude": -0.176174,
+      "latitude": 51.515994,
+      "distance": 3507
+    },
+    {
+      "station_code": "BAK",
+      "atcocode": null,
+      "tiploc_code": "BATRSPK",
+      "name": "Battersea Park",
+      "mode": "train",
+      "longitude": -0.147533,
+      "latitude": 51.476958,
+      "distance": 3640
+    },
+    {
+      "station_code": "QRB",
+      "atcocode": null,
+      "tiploc_code": "QTRDBAT",
+      "name": "Queenstown Road (Battersea)",
+      "mode": "train",
+      "longitude": -0.146678,
+      "latitude": 51.474966,
+      "distance": 3825
+    },
+    {
+      "station_code": "CMD",
+      "atcocode": null,
+      "tiploc_code": "CMDNRD",
+      "name": "Camden Road",
+      "mode": "train",
+      "longitude": -0.138701,
+      "latitude": 51.541789,
+      "distance": 3921
+    },
+    {
+      "station_code": "SDC",
+      "atcocode": null,
+      "tiploc_code": "SHRDHST",
+      "name": "Shoreditch High Street",
+      "mode": "train",
+      "longitude": -0.075246,
+      "latitude": 51.523374,
+      "distance": 4037
+    },
+    {
+      "station_code": "CIR",
+      "atcocode": null,
+      "tiploc_code": "CLDNNRB",
+      "name": "Caledonian Road & Barnsbury",
+      "mode": "train",
+      "longitude": -0.116729,
+      "latitude": 51.543039,
+      "distance": 4052
+    },
+    {
+      "station_code": "WWR",
+      "atcocode": null,
+      "tiploc_code": "WNDSWRD",
+      "name": "Wandsworth Road",
+      "mode": "train",
+      "longitude": -0.13852,
+      "latitude": 51.470215,
+      "distance": 4185
+    },
+    {
+      "station_code": "EXR",
+      "atcocode": null,
+      "tiploc_code": "ESSEXRD",
+      "name": "Essex Road",
+      "mode": "train",
+      "longitude": -0.096276,
+      "latitude": 51.540704,
+      "distance": 4304
+    },
+    {
+      "station_code": "HOX",
+      "atcocode": null,
+      "tiploc_code": "HOXTON",
+      "name": "Hoxton",
+      "mode": "train",
+      "longitude": -0.075682,
+      "latitude": 51.53151,
+      "distance": 4489
+    },
+    {
+      "station_code": "KTW",
+      "atcocode": null,
+      "tiploc_code": "KNTSHTW",
+      "name": "Kentish Town West",
+      "mode": "train",
+      "longitude": -0.146655,
+      "latitude": 51.546546,
+      "distance": 4569
+    },
+    {
+      "station_code": "HHY",
+      "atcocode": null,
+      "tiploc_code": "HIGHBYA",
+      "name": "Highbury & Islington",
+      "mode": "train",
+      "longitude": -0.103767,
+      "latitude": 51.546086,
+      "distance": 4623
+    },
+    {
+      "station_code": "CLP",
+      "atcocode": null,
+      "tiploc_code": "CLPHHS",
+      "name": "Clapham High Street",
+      "mode": "train",
+      "longitude": -0.132522,
+      "latitude": 51.465479,
+      "distance": 4655
+    },
+    {
+      "station_code": "LGJ",
+      "atcocode": null,
+      "tiploc_code": "LBGHJN",
+      "name": "Loughborough Junction",
+      "mode": "train",
+      "longitude": -0.102182,
+      "latitude": 51.466296,
+      "distance": 4877
+    },
+    {
+      "station_code": "ZWL",
+      "atcocode": null,
+      "tiploc_code": "WCHAPEL",
+      "name": "Whitechapel",
+      "mode": "train",
+      "longitude": -0.059757,
+      "latitude": 51.519467,
+      "distance": 4882
+    },
+    {
+      "station_code": "KTN",
+      "atcocode": null,
+      "tiploc_code": "KNTSHTN",
+      "name": "Kentish Town",
+      "mode": "train",
+      "longitude": -0.140365,
+      "latitude": 51.550493,
+      "distance": 4893
+    },
+    {
+      "station_code": "SDE",
+      "atcocode": null,
+      "tiploc_code": "SHADWEL",
+      "name": "Shadwell",
+      "mode": "train",
+      "longitude": -0.056934,
+      "latitude": 51.511282,
+      "distance": 4904
+    },
+    {
+      "station_code": "WPE",
+      "atcocode": null,
+      "tiploc_code": "WAPPING",
+      "name": "Wapping",
+      "mode": "train",
+      "longitude": -0.055931,
+      "latitude": 51.504386,
+      "distance": 4963
+    },
+    {
+      "station_code": "BRX",
+      "atcocode": null,
+      "tiploc_code": "BRIXTON",
+      "name": "Brixton",
+      "mode": "train",
+      "longitude": -0.114183,
+      "latitude": 51.463297,
+      "distance": 4970
+    },
+    {
+      "station_code": "HGG",
+      "atcocode": null,
+      "tiploc_code": "HAGGERS",
+      "name": "Haggerston",
+      "mode": "train",
+      "longitude": -0.075667,
+      "latitude": 51.538704,
+      "distance": 5011
+    },
+    {
+      "station_code": "BET",
+      "atcocode": null,
+      "tiploc_code": "BTHNLGR",
+      "name": "Bethnal Green",
+      "mode": "train",
+      "longitude": -0.059568,
+      "latitude": 51.523916,
+      "distance": 5054
+    },
+    {
+      "station_code": "DMK",
+      "atcocode": null,
+      "tiploc_code": "DENMRKH",
+      "name": "Denmark Hill",
+      "mode": "train",
+      "longitude": -0.089361,
+      "latitude": 51.468201,
+      "distance": 5079
+    },
+    {
+      "station_code": "SOH",
+      "atcocode": null,
+      "tiploc_code": "SHMPSTD",
+      "name": "South Hampstead",
+      "mode": "train",
+      "longitude": -0.178878,
+      "latitude": 51.54143,
+      "distance": 5206
+    },
+    {
+      "station_code": "WBP",
+      "atcocode": null,
+      "tiploc_code": "WBRMPTN",
+      "name": "West Brompton",
+      "mode": "train",
+      "longitude": -0.195593,
+      "latitude": 51.48706,
+      "distance": 5220
+    },
+    {
+      "station_code": "CNN",
+      "atcocode": null,
+      "tiploc_code": "CNNB",
+      "name": "Canonbury",
+      "mode": "train",
+      "longitude": -0.092191,
+      "latitude": 51.548731,
+      "distance": 5222
+    },
+    {
+      "station_code": "IMW",
+      "atcocode": null,
+      "tiploc_code": "CSEAH",
+      "name": "Imperial Wharf",
+      "mode": "train",
+      "longitude": -0.182823,
+      "latitude": 51.474947,
+      "distance": 5249
+    },
+    {
+      "station_code": "ROE",
+      "atcocode": null,
+      "tiploc_code": "RTHERHI",
+      "name": "Rotherhithe",
+      "mode": "train",
+      "longitude": -0.052049,
+      "latitude": 51.500815,
+      "distance": 5271
+    },
+    {
+      "station_code": "DYP",
+      "atcocode": null,
+      "tiploc_code": "DRYP",
+      "name": "Drayton Park",
+      "mode": "train",
+      "longitude": -0.105509,
+      "latitude": 51.552768,
+      "distance": 5288
+    },
+    {
+      "station_code": "SBM",
+      "atcocode": null,
+      "tiploc_code": "SBRMNDS",
+      "name": "South Bermondsey",
+      "mode": "train",
+      "longitude": -0.054678,
+      "latitude": 51.488134,
+      "distance": 5470
+    },
+    {
+      "station_code": "ZCW",
+      "atcocode": null,
+      "tiploc_code": "CNDAW",
+      "name": "Canada Water",
+      "mode": "train",
+      "longitude": -0.04972,
+      "latitude": 51.497988,
+      "distance": 5481
+    },
+    {
+      "station_code": "CBH",
+      "atcocode": null,
+      "tiploc_code": "CAMHTH",
+      "name": "Cambridge Heath",
+      "mode": "train",
+      "longitude": -0.057279,
+      "latitude": 51.531971,
+      "distance": 5584
+    },
+    {
+      "station_code": "GPO",
+      "atcocode": null,
+      "tiploc_code": "GOSPLOK",
+      "name": "Gospel Oak",
+      "mode": "train",
+      "longitude": -0.15077,
+      "latitude": 51.555334,
+      "distance": 5587
+    },
+    {
+      "station_code": "KBN",
+      "atcocode": null,
+      "tiploc_code": "KLBRNHR",
+      "name": "Kilburn High Road",
+      "mode": "train",
+      "longitude": -0.192237,
+      "latitude": 51.537276,
+      "distance": 5588
+    },
+    {
+      "station_code": "CLJ",
+      "atcocode": null,
+      "tiploc_code": "CLPHMJ1",
+      "name": "Clapham Junction",
+      "mode": "train",
+      "longitude": -0.170221,
+      "latitude": 51.464185,
+      "distance": 5626
+    },
+    {
+      "station_code": "DLJ",
+      "atcocode": null,
+      "tiploc_code": "DALS",
+      "name": "Dalston Junction",
+      "mode": "train",
+      "longitude": -0.075138,
+      "latitude": 51.546114,
+      "distance": 5641
+    },
+    {
+      "station_code": "SQE",
+      "atcocode": null,
+      "tiploc_code": "SURREYQ",
+      "name": "Surrey Quays",
+      "mode": "train",
+      "longitude": -0.047519,
+      "latitude": 51.493195,
+      "distance": 5752
+    },
+    {
+      "station_code": "PMR",
+      "atcocode": null,
+      "tiploc_code": "PCKHMRY",
+      "name": "Peckham Rye",
+      "mode": "train",
+      "longitude": -0.069414,
+      "latitude": 51.470032,
+      "distance": 5768
+    },
+    {
+      "station_code": "DLK",
+      "atcocode": null,
+      "tiploc_code": "DALSKLD",
+      "name": "Dalston Kingsland",
+      "mode": "train",
+      "longitude": -0.075701,
+      "latitude": 51.548147,
+      "distance": 5792
+    },
+    {
+      "station_code": "KPA",
+      "atcocode": null,
+      "tiploc_code": "KENOLYM",
+      "name": "Kensington Olympia",
+      "mode": "train",
+      "longitude": -0.210364,
+      "latitude": 51.497897,
+      "distance": 5829
+    },
+    {
+      "station_code": "HDH",
+      "atcocode": null,
+      "tiploc_code": "HMPSTDH",
+      "name": "Hampstead Heath",
+      "mode": "train",
+      "longitude": -0.165705,
+      "latitude": 51.555208,
+      "distance": 5954
+    },
+    {
+      "station_code": "EDW",
+      "atcocode": null,
+      "tiploc_code": "EDULWCH",
+      "name": "East Dulwich",
+      "mode": "train",
+      "longitude": -0.080572,
+      "latitude": 51.461493,
+      "distance": 6035
+    },
+    {
+      "station_code": "LHS",
+      "atcocode": null,
+      "tiploc_code": "LIMHSE",
+      "name": "Limehouse",
+      "mode": "train",
+      "longitude": -0.039803,
+      "latitude": 51.512535,
+      "distance": 6098
+    },
+    {
+      "station_code": "LOF",
+      "atcocode": null,
+      "tiploc_code": "LONFLDS",
+      "name": "London Fields",
+      "mode": "train",
+      "longitude": -0.057753,
+      "latitude": 51.541151,
+      "distance": 6125
+    },
+    {
+      "station_code": "QPW",
+      "atcocode": null,
+      "tiploc_code": "QPRK",
+      "name": "Queens Park (London)",
+      "mode": "train",
+      "longitude": -0.204985,
+      "latitude": 51.533964,
+      "distance": 6131
+    },
+    {
+      "station_code": "QRP",
+      "atcocode": null,
+      "tiploc_code": "PCKHMQD",
+      "name": "Queens Road (Peckham)",
+      "mode": "train",
+      "longitude": -0.057314,
+      "latitude": 51.473565,
+      "distance": 6134
+    },
+    {
+      "station_code": "FNY",
+      "atcocode": null,
+      "tiploc_code": "FNCHLYR",
+      "name": "Finchley Road & Frognal",
+      "mode": "train",
+      "longitude": -0.183141,
+      "latitude": 51.550264,
+      "distance": 6142
+    },
+    {
+      "station_code": "SPB",
+      "atcocode": null,
+      "tiploc_code": "SHPDSB",
+      "name": "Shepherds Bush",
+      "mode": "train",
+      "longitude": -0.217654,
+      "latitude": 51.505283,
+      "distance": 6243
+    },
+    {
+      "station_code": "HNH",
+      "atcocode": null,
+      "tiploc_code": "HERNEH",
+      "name": "Herne Hill",
+      "mode": "train",
+      "longitude": -0.102289,
+      "latitude": 51.453303,
+      "distance": 6245
+    },
+    {
+      "station_code": "UHL",
+      "atcocode": null,
+      "tiploc_code": "UPRHLWY",
+      "name": "Upper Holloway",
+      "mode": "train",
+      "longitude": -0.129513,
+      "latitude": 51.56363,
+      "distance": 6274
+    },
+    {
+      "station_code": "WHD",
+      "atcocode": null,
+      "tiploc_code": "WHMDSTD",
+      "name": "West Hampstead",
+      "mode": "train",
+      "longitude": -0.191185,
+      "latitude": 51.547466,
+      "distance": 6280
+    },
+    {
+      "station_code": "WHP",
+      "atcocode": null,
+      "tiploc_code": "WHMPSTM",
+      "name": "West Hampstead Thameslink",
+      "mode": "train",
+      "longitude": -0.191837,
+      "latitude": 51.548474,
+      "distance": 6391
+    },
+    {
+      "station_code": "NDL",
+      "atcocode": null,
+      "tiploc_code": "NDULWCH",
+      "name": "North Dulwich",
+      "mode": "train",
+      "longitude": -0.087918,
+      "latitude": 51.454509,
+      "distance": 6471
+    },
+    {
+      "station_code": "FPK",
+      "atcocode": null,
+      "tiploc_code": "FNPK",
+      "name": "Finsbury Park",
+      "mode": "train",
+      "longitude": -0.106285,
+      "latitude": 51.5643,
+      "distance": 6514
+    },
+    {
+      "station_code": "HAC",
+      "atcocode": null,
+      "tiploc_code": "HAKNYNM",
+      "name": "Hackney Downs",
+      "mode": "train",
+      "longitude": -0.060819,
+      "latitude": 51.548756,
+      "distance": 6527
+    },
+    {
+      "station_code": "WNT",
+      "atcocode": null,
+      "tiploc_code": "WDWTOWN",
+      "name": "Wandsworth Town",
+      "mode": "train",
+      "longitude": -0.188125,
+      "latitude": 51.461046,
+      "distance": 6632
+    },
+    {
+      "station_code": "HKC",
+      "atcocode": null,
+      "tiploc_code": "HACKNYC",
+      "name": "Hackney Central",
+      "mode": "train",
+      "longitude": -0.056058,
+      "latitude": 51.547103,
+      "distance": 6640
+    },
+    {
+      "station_code": "BSY",
+      "atcocode": null,
+      "tiploc_code": "BRBY",
+      "name": "Brondesbury",
+      "mode": "train",
+      "longitude": -0.202309,
+      "latitude": 51.545164,
+      "distance": 6677
+    },
+    {
+      "station_code": "BSP",
+      "atcocode": null,
+      "tiploc_code": "BRBYPK",
+      "name": "Brondesbury Park",
+      "mode": "train",
+      "longitude": -0.210128,
+      "latitude": 51.540697,
+      "distance": 6822
+    },
+    {
+      "station_code": "NHD",
+      "atcocode": null,
+      "tiploc_code": "NUNHEAD",
+      "name": "Nunhead",
+      "mode": "train",
+      "longitude": -0.052273,
+      "latitude": 51.466826,
+      "distance": 6878
+    },
+    {
+      "station_code": "NXG",
+      "atcocode": null,
+      "tiploc_code": "NEWXGEL",
+      "name": "New Cross Gate",
+      "mode": "train",
+      "longitude": -0.040413,
+      "latitude": 51.475127,
+      "distance": 7006
+    },
+    {
+      "station_code": "REC",
+      "atcocode": null,
+      "tiploc_code": "RCTRYRD",
+      "name": "Rectory Road",
+      "mode": "train",
+      "longitude": -0.068267,
+      "latitude": 51.558501,
+      "distance": 7021
+    },
+    {
+      "station_code": "KNR",
+      "atcocode": null,
+      "tiploc_code": "KENR",
+      "name": "Kensal Rise",
+      "mode": "train",
+      "longitude": -0.219957,
+      "latitude": 51.534552,
+      "distance": 7082
+    },
+    {
+      "station_code": "CRH",
+      "atcocode": null,
+      "tiploc_code": "CROUCHH",
+      "name": "Crouch Hill",
+      "mode": "train",
+      "longitude": -0.117149,
+      "latitude": 51.5713,
+      "distance": 7161
+    },
+    {
+      "station_code": "WSW",
+      "atcocode": null,
+      "tiploc_code": "WANDCMN",
+      "name": "Wandsworth Common",
+      "mode": "train",
+      "longitude": -0.163386,
+      "latitude": 51.446183,
+      "distance": 7228
+    },
+    {
+      "station_code": "KNL",
+      "atcocode": null,
+      "tiploc_code": "KENSLG",
+      "name": "Kensal Green",
+      "mode": "train",
+      "longitude": -0.225088,
+      "latitude": 51.530539,
+      "distance": 7233
+    },
+    {
+      "station_code": "BAL",
+      "atcocode": null,
+      "tiploc_code": "BALHAM",
+      "name": "Balham",
+      "mode": "train",
+      "longitude": -0.152424,
+      "latitude": 51.443223,
+      "distance": 7323
+    },
+    {
+      "station_code": "HMN",
+      "atcocode": null,
+      "tiploc_code": "HOMRTON",
+      "name": "Homerton",
+      "mode": "train",
+      "longitude": -0.04236,
+      "latitude": 51.54701,
+      "distance": 7367
+    },
+    {
+      "station_code": "NWX",
+      "atcocode": null,
+      "tiploc_code": "NWCRELL",
+      "name": "New Cross",
+      "mode": "train",
+      "longitude": -0.032441,
+      "latitude": 51.476342,
+      "distance": 7423
+    },
+    {
+      "station_code": "SKW",
+      "atcocode": null,
+      "tiploc_code": "STKNWNG",
+      "name": "Stoke Newington",
+      "mode": "train",
+      "longitude": -0.072887,
+      "latitude": 51.565231,
+      "distance": 7475
+    },
+    {
+      "station_code": "TUH",
+      "atcocode": null,
+      "tiploc_code": "TULSEH",
+      "name": "Tulse Hill",
+      "mode": "train",
+      "longitude": -0.105077,
+      "latitude": 51.439859,
+      "distance": 7650
+    },
+    {
+      "station_code": "SRH",
+      "atcocode": null,
+      "tiploc_code": "STRHILL",
+      "name": "Streatham Hill",
+      "mode": "train",
+      "longitude": -0.12716,
+      "latitude": 51.438191,
+      "distance": 7676
+    },
+    {
+      "station_code": "DEP",
+      "atcocode": null,
+      "tiploc_code": "DEPTFD",
+      "name": "Deptford",
+      "mode": "train",
+      "longitude": -0.02627,
+      "latitude": 51.478846,
+      "distance": 7686
+    },
+    {
+      "station_code": "CPT",
+      "atcocode": null,
+      "tiploc_code": "CLAPTON",
+      "name": "Clapton",
+      "mode": "train",
+      "longitude": -0.057025,
+      "latitude": 51.561642,
+      "distance": 7770
+    },
+    {
+      "station_code": "WDU",
+      "atcocode": null,
+      "tiploc_code": "WDULWCH",
+      "name": "West Dulwich",
+      "mode": "train",
+      "longitude": -0.091371,
+      "latitude": 51.440716,
+      "distance": 7807
+    },
+    {
+      "station_code": "BCY",
+      "atcocode": null,
+      "tiploc_code": "BROCKLY",
+      "name": "Brockley",
+      "mode": "train",
+      "longitude": -0.037537,
+      "latitude": 51.464647,
+      "distance": 7824
+    },
+    {
+      "station_code": "HGY",
+      "atcocode": null,
+      "tiploc_code": "HRGY",
+      "name": "Harringay",
+      "mode": "train",
+      "longitude": -0.105136,
+      "latitude": 51.577357,
+      "distance": 7951
+    },
+    {
+      "station_code": "PUT",
+      "atcocode": null,
+      "tiploc_code": "PUTNEY",
+      "name": "Putney",
+      "mode": "train",
+      "longitude": -0.216475,
+      "latitude": 51.461301,
+      "distance": 8002
+    },
+    {
+      "station_code": "HRY",
+      "atcocode": null,
+      "tiploc_code": "HRGYGL",
+      "name": "Harringay Green Lanes",
+      "mode": "train",
+      "longitude": -0.098144,
+      "latitude": 51.577181,
+      "distance": 8040
+    },
+    {
+      "station_code": "HKW",
+      "atcocode": null,
+      "tiploc_code": "HACKNYW",
+      "name": "Hackney Wick",
+      "mode": "train",
+      "longitude": -0.02492,
+      "latitude": 51.543409,
+      "distance": 8158
+    },
+    {
+      "station_code": "CRI",
+      "atcocode": null,
+      "tiploc_code": "CRKLWD",
+      "name": "Cricklewood",
+      "mode": "train",
+      "longitude": -0.212677,
+      "latitude": 51.558451,
+      "distance": 8195
+    },
+    {
+      "station_code": "SMH",
+      "atcocode": null,
+      "tiploc_code": "STMFDHL",
+      "name": "Stamford Hill",
+      "mode": "train",
+      "longitude": -0.076682,
+      "latitude": 51.574466,
+      "distance": 8262
+    },
+    {
+      "station_code": "EAD",
+      "atcocode": null,
+      "tiploc_code": "ERLFLD",
+      "name": "Earlsfield",
+      "mode": "train",
+      "longitude": -0.187715,
+      "latitude": 51.442335,
+      "distance": 8334
+    },
+    {
+      "station_code": "SAJ",
+      "atcocode": null,
+      "tiploc_code": "STJOHNS",
+      "name": "St Johns",
+      "mode": "train",
+      "longitude": -0.022719,
+      "latitude": 51.469389,
+      "distance": 8386
+    },
+    {
+      "station_code": "WIJ",
+      "atcocode": null,
+      "tiploc_code": "WLSDNJL",
+      "name": "Willesden Junction",
+      "mode": "train",
+      "longitude": -0.243268,
+      "latitude": 51.532026,
+      "distance": 8472
+    },
+    {
+      "station_code": "HPA",
+      "atcocode": null,
+      "tiploc_code": "HONROPK",
+      "name": "Honor Oak Park",
+      "mode": "train",
+      "longitude": -0.045505,
+      "latitude": 51.449987,
+      "distance": 8529
+    },
+    {
+      "station_code": "GNW",
+      "atcocode": null,
+      "tiploc_code": "GNWH",
+      "name": "Greenwich",
+      "mode": "train",
+      "longitude": -0.01334,
+      "latitude": 51.478133,
+      "distance": 8540
+    },
+    {
+      "station_code": "WNW",
+      "atcocode": null,
+      "tiploc_code": "WNORWOD",
+      "name": "West Norwood",
+      "mode": "train",
+      "longitude": -0.10383,
+      "latitude": 51.431746,
+      "distance": 8551
+    },
+    {
+      "station_code": "CFT",
+      "atcocode": null,
+      "tiploc_code": "CFPK",
+      "name": "Crofton Park",
+      "mode": "train",
+      "longitude": -0.036503,
+      "latitude": 51.455188,
+      "distance": 8555
+    },
+    {
+      "station_code": "HRN",
+      "atcocode": null,
+      "tiploc_code": "HRNSY",
+      "name": "Hornsey",
+      "mode": "train",
+      "longitude": -0.111975,
+      "latitude": 51.586459,
+      "distance": 8876
+    },
+    {
+      "station_code": "SYH",
+      "atcocode": null,
+      "tiploc_code": "SYDNHMH",
+      "name": "Sydenham Hill",
+      "mode": "train",
+      "longitude": -0.08034,
+      "latitude": 51.432712,
+      "distance": 8906
+    },
+    {
+      "station_code": "STO",
+      "atcocode": null,
+      "tiploc_code": "STOTNHM",
+      "name": "South Tottenham",
+      "mode": "train",
+      "longitude": -0.072103,
+      "latitude": 51.580371,
+      "distance": 8991
+    },
+    {
+      "station_code": "STE",
+      "atcocode": null,
+      "tiploc_code": "STRETHM",
+      "name": "Streatham",
+      "mode": "train",
+      "longitude": -0.13155,
+      "latitude": 51.425806,
+      "distance": 9057
+    },
+    {
+      "station_code": "SVS",
+      "atcocode": null,
+      "tiploc_code": "SEVNSIS",
+      "name": "Seven Sisters",
+      "mode": "train",
+      "longitude": -0.07527,
+      "latitude": 51.582266,
+      "distance": 9093
+    },
+    {
+      "station_code": "BNS",
+      "atcocode": null,
+      "tiploc_code": "BARNES",
+      "name": "Barnes",
+      "mode": "train",
+      "longitude": -0.242164,
+      "latitude": 51.467084,
+      "distance": 9108
+    },
+    {
+      "station_code": "LEW",
+      "atcocode": null,
+      "tiploc_code": "LEWISHM",
+      "name": "Lewisham",
+      "mode": "train",
+      "longitude": -0.014024,
+      "latitude": 51.46569,
+      "distance": 9114
+    },
+    {
+      "station_code": "FOH",
+      "atcocode": null,
+      "tiploc_code": "FORESTH",
+      "name": "Forest Hill",
+      "mode": "train",
+      "longitude": -0.053157,
+      "latitude": 51.439278,
+      "distance": 9143
+    },
+    {
+      "station_code": "SFA",
+      "atcocode": null,
+      "tiploc_code": "STFODOM",
+      "name": "Stratford International",
+      "mode": "train",
+      "longitude": -0.008778,
+      "latitude": 51.544827,
+      "distance": 9216
+    },
+    {
+      "station_code": "ACC",
+      "atcocode": null,
+      "tiploc_code": "ACTNCTL",
+      "name": "Acton Central",
+      "mode": "train",
+      "longitude": -0.262971,
+      "latitude": 51.508715,
+      "distance": 9377
+    },
+    {
+      "station_code": "LAD",
+      "atcocode": null,
+      "tiploc_code": "LDYW",
+      "name": "Ladywell",
+      "mode": "train",
+      "longitude": -0.019041,
+      "latitude": 51.456243,
+      "distance": 9410
+    },
+    {
+      "station_code": "SRA",
+      "atcocode": null,
+      "tiploc_code": "STFD",
+      "name": "Stratford",
+      "mode": "train",
+      "longitude": -0.003397,
+      "latitude": 51.541893,
+      "distance": 9412
+    },
+    {
+      "station_code": "MZH",
+      "atcocode": null,
+      "tiploc_code": "MAZEH",
+      "name": "Maze Hill",
+      "mode": "train",
+      "longitude": 0.002914,
+      "latitude": 51.482623,
+      "distance": 9434
+    },
+    {
+      "station_code": "WEH",
+      "atcocode": null,
+      "tiploc_code": "WHAMHL",
+      "name": "West Ham",
+      "mode": "train",
+      "longitude": 0.005431,
+      "latitude": 51.528488,
+      "distance": 9497
+    },
+    {
+      "station_code": "BNI",
+      "atcocode": null,
+      "tiploc_code": "BNSBDGE",
+      "name": "Barnes Bridge",
+      "mode": "train",
+      "longitude": -0.25263,
+      "latitude": 51.472007,
+      "distance": 9507
+    },
+    {
+      "station_code": "HDN",
+      "atcocode": null,
+      "tiploc_code": "HARLSDN",
+      "name": "Harlesden",
+      "mode": "train",
+      "longitude": -0.257668,
+      "latitude": 51.536287,
+      "distance": 9568
+    },
+    {
+      "station_code": "GIP",
+      "atcocode": null,
+      "tiploc_code": "GIPSYH",
+      "name": "Gipsy Hill",
+      "mode": "train",
+      "longitude": -0.083836,
+      "latitude": 51.424451,
+      "distance": 9688
+    },
+    {
+      "station_code": "AML",
+      "atcocode": null,
+      "tiploc_code": "ACTONML",
+      "name": "Acton Main Line",
+      "mode": "train",
+      "longitude": -0.266756,
+      "latitude": 51.517178,
+      "distance": 9700
+    },
+    {
+      "station_code": "SRC",
+      "atcocode": null,
+      "tiploc_code": "STRHCOM",
+      "name": "Streatham Common",
+      "mode": "train",
+      "longitude": -0.13601,
+      "latitude": 51.418728,
+      "distance": 9858
+    },
+    {
+      "station_code": "CTF",
+      "atcocode": null,
+      "tiploc_code": "CATFORD",
+      "name": "Catford",
+      "mode": "train",
+      "longitude": -0.026317,
+      "latitude": 51.444405,
+      "distance": 9894
+    },
+    {
+      "station_code": "SAT",
+      "atcocode": null,
+      "tiploc_code": "SACTON",
+      "name": "South Acton",
+      "mode": "train",
+      "longitude": -0.270157,
+      "latitude": 51.499694,
+      "distance": 9909
+    },
+    {
+      "station_code": "CFB",
+      "atcocode": null,
+      "tiploc_code": "CATFBDG",
+      "name": "Catford Bridge",
+      "mode": "train",
+      "longitude": -0.024791,
+      "latitude": 51.444739,
+      "distance": 9943
+    },
+    {
+      "station_code": "TOO",
+      "atcocode": null,
+      "tiploc_code": "TOOTING",
+      "name": "Tooting",
+      "mode": "train",
+      "longitude": -0.161278,
+      "latitude": 51.419847,
+      "distance": 9994
+    },
+    {
+      "station_code": "HYR",
+      "atcocode": null,
+      "tiploc_code": "HYDNSRD",
+      "name": "Haydons Road",
+      "mode": "train",
+      "longitude": -0.188815,
+      "latitude": 51.425446,
+      "distance": 10036
+    },
+    {
+      "station_code": "AAP",
+      "atcocode": null,
+      "tiploc_code": "ALEXNDP",
+      "name": "Alexandra Palace",
+      "mode": "train",
+      "longitude": -0.120235,
+      "latitude": 51.597922,
+      "distance": 10098
+    },
+    {
+      "station_code": "CHK",
+      "atcocode": null,
+      "tiploc_code": "CHISWCK",
+      "name": "Chiswick",
+      "mode": "train",
+      "longitude": -0.267835,
+      "latitude": 51.481135,
+      "distance": 10139
+    },
+    {
+      "station_code": "TOM",
+      "atcocode": null,
+      "tiploc_code": "TTNHMHL",
+      "name": "Tottenham Hale",
+      "mode": "train",
+      "longitude": -0.059929,
+      "latitude": 51.588308,
+      "distance": 10155
+    },
+    {
+      "station_code": "MYL",
+      "atcocode": null,
+      "tiploc_code": "MRYLAND",
+      "name": "Maryland",
+      "mode": "train",
+      "longitude": 0.005815,
+      "latitude": 51.54608,
+      "distance": 10185
+    },
+    {
+      "station_code": "SYD",
+      "atcocode": null,
+      "tiploc_code": "SYDENHM",
+      "name": "Sydenham",
+      "mode": "train",
+      "longitude": -0.054244,
+      "latitude": 51.427246,
+      "distance": 10239
+    },
+    {
+      "station_code": "GUN",
+      "atcocode": null,
+      "tiploc_code": "GNRSBRY",
+      "name": "Gunnersbury",
+      "mode": "train",
+      "longitude": -0.275286,
+      "latitude": 51.491676,
+      "distance": 10375
+    },
+    {
+      "station_code": "WCB",
+      "atcocode": null,
+      "tiploc_code": "WCOMBEP",
+      "name": "Westcombe Park",
+      "mode": "train",
+      "longitude": 0.018395,
+      "latitude": 51.484201,
+      "distance": 10419
+    },
+    {
+      "station_code": "BCV",
+      "atcocode": null,
+      "tiploc_code": "BRUCGRV",
+      "name": "Bruce Grove",
+      "mode": "train",
+      "longitude": -0.069867,
+      "latitude": 51.593957,
+      "distance": 10435
+    },
+    {
+      "station_code": "SJS",
+      "atcocode": null,
+      "tiploc_code": "STJMSST",
+      "name": "St James Street",
+      "mode": "train",
+      "longitude": -0.032918,
+      "latitude": 51.580979,
+      "distance": 10490
+    },
+    {
+      "station_code": "BKH",
+      "atcocode": null,
+      "tiploc_code": "BLKHTH",
+      "name": "Blackheath",
+      "mode": "train",
+      "longitude": 0.008872,
+      "latitude": 51.465795,
+      "distance": 10506
+    },
+    {
+      "station_code": "MTL",
+      "atcocode": null,
+      "tiploc_code": "MRTLKE",
+      "name": "Mortlake",
+      "mode": "train",
+      "longitude": -0.267106,
+      "latitude": 51.468085,
+      "distance": 10601
+    },
+    {
+      "station_code": "CYP",
+      "atcocode": null,
+      "tiploc_code": "CRYSTLP",
+      "name": "Crystal Palace",
+      "mode": "train",
+      "longitude": -0.07261,
+      "latitude": 51.418107,
+      "distance": 10614
+    },
+    {
+      "station_code": "BHO",
+      "atcocode": null,
+      "tiploc_code": "BLCHSRD",
+      "name": "Blackhorse Road",
+      "mode": "train",
+      "longitude": -0.041236,
+      "latitude": 51.586604,
+      "distance": 10653
+    },
+    {
+      "station_code": "NRB",
+      "atcocode": null,
+      "tiploc_code": "NORBURY",
+      "name": "Norbury",
+      "mode": "train",
+      "longitude": -0.121926,
+      "latitude": 51.411444,
+      "distance": 10657
+    },
+    {
+      "station_code": "HGR",
+      "atcocode": null,
+      "tiploc_code": "HTHRGRN",
+      "name": "Hither Green",
+      "mode": "train",
+      "longitude": -0.000944,
+      "latitude": 51.452024,
+      "distance": 10700
+    },
+    {
+      "station_code": "LEM",
+      "atcocode": null,
+      "tiploc_code": "LEYTNMR",
+      "name": "Leyton Midland Road",
+      "mode": "train",
+      "longitude": -0.008051,
+      "latitude": 51.569724,
+      "distance": 10796
+    },
+    {
+      "station_code": "WMW",
+      "atcocode": null,
+      "tiploc_code": "WLTHQRD",
+      "name": "Walthamstow Queens Road",
+      "mode": "train",
+      "longitude": -0.023846,
+      "latitude": 51.581501,
+      "distance": 10936
+    },
+    {
+      "station_code": "PNW",
+      "atcocode": null,
+      "tiploc_code": "PENEW",
+      "name": "Penge West",
+      "mode": "train",
+      "longitude": -0.06084,
+      "latitude": 51.417553,
+      "distance": 10988
+    },
+    {
+      "station_code": "WIM",
+      "atcocode": null,
+      "tiploc_code": "WDON",
+      "name": "Wimbledon",
+      "mode": "train",
+      "longitude": -0.206369,
+      "latitude": 51.421274,
+      "distance": 11009
+    },
+    {
+      "station_code": "PNE",
+      "atcocode": null,
+      "tiploc_code": "PNGEE",
+      "name": "Penge East",
+      "mode": "train",
+      "longitude": -0.05422,
+      "latitude": 51.419332,
+      "distance": 11013
+    },
+    {
+      "station_code": "SBP",
+      "atcocode": null,
+      "tiploc_code": "STNBGPK",
+      "name": "Stonebridge Park",
+      "mode": "train",
+      "longitude": -0.275828,
+      "latitude": 51.544109,
+      "distance": 11051
+    },
+    {
+      "station_code": "BOP",
+      "atcocode": null,
+      "tiploc_code": "BOWESPK",
+      "name": "Bowes Park",
+      "mode": "train",
+      "longitude": -0.120582,
+      "latitude": 51.60701,
+      "distance": 11106
+    },
+    {
+      "station_code": "BGM",
+      "atcocode": null,
+      "tiploc_code": "BELNGHM",
+      "name": "Bellingham",
+      "mode": "train",
+      "longitude": -0.019331,
+      "latitude": 51.432911,
+      "distance": 11154
+    },
+    {
+      "station_code": "HEN",
+      "atcocode": null,
+      "tiploc_code": "HDON",
+      "name": "Hendon",
+      "mode": "train",
+      "longitude": -0.238674,
+      "latitude": 51.580066,
+      "distance": 11168
+    },
+    {
+      "station_code": "MTC",
+      "atcocode": null,
+      "tiploc_code": "ESTFLDS",
+      "name": "Mitcham Eastfields",
+      "mode": "train",
+      "longitude": -0.154646,
+      "latitude": 51.407737,
+      "distance": 11221
+    },
+    {
+      "station_code": "CTN",
+      "atcocode": null,
+      "tiploc_code": "CRLN",
+      "name": "Charlton",
+      "mode": "train",
+      "longitude": 0.031258,
+      "latitude": 51.486812,
+      "distance": 11222
+    },
+    {
+      "station_code": "KWB",
+      "atcocode": null,
+      "tiploc_code": "KEWBDGE",
+      "name": "Kew Bridge",
+      "mode": "train",
+      "longitude": -0.287108,
+      "latitude": 51.489511,
+      "distance": 11223
+    },
+    {
+      "station_code": "WHC",
+      "atcocode": null,
+      "tiploc_code": "WLTWCEN",
+      "name": "Walthamstow Central",
+      "mode": "train",
+      "longitude": -0.019815,
+      "latitude": 51.582917,
+      "distance": 11238
+    },
+    {
+      "station_code": "LSY",
+      "atcocode": null,
+      "tiploc_code": "LSYDNHM",
+      "name": "Lower Sydenham",
+      "mode": "train",
+      "longitude": -0.033345,
+      "latitude": 51.424829,
+      "distance": 11246
+    },
+    {
+      "station_code": "LER",
+      "atcocode": null,
+      "tiploc_code": "LYTNSHR",
+      "name": "Leytonstone High Road",
+      "mode": "train",
+      "longitude": 0.008416,
+      "latitude": 51.563553,
+      "distance": 11297
+    },
+    {
+      "station_code": "ANZ",
+      "atcocode": null,
+      "tiploc_code": "ANERLEY",
+      "name": "Anerley",
+      "mode": "train",
+      "longitude": -0.065886,
+      "latitude": 51.412151,
+      "distance": 11401
+    },
+    {
+      "station_code": "KWG",
+      "atcocode": null,
+      "tiploc_code": "KEWGRDN",
+      "name": "Kew Gardens",
+      "mode": "train",
+      "longitude": -0.285054,
+      "latitude": 51.477072,
+      "distance": 11411
+    },
+    {
+      "station_code": "FOG",
+      "atcocode": null,
+      "tiploc_code": "FRSTGT",
+      "name": "Forest Gate",
+      "mode": "train",
+      "longitude": 0.024353,
+      "latitude": 51.54943,
+      "distance": 11506
+    },
+    {
+      "station_code": "WHL",
+      "atcocode": null,
+      "tiploc_code": "WHHRTLA",
+      "name": "White Hart Lane",
+      "mode": "train",
+      "longitude": -0.070914,
+      "latitude": 51.605035,
+      "distance": 11559
+    },
+    {
+      "station_code": "LEE",
+      "atcocode": null,
+      "tiploc_code": "LEEE",
+      "name": "Lee",
+      "mode": "train",
+      "longitude": 0.013493,
+      "latitude": 51.449753,
+      "distance": 11669
+    },
+    {
+      "station_code": "NUM",
+      "atcocode": null,
+      "tiploc_code": "NMBRLPK",
+      "name": "Northumberland Park",
+      "mode": "train",
+      "longitude": -0.053932,
+      "latitude": 51.601967,
+      "distance": 11699
+    },
+    {
+      "station_code": "WNP",
+      "atcocode": null,
+      "tiploc_code": "WNSTDPK",
+      "name": "Wanstead Park",
+      "mode": "train",
+      "longitude": 0.026213,
+      "latitude": 51.551691,
+      "distance": 11727
+    },
+    {
+      "station_code": "KDB",
+      "atcocode": null,
+      "tiploc_code": "KIDBROK",
+      "name": "Kidbrooke",
+      "mode": "train",
+      "longitude": 0.027498,
+      "latitude": 51.46212,
+      "distance": 11847
+    },
+    {
+      "station_code": "NBC",
+      "atcocode": null,
+      "tiploc_code": "NBCKNHM",
+      "name": "New Beckenham",
+      "mode": "train",
+      "longitude": -0.035273,
+      "latitude": 51.416768,
+      "distance": 11916
+    },
+    {
+      "station_code": "NSG",
+      "atcocode": null,
+      "tiploc_code": "NEWSGAT",
+      "name": "New Southgate",
+      "mode": "train",
+      "longitude": -0.143038,
+      "latitude": 51.614112,
+      "distance": 11934
+    },
+    {
+      "station_code": "KTH",
+      "atcocode": null,
+      "tiploc_code": "KENTHOS",
+      "name": "Kent House",
+      "mode": "train",
+      "longitude": -0.045247,
+      "latitude": 51.412214,
+      "distance": 12003
+    },
+    {
+      "station_code": "BEC",
+      "atcocode": null,
+      "tiploc_code": "BCKNHMH",
+      "name": "Beckenham Hill",
+      "mode": "train",
+      "longitude": -0.015951,
+      "latitude": 51.424581,
+      "distance": 12006
+    },
+    {
+      "station_code": "NSH",
+      "atcocode": null,
+      "tiploc_code": "NSHEEN",
+      "name": "North Sheen",
+      "mode": "train",
+      "longitude": -0.287876,
+      "latitude": 51.465153,
+      "distance": 12050
+    },
+    {
+      "station_code": "EAL",
+      "atcocode": null,
+      "tiploc_code": "EALINGB",
+      "name": "Ealing Broadway",
+      "mode": "train",
+      "longitude": -0.301752,
+      "latitude": 51.51484,
+      "distance": 12089
+    },
+    {
+      "station_code": "WCX",
+      "atcocode": null,
+      "tiploc_code": "WEMBLSM",
+      "name": "Wembley Stadium",
+      "mode": "train",
+      "longitude": -0.285608,
+      "latitude": 51.554414,
+      "distance": 12131
+    },
+    {
+      "station_code": "TTH",
+      "atcocode": null,
+      "tiploc_code": "THTH",
+      "name": "Thornton Heath",
+      "mode": "train",
+      "longitude": -0.100306,
+      "latitude": 51.398776,
+      "distance": 12205
+    },
+    {
+      "station_code": "WST",
+      "atcocode": null,
+      "tiploc_code": "WDST",
+      "name": "Wood Street",
+      "mode": "train",
+      "longitude": -0.002405,
+      "latitude": 51.586579,
+      "distance": 12357
+    },
+    {
+      "station_code": "WBO",
+      "atcocode": null,
+      "tiploc_code": "WIMLCHS",
+      "name": "Wimbledon Chase",
+      "mode": "train",
+      "longitude": -0.214031,
+      "latitude": 51.409557,
+      "distance": 12405
+    },
+    {
+      "station_code": "PAL",
+      "atcocode": null,
+      "tiploc_code": "PALMRSG",
+      "name": "Palmers Green",
+      "mode": "train",
+      "longitude": -0.110437,
+      "latitude": 51.618313,
+      "distance": 12409
+    },
+    {
+      "station_code": "CLK",
+      "atcocode": null,
+      "tiploc_code": "CLOCKHS",
+      "name": "Clock House",
+      "mode": "train",
+      "longitude": -0.040657,
+      "latitude": 51.408585,
+      "distance": 12510
+    },
+    {
+      "station_code": "BIK",
+      "atcocode": null,
+      "tiploc_code": "BIRKBCK",
+      "name": "Birkbeck",
+      "mode": "train",
+      "longitude": -0.055739,
+      "latitude": 51.40389,
+      "distance": 12520
+    },
+    {
+      "station_code": "SLV",
+      "atcocode": null,
+      "tiploc_code": "SIVRST",
+      "name": "Silver Street",
+      "mode": "train",
+      "longitude": -0.06724,
+      "latitude": 51.614687,
+      "distance": 12655
+    },
+    {
+      "station_code": "WMB",
+      "atcocode": null,
+      "tiploc_code": "WMBYDC",
+      "name": "Wembley Central",
+      "mode": "train",
+      "longitude": -0.296418,
+      "latitude": 51.552323,
+      "distance": 12716
+    },
+    {
+      "station_code": "WWD",
+      "atcocode": null,
+      "tiploc_code": "WOLWCDY",
+      "name": "Woolwich Dockyard",
+      "mode": "train",
+      "longitude": 0.054642,
+      "latitude": 51.491125,
+      "distance": 12735
+    },
+    {
+      "station_code": "SMO",
+      "atcocode": null,
+      "tiploc_code": "SMERTON",
+      "name": "South Merton",
+      "mode": "train",
+      "longitude": -0.205157,
+      "latitude": 51.402991,
+      "distance": 12778
+    },
+    {
+      "station_code": "NWD",
+      "atcocode": null,
+      "tiploc_code": "NORWDJ",
+      "name": "Norwood Junction",
+      "mode": "train",
+      "longitude": -0.075222,
+      "latitude": 51.397017,
+      "distance": 12778
+    },
+    {
+      "station_code": "WGR",
+      "atcocode": null,
+      "tiploc_code": "WDGRNPK",
+      "name": "Woodgrange Park",
+      "mode": "train",
+      "longitude": 0.044423,
+      "latitude": 51.549262,
+      "distance": 12779
+    },
+    {
+      "station_code": "BKJ",
+      "atcocode": null,
+      "tiploc_code": "BCKNMJC",
+      "name": "Beckenham Junction",
+      "mode": "train",
+      "longitude": -0.026023,
+      "latitude": 51.411172,
+      "distance": 12787
+    },
+    {
+      "station_code": "BFD",
+      "atcocode": null,
+      "tiploc_code": "BNTFORD",
+      "name": "Brentford",
+      "mode": "train",
+      "longitude": -0.309651,
+      "latitude": 51.487545,
+      "distance": 12798
+    },
+    {
+      "station_code": "MIJ",
+      "atcocode": null,
+      "tiploc_code": "MITCHMJ",
+      "name": "Mitcham Junction",
+      "mode": "train",
+      "longitude": -0.157757,
+      "latitude": 51.392948,
+      "distance": 12878
+    },
+    {
+      "station_code": "AGR",
+      "atcocode": null,
+      "tiploc_code": "ANGELRD",
+      "name": "Angel Road",
+      "mode": "train",
+      "longitude": -0.048791,
+      "latitude": 51.612403,
+      "distance": 12899
+    },
+    {
+      "station_code": "RMD",
+      "atcocode": null,
+      "tiploc_code": "RICHNLL",
+      "name": "Richmond",
+      "mode": "train",
+      "longitude": -0.301411,
+      "latitude": 51.463147,
+      "distance": 13001
+    },
+    {
+      "station_code": "RAY",
+      "atcocode": null,
+      "tiploc_code": "RAYNSPK",
+      "name": "Raynes Park",
+      "mode": "train",
+      "longitude": -0.230151,
+      "latitude": 51.409172,
+      "distance": 13017
+    },
+    {
+      "station_code": "MNP",
+      "atcocode": null,
+      "tiploc_code": "MANRPK",
+      "name": "Manor Park",
+      "mode": "train",
+      "longitude": 0.046342,
+      "latitude": 51.552475,
+      "distance": 13036
+    },
+    {
+      "station_code": "SRS",
+      "atcocode": null,
+      "tiploc_code": "SELHRST",
+      "name": "Selhurst",
+      "mode": "train",
+      "longitude": -0.0883,
+      "latitude": 51.391926,
+      "distance": 13105
+    },
+    {
+      "station_code": "ELE",
+      "atcocode": null,
+      "tiploc_code": "ELMERSE",
+      "name": "Elmers End",
+      "mode": "train",
+      "longitude": -0.04957,
+      "latitude": 51.398491,
+      "distance": 13241
+    },
+    {
+      "station_code": "RVB",
+      "atcocode": null,
+      "tiploc_code": "RBRN",
+      "name": "Ravensbourne",
+      "mode": "train",
+      "longitude": -0.007557,
+      "latitude": 51.414187,
+      "distance": 13269
+    },
+    {
+      "station_code": "MDS",
+      "atcocode": null,
+      "tiploc_code": "MORDENS",
+      "name": "Morden South",
+      "mode": "train",
+      "longitude": -0.199461,
+      "latitude": 51.396115,
+      "distance": 13323
+    },
+    {
+      "station_code": "WEA",
+      "atcocode": null,
+      "tiploc_code": "WEALING",
+      "name": "West Ealing",
+      "mode": "train",
+      "longitude": -0.320133,
+      "latitude": 51.513504,
+      "distance": 13349
+    },
+    {
+      "station_code": "GRP",
+      "atcocode": null,
+      "tiploc_code": "GRVPK",
+      "name": "Grove Park",
+      "mode": "train",
+      "longitude": 0.021726,
+      "latitude": 51.430861,
+      "distance": 13377
+    },
+    {
+      "station_code": "NWB",
+      "atcocode": null,
+      "tiploc_code": "NWEMBLY",
+      "name": "North Wembley",
+      "mode": "train",
+      "longitude": -0.303984,
+      "latitude": 51.562594,
+      "distance": 13672
+    },
+    {
+      "station_code": "ELW",
+      "atcocode": null,
+      "tiploc_code": "ELTHAM",
+      "name": "Eltham",
+      "mode": "train",
+      "longitude": 0.052472,
+      "latitude": 51.455642,
+      "distance": 13719
+    },
+    {
+      "station_code": "WWA",
+      "atcocode": null,
+      "tiploc_code": "WOLWCHA",
+      "name": "Woolwich Arsenal",
+      "mode": "train",
+      "longitude": 0.069194,
+      "latitude": 51.489907,
+      "distance": 13751
+    },
+    {
+      "station_code": "EDR",
+      "atcocode": null,
+      "tiploc_code": "EDMNGRN",
+      "name": "Edmonton Green",
+      "mode": "train",
+      "longitude": -0.061112,
+      "latitude": 51.624927,
+      "distance": 13869
+    },
+    {
+      "station_code": "SIH",
+      "atcocode": null,
+      "tiploc_code": "SHLIER",
+      "name": "St Helier (London)",
+      "mode": "train",
+      "longitude": -0.198771,
+      "latitude": 51.389899,
+      "distance": 13949
+    },
+    {
+      "station_code": "SYL",
+      "atcocode": null,
+      "tiploc_code": "SYONLA",
+      "name": "Syon Lane",
+      "mode": "train",
+      "longitude": -0.324842,
+      "latitude": 51.481783,
+      "distance": 13952
+    },
+    {
+      "station_code": "SUD",
+      "atcocode": null,
+      "tiploc_code": "SDBRYHR",
+      "name": "Sudbury & Harrow Road",
+      "mode": "train",
+      "longitude": -0.315468,
+      "latitude": 51.554397,
+      "distance": 14021
+    },
+    {
+      "station_code": "DRG",
+      "atcocode": null,
+      "tiploc_code": "DRAYGRN",
+      "name": "Drayton Green",
+      "mode": "train",
+      "longitude": -0.330194,
+      "latitude": 51.516615,
+      "distance": 14066
+    },
+    {
+      "station_code": "WIH",
+      "atcocode": null,
+      "tiploc_code": "WNMHILL",
+      "name": "Winchmore Hill",
+      "mode": "train",
+      "longitude": -0.1009,
+      "latitude": 51.63394,
+      "distance": 14210
+    },
+    {
+      "station_code": "CBP",
+      "atcocode": null,
+      "tiploc_code": "CBARPAR",
+      "name": "Castle Bar Park",
+      "mode": "train",
+      "longitude": -0.331549,
+      "latitude": 51.522929,
+      "distance": 14227
+    },
+    {
+      "station_code": "HIP",
+      "atcocode": null,
+      "tiploc_code": "HGHMSPK",
+      "name": "Highams Park",
+      "mode": "train",
+      "longitude": -0.000222,
+      "latitude": 51.608348,
+      "distance": 14278
+    },
+    {
+      "station_code": "SOK",
+      "atcocode": null,
+      "tiploc_code": "SKENTON",
+      "name": "South Kenton",
+      "mode": "train",
+      "longitude": -0.308462,
+      "latitude": 51.570212,
+      "distance": 14342
+    },
+    {
+      "station_code": "MTG",
+      "atcocode": null,
+      "tiploc_code": "MOTNGHM",
+      "name": "Mottingham",
+      "mode": "train",
+      "longitude": 0.050054,
+      "latitude": 51.440216,
+      "distance": 14378
+    },
+    {
+      "station_code": "SRT",
+      "atcocode": null,
+      "tiploc_code": "SHRTLND",
+      "name": "Shortlands",
+      "mode": "train",
+      "longitude": 0.001784,
+      "latitude": 51.405799,
+      "distance": 14402
+    },
+    {
+      "station_code": "WCY",
+      "atcocode": null,
+      "tiploc_code": "WCROYDN",
+      "name": "West Croydon",
+      "mode": "train",
+      "longitude": -0.102586,
+      "latitude": 51.378426,
+      "distance": 14425
+    },
+    {
+      "station_code": "MIL",
+      "atcocode": null,
+      "tiploc_code": "MLHB",
+      "name": "Mill Hill Broadway",
+      "mode": "train",
+      "longitude": -0.24924,
+      "latitude": 51.613091,
+      "distance": 14471
+    },
+    {
+      "station_code": "HCB",
+      "atcocode": null,
+      "tiploc_code": "HKBG",
+      "name": "Hackbridge",
+      "mode": "train",
+      "longitude": -0.153908,
+      "latitude": 51.37787,
+      "distance": 14499
+    },
+    {
+      "station_code": "NEM",
+      "atcocode": null,
+      "tiploc_code": "NEWMLDN",
+      "name": "New Malden",
+      "mode": "train",
+      "longitude": -0.25594,
+      "latitude": 51.404073,
+      "distance": 14517
+    },
+    {
+      "station_code": "SMG",
+      "atcocode": null,
+      "tiploc_code": "STMGTS",
+      "name": "St Margarets (Greater London)",
+      "mode": "train",
+      "longitude": -0.3202,
+      "latitude": 51.455234,
+      "distance": 14543
+    },
+    {
+      "station_code": "HAN",
+      "atcocode": null,
+      "tiploc_code": "HANWELL",
+      "name": "Hanwell",
+      "mode": "train",
+      "longitude": -0.338583,
+      "latitude": 51.511833,
+      "distance": 14617
+    },
+    {
+      "station_code": "SUP",
+      "atcocode": null,
+      "tiploc_code": "SNDP",
+      "name": "Sundridge Park",
+      "mode": "train",
+      "longitude": 0.021446,
+      "latitude": 51.41378,
+      "distance": 14644
+    },
+    {
+      "station_code": "MOT",
+      "atcocode": null,
+      "tiploc_code": "MOTSPRP",
+      "name": "Motspur Park",
+      "mode": "train",
+      "longitude": -0.239531,
+      "latitude": 51.395195,
+      "distance": 14678
+    },
+    {
+      "station_code": "OKL",
+      "atcocode": null,
+      "tiploc_code": "OKLGHPK",
+      "name": "Oakleigh Park",
+      "mode": "train",
+      "longitude": -0.166209,
+      "latitude": 51.637676,
+      "distance": 14751
+    },
+    {
+      "station_code": "SGN",
+      "atcocode": null,
+      "tiploc_code": "SGFORD",
+      "name": "South Greenford",
+      "mode": "train",
+      "longitude": -0.336704,
+      "latitude": 51.533748,
+      "distance": 14772
+    },
+    {
+      "station_code": "PLU",
+      "atcocode": null,
+      "tiploc_code": "PLMS",
+      "name": "Plumstead",
+      "mode": "train",
+      "longitude": 0.084256,
+      "latitude": 51.489793,
+      "distance": 14786
+    },
+    {
+      "station_code": "EDN",
+      "atcocode": null,
+      "tiploc_code": "EDPK",
+      "name": "Eden Park",
+      "mode": "train",
+      "longitude": -0.026355,
+      "latitude": 51.390089,
+      "distance": 14791
+    },
+    {
+      "station_code": "IFD",
+      "atcocode": null,
+      "tiploc_code": "ILFORD",
+      "name": "Ilford",
+      "mode": "train",
+      "longitude": 0.069679,
+      "latitude": 51.559116,
+      "distance": 14809
+    },
+    {
+      "station_code": "ECR",
+      "atcocode": null,
+      "tiploc_code": "ECROYDN",
+      "name": "East Croydon",
+      "mode": "train",
+      "longitude": -0.09278,
+      "latitude": 51.375452,
+      "distance": 14848
+    },
+    {
+      "station_code": "BKG",
+      "atcocode": null,
+      "tiploc_code": "BARKING",
+      "name": "Barking",
+      "mode": "train",
+      "longitude": 0.080902,
+      "latitude": 51.539493,
+      "distance": 14858
+    },
+    {
+      "station_code": "BMN",
+      "atcocode": null,
+      "tiploc_code": "BROMLYN",
+      "name": "Bromley North",
+      "mode": "train",
+      "longitude": 0.016993,
+      "latitude": 51.408326,
+      "distance": 14871
+    },
+    {
+      "station_code": "ISL",
+      "atcocode": null,
+      "tiploc_code": "ISLEWTH",
+      "name": "Isleworth",
+      "mode": "train",
+      "longitude": -0.336907,
+      "latitude": 51.474761,
+      "distance": 14941
+    },
+    {
+      "station_code": "NBT",
+      "atcocode": null,
+      "tiploc_code": "NRBITON",
+      "name": "Norbiton",
+      "mode": "train",
+      "longitude": -0.284025,
+      "latitude": 51.412356,
+      "distance": 15129
+    },
+    {
+      "station_code": "GPK",
+      "atcocode": null,
+      "tiploc_code": "GRPK",
+      "name": "Grange Park",
+      "mode": "train",
+      "longitude": -0.097358,
+      "latitude": 51.642606,
+      "distance": 15197
+    },
+    {
+      "station_code": "FCN",
+      "atcocode": null,
+      "tiploc_code": "FALCNWD",
+      "name": "Falconwood",
+      "mode": "train",
+      "longitude": 0.079305,
+      "latitude": 51.459153,
+      "distance": 15285
+    },
+    {
+      "station_code": "TWI",
+      "atcocode": null,
+      "tiploc_code": "TWCKNHM",
+      "name": "Twickenham",
+      "mode": "train",
+      "longitude": -0.330394,
+      "latitude": 51.450029,
+      "distance": 15423
+    },
+    {
+      "station_code": "BHK",
+      "atcocode": null,
+      "tiploc_code": "BHILLPK",
+      "name": "Bush Hill Park",
+      "mode": "train",
+      "longitude": -0.069221,
+      "latitude": 51.641517,
+      "distance": 15467
+    },
+    {
+      "station_code": "SUC",
+      "atcocode": null,
+      "tiploc_code": "SUTTONC",
+      "name": "Sutton Common",
+      "mode": "train",
+      "longitude": -0.196343,
+      "latitude": 51.374889,
+      "distance": 15469
+    },
+    {
+      "station_code": "SDH",
+      "atcocode": null,
+      "tiploc_code": "SDBRYHH",
+      "name": "Sudbury Hill Harrow",
+      "mode": "train",
+      "longitude": -0.335803,
+      "latitude": 51.558464,
+      "distance": 15494
+    },
+    {
+      "station_code": "KNT",
+      "atcocode": null,
+      "tiploc_code": "KTON",
+      "name": "Kenton",
+      "mode": "train",
+      "longitude": -0.316981,
+      "latitude": 51.5818,
+      "distance": 15507
+    },
+    {
+      "station_code": "ESD",
+      "atcocode": null,
+      "tiploc_code": "ELMW",
+      "name": "Elmstead Woods",
+      "mode": "train",
+      "longitude": 0.044274,
+      "latitude": 51.417116,
+      "distance": 15556
+    },
+    {
+      "station_code": "WDO",
+      "atcocode": null,
+      "tiploc_code": "WADDON",
+      "name": "Waddon",
+      "mode": "train",
+      "longitude": -0.117336,
+      "latitude": 51.367396,
+      "distance": 15564
+    },
+    {
+      "station_code": "BMS",
+      "atcocode": null,
+      "tiploc_code": "BROMLYS",
+      "name": "Bromley South",
+      "mode": "train",
+      "longitude": 0.017344,
+      "latitude": 51.399975,
+      "distance": 15587
+    },
+    {
+      "station_code": "GFD",
+      "atcocode": null,
+      "tiploc_code": "GFORD",
+      "name": "Greenford",
+      "mode": "train",
+      "longitude": -0.345837,
+      "latitude": 51.54233,
+      "distance": 15601
+    },
+    {
+      "station_code": "CSH",
+      "atcocode": null,
+      "tiploc_code": "CRSHLTN",
+      "name": "Carshalton",
+      "mode": "train",
+      "longitude": -0.166368,
+      "latitude": 51.368453,
+      "distance": 15664
+    },
+    {
+      "station_code": "NEH",
+      "atcocode": null,
+      "tiploc_code": "NWELTHM",
+      "name": "New Eltham",
+      "mode": "train",
+      "longitude": 0.070533,
+      "latitude": 51.438058,
+      "distance": 15725
+    },
+    {
+      "station_code": "KNG",
+      "atcocode": null,
+      "tiploc_code": "KGSTON",
+      "name": "Kingston",
+      "mode": "train",
+      "longitude": -0.301166,
+      "latitude": 51.41275,
+      "distance": 15972
+    },
+    {
+      "station_code": "NBA",
+      "atcocode": null,
+      "tiploc_code": "NBARNET",
+      "name": "New Barnet",
+      "mode": "train",
+      "longitude": -0.172997,
+      "latitude": 51.648573,
+      "distance": 16029
+    },
+    {
+      "station_code": "BRS",
+      "atcocode": null,
+      "tiploc_code": "BRLANDS",
+      "name": "Berrylands",
+      "mode": "train",
+      "longitude": -0.280714,
+      "latitude": 51.399043,
+      "distance": 16044
+    },
+    {
+      "station_code": "WWI",
+      "atcocode": null,
+      "tiploc_code": "WWICKHM",
+      "name": "West Wickham",
+      "mode": "train",
+      "longitude": -0.014432,
+      "latitude": 51.3813,
+      "distance": 16046
+    },
+    {
+      "station_code": "WCP",
+      "atcocode": null,
+      "tiploc_code": "WRCSTRP",
+      "name": "Worcester Park",
+      "mode": "train",
+      "longitude": -0.245167,
+      "latitude": 51.381251,
+      "distance": 16208
+    },
+    {
+      "station_code": "SCY",
+      "atcocode": null,
+      "tiploc_code": "SCROYDN",
+      "name": "South Croydon",
+      "mode": "train",
+      "longitude": -0.093457,
+      "latitude": 51.362963,
+      "distance": 16214
+    },
+    {
+      "station_code": "PON",
+      "atcocode": null,
+      "tiploc_code": "PNDRSEN",
+      "name": "Ponders End",
+      "mode": "train",
+      "longitude": -0.03508,
+      "latitude": 51.642254,
+      "distance": 16317
+    },
+    {
+      "station_code": "WLT",
+      "atcocode": null,
+      "tiploc_code": "WALNGTN",
+      "name": "Wallington",
+      "mode": "train",
+      "longitude": -0.150833,
+      "latitude": 51.360385,
+      "distance": 16407
+    },
+    {
+      "station_code": "ENC",
+      "atcocode": null,
+      "tiploc_code": "ENFC",
+      "name": "Enfield Chase",
+      "mode": "train",
+      "longitude": -0.090696,
+      "latitude": 51.653252,
+      "distance": 16436
+    },
+    {
+      "station_code": "ENF",
+      "atcocode": null,
+      "tiploc_code": "ENFLDTN",
+      "name": "Enfield Town",
+      "mode": "train",
+      "longitude": -0.079328,
+      "latitude": 51.652024,
+      "distance": 16442
+    },
+    {
+      "station_code": "HMW",
+      "atcocode": null,
+      "tiploc_code": "HAMWICK",
+      "name": "Hampton Wick",
+      "mode": "train",
+      "longitude": -0.312489,
+      "latitude": 51.414523,
+      "distance": 16447
+    },
+    {
+      "station_code": "MAL",
+      "atcocode": null,
+      "tiploc_code": "MALDENM",
+      "name": "Malden Manor",
+      "mode": "train",
+      "longitude": -0.261274,
+      "latitude": 51.384728,
+      "distance": 16476
+    },
+    {
+      "station_code": "STW",
+      "atcocode": null,
+      "tiploc_code": "STRWBYH",
+      "name": "Strawberry Hill",
+      "mode": "train",
+      "longitude": -0.339358,
+      "latitude": 51.438961,
+      "distance": 16520
+    },
+    {
+      "station_code": "WLI",
+      "atcocode": null,
+      "tiploc_code": "WELLING",
+      "name": "Welling",
+      "mode": "train",
+      "longitude": 0.10169,
+      "latitude": 51.464797,
+      "distance": 16556
+    },
+    {
+      "station_code": "HOH",
+      "atcocode": null,
+      "tiploc_code": "HAROOTH",
+      "name": "Harrow On The Hill",
+      "mode": "train",
+      "longitude": -0.337225,
+      "latitude": 51.579184,
+      "distance": 16564
+    },
+    {
+      "station_code": "SBU",
+      "atcocode": null,
+      "tiploc_code": "SBURY",
+      "name": "Southbury",
+      "mode": "train",
+      "longitude": -0.052437,
+      "latitude": 51.648703,
+      "distance": 16565
+    },
+    {
+      "station_code": "WSU",
+      "atcocode": null,
+      "tiploc_code": "WSUTTON",
+      "name": "West Sutton",
+      "mode": "train",
+      "longitude": -0.205173,
+      "latitude": 51.365852,
+      "distance": 16616
+    },
+    {
+      "station_code": "SVK",
+      "atcocode": null,
+      "tiploc_code": "SVNKNGS",
+      "name": "Seven Kings",
+      "mode": "train",
+      "longitude": 0.0971,
+      "latitude": 51.564025,
+      "distance": 16770
+    },
+    {
+      "station_code": "BKL",
+      "atcocode": null,
+      "tiploc_code": "BICKLEY",
+      "name": "Bickley",
+      "mode": "train",
+      "longitude": 0.045241,
+      "latitude": 51.400103,
+      "distance": 16886
+    },
+    {
+      "station_code": "CHI",
+      "atcocode": null,
+      "tiploc_code": "CHINGFD",
+      "name": "Chingford",
+      "mode": "train",
+      "longitude": 0.009897,
+      "latitude": 51.633085,
+      "distance": 16913
+    },
+    {
+      "station_code": "CSB",
+      "atcocode": null,
+      "tiploc_code": "CRSHLTB",
+      "name": "Carshalton Beeches",
+      "mode": "train",
+      "longitude": -0.169797,
+      "latitude": 51.357409,
+      "distance": 16915
+    },
+    {
+      "station_code": "TED",
+      "atcocode": null,
+      "tiploc_code": "TEDNGTN",
+      "name": "Teddington",
+      "mode": "train",
+      "longitude": -0.332706,
+      "latitude": 51.424479,
+      "distance": 16933
+    },
+    {
+      "station_code": "NLT",
+      "atcocode": null,
+      "tiploc_code": "NTHOLTP",
+      "name": "Northolt Park",
+      "mode": "train",
+      "longitude": -0.359466,
+      "latitude": 51.557538,
+      "distance": 16993
+    },
+    {
+      "station_code": "SUO",
+      "atcocode": null,
+      "tiploc_code": "SUTTON",
+      "name": "Sutton (Surrey)",
+      "mode": "train",
+      "longitude": -0.191215,
+      "latitude": 51.359531,
+      "distance": 17006
+    },
+    {
+      "station_code": "HOU",
+      "atcocode": null,
+      "tiploc_code": "HOUNSLW",
+      "name": "Hounslow",
+      "mode": "train",
+      "longitude": -0.362277,
+      "latitude": 51.461944,
+      "distance": 17019
+    },
+    {
+      "station_code": "CIT",
+      "atcocode": null,
+      "tiploc_code": "CHSLHRS",
+      "name": "Chislehurst",
+      "mode": "train",
+      "longitude": 0.057418,
+      "latitude": 51.405555,
+      "distance": 17087
+    },
+    {
+      "station_code": "HRW",
+      "atcocode": null,
+      "tiploc_code": "HROW",
+      "name": "Harrow & Wealdstone",
+      "mode": "train",
+      "longitude": -0.334571,
+      "latitude": 51.592167,
+      "distance": 17153
+    },
+    {
+      "station_code": "WTN",
+      "atcocode": null,
+      "tiploc_code": "WHTTON",
+      "name": "Whitton",
+      "mode": "train",
+      "longitude": -0.357681,
+      "latitude": 51.449606,
+      "distance": 17180
+    },
+    {
+      "station_code": "ABW",
+      "atcocode": null,
+      "tiploc_code": "ABWD",
+      "name": "Abbey Wood",
+      "mode": "train",
+      "longitude": 0.121394,
+      "latitude": 51.491061,
+      "distance": 17322
+    },
+    {
+      "station_code": "FLW",
+      "atcocode": null,
+      "tiploc_code": "FULWELL",
+      "name": "Fulwell",
+      "mode": "train",
+      "longitude": -0.349468,
+      "latitude": 51.433933,
+      "distance": 17401
+    },
+    {
+      "station_code": "HYS",
+      "atcocode": null,
+      "tiploc_code": "HAYS",
+      "name": "Hayes (Kent)",
+      "mode": "train",
+      "longitude": 0.010557,
+      "latitude": 51.376332,
+      "distance": 17418
+    },
+    {
+      "station_code": "GDH",
+      "atcocode": null,
+      "tiploc_code": "GORDONH",
+      "name": "Gordon Hill",
+      "mode": "train",
+      "longitude": -0.09461,
+      "latitude": 51.663333,
+      "distance": 17507
+    },
+    {
+      "station_code": "SUR",
+      "atcocode": null,
+      "tiploc_code": "SURBITN",
+      "name": "Surbiton",
+      "mode": "train",
+      "longitude": -0.303959,
+      "latitude": 51.392458,
+      "distance": 17674
+    },
+    {
+      "station_code": "GMY",
+      "atcocode": null,
+      "tiploc_code": "GODMAYS",
+      "name": "Goodmayes",
+      "mode": "train",
+      "longitude": 0.110807,
+      "latitude": 51.565577,
+      "distance": 17714
+    },
+    {
+      "station_code": "BMD",
+      "atcocode": null,
+      "tiploc_code": "BRIMSDN",
+      "name": "Brimsdown",
+      "mode": "train",
+      "longitude": -0.030817,
+      "latitude": 51.655582,
+      "distance": 17798
+    },
+    {
+      "station_code": "SNR",
+      "atcocode": null,
+      "tiploc_code": "SDSD",
+      "name": "Sanderstead",
+      "mode": "train",
+      "longitude": -0.093678,
+      "latitude": 51.348282,
+      "distance": 17828
+    },
+    {
+      "station_code": "CHE",
+      "atcocode": null,
+      "tiploc_code": "CHEAM",
+      "name": "Cheam",
+      "mode": "train",
+      "longitude": -0.214167,
+      "latitude": 51.355477,
+      "distance": 17911
+    },
+    {
+      "station_code": "TOL",
+      "atcocode": null,
+      "tiploc_code": "TOLWTH",
+      "name": "Tolworth",
+      "mode": "train",
+      "longitude": -0.279461,
+      "latitude": 51.376859,
+      "distance": 17918
+    },
+    {
+      "station_code": "PUO",
+      "atcocode": null,
+      "tiploc_code": "PURLEYO",
+      "name": "Purley Oaks",
+      "mode": "train",
+      "longitude": -0.098856,
+      "latitude": 51.347044,
+      "distance": 17921
+    },
+    {
+      "station_code": "SID",
+      "atcocode": null,
+      "tiploc_code": "SIDCUP",
+      "name": "Sidcup",
+      "mode": "train",
+      "longitude": 0.103795,
+      "latitude": 51.433868,
+      "distance": 17978
+    },
+    {
+      "station_code": "SNL",
+      "atcocode": null,
+      "tiploc_code": "STLEIGH",
+      "name": "Stoneleigh",
+      "mode": "train",
+      "longitude": -0.248665,
+      "latitude": 51.363399,
+      "distance": 18064
+    },
+    {
+      "station_code": "HDW",
+      "atcocode": null,
+      "tiploc_code": "HADLYWD",
+      "name": "Hadley Wood",
+      "mode": "train",
+      "longitude": -0.176173,
+      "latitude": 51.668495,
+      "distance": 18245
+    },
+    {
+      "station_code": "BLM",
+      "atcocode": null,
+      "tiploc_code": "BELM",
+      "name": "Belmont",
+      "mode": "train",
+      "longitude": -0.198855,
+      "latitude": 51.343813,
+      "distance": 18832
+    },
+    {
+      "station_code": "PUR",
+      "atcocode": null,
+      "tiploc_code": "PURLEY",
+      "name": "Purley",
+      "mode": "train",
+      "longitude": -0.114035,
+      "latitude": 51.337577,
+      "distance": 18887
+    },
+    {
+      "station_code": "HMC",
+      "atcocode": null,
+      "tiploc_code": "HCRT",
+      "name": "Hampton Court",
+      "mode": "train",
+      "longitude": -0.342748,
+      "latitude": 51.402554,
+      "distance": 18918
+    },
+    {
+      "station_code": "HDL",
+      "atcocode": null,
+      "tiploc_code": "HEDSTNL",
+      "name": "Headstone Lane",
+      "mode": "train",
+      "longitude": -0.35722,
+      "latitude": 51.602647,
+      "distance": 19101
+    },
+    {
+      "station_code": "TUR",
+      "atcocode": null,
+      "tiploc_code": "TURKYST",
+      "name": "Turkey Street",
+      "mode": "train",
+      "longitude": -0.047217,
+      "latitude": 51.672626,
+      "distance": 19210
+    },
+    {
+      "station_code": "PET",
+      "atcocode": null,
+      "tiploc_code": "PETSWD",
+      "name": "Petts Wood",
+      "mode": "train",
+      "longitude": 0.074481,
+      "latitude": 51.388617,
+      "distance": 19232
+    },
+    {
+      "station_code": "ELS",
+      "atcocode": null,
+      "tiploc_code": "ELTR",
+      "name": "Elstree & Borehamwood",
+      "mode": "train",
+      "longitude": -0.280081,
+      "latitude": 51.653068,
+      "distance": 19343
+    },
+    {
+      "station_code": "ENL",
+      "atcocode": null,
+      "tiploc_code": "ENFLDLK",
+      "name": "Enfield Lock",
+      "mode": "train",
+      "longitude": -0.028532,
+      "latitude": 51.67092,
+      "distance": 19444
+    },
+    {
+      "station_code": "RDD",
+      "atcocode": null,
+      "tiploc_code": "RDLSDWN",
+      "name": "Riddlesdown",
+      "mode": "train",
+      "longitude": -0.099387,
+      "latitude": 51.332484,
+      "distance": 19528
+    },
+    {
+      "station_code": "RHM",
+      "atcocode": null,
+      "tiploc_code": "REEDHMS",
+      "name": "Reedham (Surrey)",
+      "mode": "train",
+      "longitude": -0.123416,
+      "latitude": 51.331118,
+      "distance": 19584
+    },
+    {
+      "station_code": "EWW",
+      "atcocode": null,
+      "tiploc_code": "EWELW",
+      "name": "Ewell West",
+      "mode": "train",
+      "longitude": -0.256987,
+      "latitude": 51.350043,
+      "distance": 19648
+    },
+    {
+      "station_code": "EWE",
+      "atcocode": null,
+      "tiploc_code": "EWELLE",
+      "name": "Ewell East",
+      "mode": "train",
+      "longitude": -0.24153,
+      "latitude": 51.345298,
+      "distance": 19664
+    },
+    {
+      "station_code": "THD",
+      "atcocode": null,
+      "tiploc_code": "TDITTON",
+      "name": "Thames Ditton",
+      "mode": "train",
+      "longitude": -0.339152,
+      "latitude": 51.389095,
+      "distance": 19689
+    },
+    {
+      "station_code": "HMP",
+      "atcocode": null,
+      "tiploc_code": "HAMPTON",
+      "name": "Hampton (London)",
+      "mode": "train",
+      "longitude": -0.372119,
+      "latitude": 51.415933,
+      "distance": 19754
+    },
+    {
+      "station_code": "CWH",
+      "atcocode": null,
+      "tiploc_code": "CRHL",
+      "name": "Crews Hill",
+      "mode": "train",
+      "longitude": -0.106887,
+      "latitude": 51.684484,
+      "distance": 19762
+    },
+    {
+      "station_code": "CSN",
+      "atcocode": null,
+      "tiploc_code": "CHSSN",
+      "name": "Chessington North",
+      "mode": "train",
+      "longitude": -0.300699,
+      "latitude": 51.364039,
+      "distance": 19941
+    },
+    {
+      "station_code": "HTE",
+      "atcocode": null,
+      "tiploc_code": "HTCHEND",
+      "name": "Hatch End",
+      "mode": "train",
+      "longitude": -0.368601,
+      "latitude": 51.609415,
+      "distance": 20173
+    },
+    {
+      "station_code": "KLY",
+      "atcocode": null,
+      "tiploc_code": "KNLY",
+      "name": "Kenley",
+      "mode": "train",
+      "longitude": -0.100925,
+      "latitude": 51.324775,
+      "distance": 20371
+    },
+    {
+      "station_code": "SMY",
+      "atcocode": null,
+      "tiploc_code": "STMRYC",
+      "name": "St Mary Cray",
+      "mode": "train",
+      "longitude": 0.106384,
+      "latitude": 51.394748,
+      "distance": 20471
+    },
+    {
+      "station_code": "CDN",
+      "atcocode": null,
+      "tiploc_code": "COLSTWN",
+      "name": "Coulsdon Town",
+      "mode": "train",
+      "longitude": -0.134464,
+      "latitude": 51.322041,
+      "distance": 20597
+    },
+    {
+      "station_code": "BAD",
+      "atcocode": null,
+      "tiploc_code": "BANSTED",
+      "name": "Banstead",
+      "mode": "train",
+      "longitude": -0.213159,
+      "latitude": 51.329347,
+      "distance": 20652
+    },
+    {
+      "station_code": "HYW",
+      "atcocode": null,
+      "tiploc_code": "HNCHLYW",
+      "name": "Hinchley Wood",
+      "mode": "train",
+      "longitude": -0.340524,
+      "latitude": 51.374997,
+      "distance": 20837
+    },
+    {
+      "station_code": "CSS",
+      "atcocode": null,
+      "tiploc_code": "CHSSS",
+      "name": "Chessington South",
+      "mode": "train",
+      "longitude": -0.308158,
+      "latitude": 51.356549,
+      "distance": 20918
+    },
+    {
+      "station_code": "WLC",
+      "atcocode": null,
+      "tiploc_code": "WALHAMX",
+      "name": "Waltham Cross",
+      "mode": "train",
+      "longitude": -0.026558,
+      "latitude": 51.685059,
+      "distance": 20968
+    },
+    {
+      "station_code": "WME",
+      "atcocode": null,
+      "tiploc_code": "WDMNSTR",
+      "name": "Woodmansterne",
+      "mode": "train",
+      "longitude": -0.154262,
+      "latitude": 51.319018,
+      "distance": 21009
+    },
+    {
+      "station_code": "ESH",
+      "atcocode": null,
+      "tiploc_code": "ESHER",
+      "name": "Esher",
+      "mode": "train",
+      "longitude": -0.353338,
+      "latitude": 51.379889,
+      "distance": 21106
+    },
+    {
+      "station_code": "ORP",
+      "atcocode": null,
+      "tiploc_code": "ORPNGTN",
+      "name": "Orpington",
+      "mode": "train",
+      "longitude": 0.089091,
+      "latitude": 51.373294,
+      "distance": 21146
+    },
+    {
+      "station_code": "CDS",
+      "atcocode": null,
+      "tiploc_code": "COLSDNS",
+      "name": "Coulsdon South",
+      "mode": "train",
+      "longitude": -0.137887,
+      "latitude": 51.315836,
+      "distance": 21293
+    },
+    {
+      "station_code": "TEO",
+      "atcocode": null,
+      "tiploc_code": "THBLDSG",
+      "name": "Theobalds Grove",
+      "mode": "train",
+      "longitude": -0.034831,
+      "latitude": 51.692455,
+      "distance": 21569
+    },
+    {
+      "station_code": "EPS",
+      "atcocode": null,
+      "tiploc_code": "EPSM",
+      "name": "Epsom",
+      "mode": "train",
+      "longitude": -0.268778,
+      "latitude": 51.334391,
+      "distance": 21571
+    },
+    {
+      "station_code": "PBR",
+      "atcocode": null,
+      "tiploc_code": "POTRSBR",
+      "name": "Potters Bar",
+      "mode": "train",
+      "longitude": -0.192605,
+      "latitude": 51.697066,
+      "distance": 21583
+    },
+    {
+      "station_code": "EPD",
+      "atcocode": null,
+      "tiploc_code": "EPSDNS",
+      "name": "Epsom Downs",
+      "mode": "train",
+      "longitude": -0.238955,
+      "latitude": 51.323686,
+      "distance": 21823
+    },
+    {
+      "station_code": "WHY",
+      "atcocode": null,
+      "tiploc_code": "WHYTELF",
+      "name": "Whyteleafe",
+      "mode": "train",
+      "longitude": -0.081148,
+      "latitude": 51.309956,
+      "distance": 22169
+    },
+    {
+      "station_code": "CHP",
+      "atcocode": null,
+      "tiploc_code": "CHSD",
+      "name": "Chipstead",
+      "mode": "train",
+      "longitude": -0.169503,
+      "latitude": 51.309276,
+      "distance": 22203
+    },
+    {
+      "station_code": "CLG",
+      "atcocode": null,
+      "tiploc_code": "CLYGATE",
+      "name": "Claygate",
+      "mode": "train",
+      "longitude": -0.348248,
+      "latitude": 51.361212,
+      "distance": 22310
+    },
+    {
+      "station_code": "UWL",
+      "atcocode": null,
+      "tiploc_code": "UWRLNGH",
+      "name": "Upper Warlingham",
+      "mode": "train",
+      "longitude": -0.077952,
+      "latitude": 51.30851,
+      "distance": 22361
+    },
+    {
+      "station_code": "CUF",
+      "atcocode": null,
+      "tiploc_code": "CUFFLEY",
+      "name": "Cuffley",
+      "mode": "train",
+      "longitude": -0.109783,
+      "latitude": 51.70872,
+      "distance": 22439
+    },
+    {
+      "station_code": "CHN",
+      "atcocode": null,
+      "tiploc_code": "CHESHNT",
+      "name": "Cheshunt",
+      "mode": "train",
+      "longitude": -0.02396,
+      "latitude": 51.702875,
+      "distance": 22901
+    },
+    {
+      "station_code": "WHS",
+      "atcocode": null,
+      "tiploc_code": "WHYTLFS",
+      "name": "Whyteleafe South",
+      "mode": "train",
+      "longitude": -0.076918,
+      "latitude": 51.303385,
+      "distance": 22936
+    },
+    {
+      "station_code": "TAT",
+      "atcocode": null,
+      "tiploc_code": "TATNHMC",
+      "name": "Tattenham Corner",
+      "mode": "train",
+      "longitude": -0.242609,
+      "latitude": 51.309182,
+      "distance": 23424
+    },
+    {
+      "station_code": "CLD",
+      "atcocode": null,
+      "tiploc_code": "CHLSFLD",
+      "name": "Chelsfield",
+      "mode": "train",
+      "longitude": 0.10907,
+      "latitude": 51.356254,
+      "distance": 23468
+    },
+    {
+      "station_code": "RDT",
+      "atcocode": null,
+      "tiploc_code": "RADLETT",
+      "name": "Radlett",
+      "mode": "train",
+      "longitude": -0.317244,
+      "latitude": 51.685186,
+      "distance": 23735
+    },
+    {
+      "station_code": "KND",
+      "atcocode": null,
+      "tiploc_code": "KGWD",
+      "name": "Kingswood",
+      "mode": "train",
+      "longitude": -0.211248,
+      "latitude": 51.294723,
+      "distance": 24333
+    },
+    {
+      "station_code": "BPK",
+      "atcocode": null,
+      "tiploc_code": "BRKMNPK",
+      "name": "Brookmans Park",
+      "mode": "train",
+      "longitude": -0.204549,
+      "latitude": 51.72106,
+      "distance": 24366
+    },
+    {
+      "station_code": "AHD",
+      "atcocode": null,
+      "tiploc_code": "ASHD",
+      "name": "Ashtead",
+      "mode": "train",
+      "longitude": -0.307572,
+      "latitude": 51.317872,
+      "distance": 24480
+    },
+    {
+      "station_code": "WOH",
+      "atcocode": null,
+      "tiploc_code": "WLDNGHM",
+      "name": "Woldingham",
+      "mode": "train",
+      "longitude": -0.05187,
+      "latitude": 51.290156,
+      "distance": 24700
+    },
+    {
+      "station_code": "OXS",
+      "atcocode": null,
+      "tiploc_code": "OXSHOTT",
+      "name": "Oxshott",
+      "mode": "train",
+      "longitude": -0.362419,
+      "latitude": 51.336394,
+      "distance": 25023
+    },
+    {
+      "station_code": "TAD",
+      "atcocode": null,
+      "tiploc_code": "TADWTH",
+      "name": "Tadworth",
+      "mode": "train",
+      "longitude": -0.235965,
+      "latitude": 51.291636,
+      "distance": 25125
+    },
+    {
+      "station_code": "CAT",
+      "atcocode": null,
+      "tiploc_code": "CATERHM",
+      "name": "Caterham",
+      "mode": "train",
+      "longitude": -0.078307,
+      "latitude": 51.28214,
+      "distance": 25260
+    },
+    {
+      "station_code": "WMG",
+      "atcocode": null,
+      "tiploc_code": "WELHAMG",
+      "name": "Welham Green",
+      "mode": "train",
+      "longitude": -0.210692,
+      "latitude": 51.73635,
+      "distance": 26117
+    },
+    {
+      "station_code": "MHM",
+      "atcocode": null,
+      "tiploc_code": "MERSTHM",
+      "name": "Merstham",
+      "mode": "train",
+      "longitude": -0.150226,
+      "latitude": 51.264153,
+      "distance": 27074
+    },
+    {
+      "station_code": "LHD",
+      "atcocode": null,
+      "tiploc_code": "LETHRHD",
+      "name": "Leatherhead",
+      "mode": "train",
+      "longitude": -0.333232,
+      "latitude": 51.298816,
+      "distance": 27216
+    },
+    {
+      "station_code": "BWO",
+      "atcocode": null,
+      "tiploc_code": "BCWD",
+      "name": "Bricket Wood",
+      "mode": "train",
+      "longitude": -0.359115,
+      "latitude": 51.705426,
+      "distance": 27232
+    },
+    {
+      "station_code": "HWW",
+      "atcocode": null,
+      "tiploc_code": "HOWWOOD",
+      "name": "How Wood (Herts)",
+      "mode": "train",
+      "longitude": -0.34467,
+      "latitude": 51.71774,
+      "distance": 27800
+    },
+    {
+      "station_code": "BXB",
+      "atcocode": null,
+      "tiploc_code": "BROXBRN",
+      "name": "Broxbourne",
+      "mode": "train",
+      "longitude": -0.011087,
+      "latitude": 51.746909,
+      "distance": 27837
+    },
+    {
+      "station_code": "PKT",
+      "atcocode": null,
+      "tiploc_code": "PKST",
+      "name": "Park Street",
+      "mode": "train",
+      "longitude": -0.340277,
+      "latitude": 51.725457,
+      "distance": 28367
+    },
+    {
+      "station_code": "OXT",
+      "atcocode": null,
+      "tiploc_code": "OXTED",
+      "name": "Oxted",
+      "mode": "train",
+      "longitude": -0.004834,
+      "latitude": 51.257907,
+      "distance": 29000
+    },
+    {
+      "station_code": "SAA",
+      "atcocode": null,
+      "tiploc_code": "STALBNA",
+      "name": "St Albans Abbey",
+      "mode": "train",
+      "longitude": -0.342569,
+      "latitude": 51.744732,
+      "distance": 30297
+    },
+    {
+      "station_code": "SAC",
+      "atcocode": null,
+      "tiploc_code": "STALBCY",
+      "name": "St Albans",
+      "mode": "train",
+      "longitude": -0.327538,
+      "latitude": 51.750471,
+      "distance": 30369
+    }
+  ]
+}

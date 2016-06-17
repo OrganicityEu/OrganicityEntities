@@ -47,6 +47,9 @@ public class OrganicityAttributeTypes {
         DAILY_LIGHT_GOODS_VEHICLE_COUNT("trafficCount:dailyLightGoodsVehicleCount", "urn:oc:attributeType:trafficCount:dailyLightGoodsVehicleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
         DAILY_HEAVY_GOODS_VEHICLE_COUNT("trafficCount:dailyHeavyGoodsVehicleCount", "urn:oc:attributeType:trafficCount:dailyHeavyGoodsVehicleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
 
+        // Transport stations
+        PERFORMANCE_INDICATOR("transport:performanceIndicator", "urn:oc:attributeType:transport:performanceIndicator", OrganicityUnits.Units.INDEX, OrganicityDatatypes.DATATYPES.NUMERIC),
+
         //Other Attributes
         DESCRIPTION("description", "urn:oc:attributeType:description", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
         AREA("area", "urn:oc:attributeType:area", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),

@@ -1,0 +1,10 @@
+{
+  "station_code": "ZFD",
+  "atcocode": null,
+  "tiploc_code": "FRNDNLT",
+  "name": "Farringdon (London)",
+  "mode": "train",
+  "longitude": -0.105205,
+  "latitude": 51.520165,
+  "distance": 2110
+}
