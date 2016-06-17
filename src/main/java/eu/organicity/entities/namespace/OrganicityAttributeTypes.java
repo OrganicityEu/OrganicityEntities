@@ -32,12 +32,12 @@ public class OrganicityAttributeTypes {
         POPULATION_DENSITY("boroughProfile:populationDensity", "urn:oc:attributeType:boroughProfile:populationDensity", OrganicityUnits.Units.POPULATION_DENSITY, OrganicityDatatypes.DATATYPES.NUMERIC),
         HOUSEHOLD_INCOME("boroughProfile:householdIncome", "urn:oc:attributeType:boroughProfile:householdIncome", OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
         MEDIAN_HOUSE_PRICE("boroughProfile:medianHousePrice", "urn:oc:attributeType:boroughProfile:medianHousePrice", OrganicityUnits.Units.MONETARY_VALUE_POUNDS, OrganicityDatatypes.DATATYPES.NUMERIC),
-        FRACTION_GREENSPACE("boroughProfile:fractionGreenspace", "urn:oc:attributeType:boroughProfile:fractionGreenspace", OrganicityUnits.Units.FRACTION, OrganicityDatatypes.DATATYPES.NUMERIC),
+        PROPORTION_GREENSPACE("boroughProfile:proportionGreenspace", "urn:oc:attributeType:boroughProfile:proportionGreenspace", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
         CARBON_EMISSION("boroughProfile:carbonEmission", "urn:oc:attributeType:boroughProfile:carbonEmission", OrganicityUnits.Units.KILOTONNE, OrganicityDatatypes.DATATYPES.NUMERIC),
         CARS_PER_HOUSEHOLD("boroughProfile:carsPerHousehold", "urn:oc:attributeType:boroughProfile:carsPerHousehold", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),
         WALK_5X_WEEK("boroughProfile:walk5xWeek", "urn:oc:attributeType:boroughProfile:walk5xWeek", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
         CYCLE_1X_WEEK("boroughProfile:cycle1xWeek", "urn:oc:attributeType:boroughProfile:cycle1xWeek", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
-        FRACTION_OBESE("boroughProfile:fractionObese", "urn:oc:attributeType:boroughProfile:fractionObese", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
+        PROPORTION_OBESE("boroughProfile:proportionObese", "urn:oc:attributeType:boroughProfile:proportionObese", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
 
         // Manual traffic counts
         DAILY_PEDAL_CYCLE_COUNT("trafficCount:dailyPedalCycleCount", "urn:oc:attributeType:trafficCount:dailyPedalCycleCount", OrganicityUnits.Units.COUNT, OrganicityDatatypes.DATATYPES.NUMERIC),

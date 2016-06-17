@@ -1,15 +1,12 @@
 package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 import org.junit.Test;
 
-import java.io.File;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -50,12 +47,12 @@ public class BoroughProfileImporterTest {
 
         // Get Fraction Greenspace
         Attribute attribute = entity.getAttributes().stream()
-                .filter(a -> OrganicityAttributeTypes.Types.FRACTION_GREENSPACE.equals(a.getAttributeType()))
+                .filter(a -> OrganicityAttributeTypes.Types.PROPORTION_GREENSPACE.equals(a.getAttributeType()))
                 .findAny()
                 .orElse(null);
         assertNotNull(attribute);
-        assertEquals("urn:oc:attributeType:boroughProfile:fractionGreenspace", attribute.getAttribute().getType());
-        assertEquals("boroughProfile:fractionGreenspace", attribute.getAttribute().getName());
+        assertEquals("urn:oc:attributeType:boroughProfile:proportionGreenspace", attribute.getAttribute().getType());
+        assertEquals("boroughProfile:proportionGreenspace", attribute.getAttribute().getName());
         assertEquals("38.2", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
         Metadata timestamp = attribute.getMetadatas().stream()
                 .filter(m -> "TimeInstant".equals(m.getName()))
