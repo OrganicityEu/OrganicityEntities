@@ -75,10 +75,13 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
             String stationURI = STATION_FEED_URL_PREFIX + stationCode + STATION_FEED_URL_POSTFIX;
 
             URL stationURL = new URL(stationURI);
+            try {
+                JSONObject stationLiveObject = (JSONObject) parser.parse(new InputStreamReader(stationURL.openStream()));
+                entities.addAll(process(stationObject, stationLiveObject));
+            }catch (Exception e){
+                e.printStackTrace();
 
-            JSONObject stationLiveObject = (JSONObject) parser.parse(new InputStreamReader(stationURL.openStream()));
-
-            entities.addAll(process(stationObject, stationLiveObject));
+            }
         }
         return entities;
     }
