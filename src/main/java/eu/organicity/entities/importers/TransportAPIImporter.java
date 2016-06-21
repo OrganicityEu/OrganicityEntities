@@ -1,6 +1,9 @@
 package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.JsonNode;
+import com.mashape.unirest.http.Unirest;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
@@ -22,6 +25,7 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
 
     private static final String STATION_FEED_URL_PREFIX = "http://fcc.transportapi.com/v3/uk/train/station/";
     private static final String STATION_FEED_URL_POSTFIX = "/live.json";
+    private static final String STATION_FEED_PAGE="http://fcc.transportapi.com/v3/uk/train/stations/near.json?lat=51.507222&lon=-0.1275&page=";
 
     @Override
     public List<OrganicityEntity> process(String resourceFileName) throws Exception {
@@ -48,6 +52,40 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
         }
         return entities;
     }
+
+
+    public List<OrganicityEntity> process(Integer page) throws Exception {
+
+        HttpResponse<String> jsonResponse = Unirest.get(STATION_FEED_PAGE+page)
+                .header("accept", "application/json")
+                .asString();
+        JSONParser parser = new JSONParser();
+
+        JSONObject stationsObject = (JSONObject) parser.parse(jsonResponse.getBody());
+        JSONArray stations = (JSONArray) stationsObject.get("stations");
+
+        List<OrganicityEntity> entities = new ArrayList<OrganicityEntity>();
+        Iterator<JSONObject> stationIterator = stations.iterator();
+        while (stationIterator.hasNext()) {
+
+            JSONObject stationObject = stationIterator.next();
+            String stationCode = (String) stationObject.get("station_code");
+
+            // We interpret resourceFileName to be a station code
+            String stationURI = STATION_FEED_URL_PREFIX + stationCode + STATION_FEED_URL_POSTFIX;
+
+            URL stationURL = new URL(stationURI);
+
+            JSONObject stationLiveObject = (JSONObject) parser.parse(new InputStreamReader(stationURL.openStream()));
+
+            entities.addAll(process(stationObject, stationLiveObject));
+        }
+        return entities;
+    }
+
+
+
+
 
     protected List<OrganicityEntity> process(JSONObject stationObject, JSONObject stationLiveObject) throws Exception {
         //System.err.println(stationObject.toJSONString());
