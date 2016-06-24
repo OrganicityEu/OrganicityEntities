@@ -6,7 +6,7 @@ public class OrganicityAttributeTypes {
         //SENSING TYPES
         TEMPERATURE("temperature:ambient", "urn:oc:attributeType:temperature:ambient", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
         ATMOSPHERIC_PRESSURE("atmosphericPressure", "urn:oc:attributeType:atmosphericPressure", OrganicityUnits.Units.MBAR, OrganicityDatatypes.DATATYPES.NUMERIC),
-        WIND_DIRECTION("windDirection", "urn:oc:attributeType:windDirection", OrganicityUnits.Units.DEGREE_CELSIUS, OrganicityDatatypes.DATATYPES.NUMERIC),
+        WIND_DIRECTION("windDirection", "urn:oc:attributeType:windDirection", OrganicityUnits.Units.DEGREE_ANGLE, OrganicityDatatypes.DATATYPES.NUMERIC),
         SOUND_PRESSURE_LEVEL("soundPressureLevel:ambient", "urn:oc:attributeType:soundPressureLevel:ambient", OrganicityUnits.Units.DECIBEL, OrganicityDatatypes.DATATYPES.NUMERIC),
         WIND_SPEED("windSpeed", "urn:oc:attributeType:windSpeed", OrganicityUnits.Units.KILLOMETRE_PER_HOUR, OrganicityDatatypes.DATATYPES.NUMERIC),
         RELATIVE_HUMIDITY("relativeHumidity", "urn:oc:attributeType:relativeHumidity", OrganicityUnits.Units.PERCENT, OrganicityDatatypes.DATATYPES.NUMERIC),
@@ -27,6 +27,8 @@ public class OrganicityAttributeTypes {
         PARTICLES("chemicalAgentAtmosphericConcentration:airParticles", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticles", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES10("chemicalAgentAtmosphericConcentration:airParticlesPM10", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM10", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         PARTICLES25("chemicalAgentAtmosphericConcentration:airParticlesPM25", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM25", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        ELECTRICAL_CURRENT("electricalCurrent", "urn:oc:attributeType:electricalCurrent", OrganicityUnits.Units.AMPERE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        POWER_CONSUMPTION("powerConsumption", "urn:oc:attributeType:powerConsumption", OrganicityUnits.Units.KWH, OrganicityDatatypes.DATATYPES.NUMERIC),
 
         // Boroughs
         POPULATION_DENSITY("boroughProfile:populationDensity", "urn:oc:attributeType:boroughProfile:populationDensity", OrganicityUnits.Units.POPULATION_DENSITY, OrganicityDatatypes.DATATYPES.NUMERIC),
