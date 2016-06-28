@@ -9,6 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <repositories>
         <repository>
+            <id>organicity</id>
+            <url>https://maven.organicity.eu/content/repositories/snapshots</url>
+        </repository>
+        <repository>
             <id>sparkworks</id>
             <url>http://nexus.sparkworks.net/nexus/content/repositories/snapshots</url>
         </repository>
@@ -63,5 +67,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>organicity</id>
+            <url>https://maven.organicity.eu/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
