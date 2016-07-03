@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/OrganicityEu/OrganicityEntities.svg?branch=master)](https://travis-ci.org/OrganicityEu/OrganicityEntities)
+
 # OrganicityEntities
 Java library to handle Organicity Entities and Organicity Namespaces
 
