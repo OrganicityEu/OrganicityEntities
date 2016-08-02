@@ -34,7 +34,9 @@ public class OrganicityUnits {
         LAT_LONG_POSITION("coords", "coords"),
         NOT_APPLIED("NOT APPLIED", "NOT APPLIED"),
         POPULATION_DENSITY("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),  // FIXME: Replace with peoplePerSquareKilometer
-        MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds");
+        MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds"),
+        AMPERE("ampere", "urn:oc:uom:ampere"),
+        KWH("kWh", "urn:oc:uom:kWh");
 
 
         private final String name;
