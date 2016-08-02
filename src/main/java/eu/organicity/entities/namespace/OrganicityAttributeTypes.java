@@ -56,7 +56,7 @@ public class OrganicityAttributeTypes {
         POSITION("position", "urn:oc:attributeType:position", OrganicityUnits.Units.LAT_LONG_POSITION, OrganicityDatatypes.DATATYPES.STRING),
         COMMENTS("comments", "urn:oc:attributeType:comments", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
         RANKING("ranking", "urn:oc:attributeType:ranking", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.NUMERIC),
-        ORIGIN("origin", "urn:oc:attributeType:origin", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),
+        ORIGIN("origin", "urn:oc:attributeType:origin", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.STRING),
         DATASOURCE("datasource", "urn:oc:attributeType:datasource", OrganicityUnits.Units.NOT_APPLIED, OrganicityDatatypes.DATATYPES.URL),;
 
         private final String name;

@@ -44,8 +44,7 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
             entity.setPosition(Double.parseDouble(feature.getProperties().get("latitude").toString()), Double.parseDouble(feature.getProperties().get("longitude").toString()) );
 
             // Adding Origin
-            Origin origin = new Origin("http://organicity.eu/cities/london/");
-            entity.addAttribute(origin);
+            entity.addAttribute(getOrigin());
 
             // Adding last update
             entity.setTimestamp(new Date());

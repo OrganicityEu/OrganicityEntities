@@ -99,8 +99,7 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
         Double longitude = (Double) stationObject.get("longitude");
         stationEntity.setPosition(latitude, longitude);
 
-        Origin origin = new Origin("http://organicity.eu/cities/london/");
-        stationEntity.addAttribute(origin);
+        stationEntity.addAttribute(getOrigin());
 
         // Adding last update
         stationEntity.setTimestamp(new Date());
@@ -140,6 +139,14 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
     @Override
     public OrganicityEntity initialiseEntity(String id) {
         return null;
+    }
+
+    @Override
+    public Origin getOrigin() {
+        List<String> urls = new ArrayList<>();
+        urls.add("http://fcc.transportapi.com/");
+        return new Origin("Train station performance indicators from the TransportAPI",
+                urls);
     }
 
     public double getStatus(int late, int total){

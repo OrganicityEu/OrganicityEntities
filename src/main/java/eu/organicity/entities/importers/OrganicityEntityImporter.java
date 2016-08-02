@@ -1,5 +1,6 @@
 package eu.organicity.entities.importers;
 
+import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 
 import java.io.IOException;
@@ -19,4 +20,6 @@ public interface OrganicityEntityImporter {
     List<OrganicityEntity> process(String resourceFileName) throws Exception;
 
     OrganicityEntity initialiseEntity(String id);
+
+    Origin getOrigin();
 }

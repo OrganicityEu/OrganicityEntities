@@ -33,7 +33,7 @@ public class OrganicityUnits {
         WATT_PER_SQUARE_METER("wattPerSquareMeter", "urn:oc:uom:wattPerSquareMeter"),
         LAT_LONG_POSITION("coords", "coords"),
         NOT_APPLIED("NOT APPLIED", "NOT APPLIED"),
-        POPULATION_DENSITY("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),
+        POPULATION_DENSITY("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),  // FIXME: Replace with peoplePerSquareKilometer
         MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds");
 
 

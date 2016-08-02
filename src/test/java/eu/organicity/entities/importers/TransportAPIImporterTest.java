@@ -56,7 +56,7 @@ public class TransportAPIImporterTest {
     @Ignore // Since it requires web access
     public void testProcessWeb() throws Exception {
         TransportAPIImporter importer = new TransportAPIImporter();
-        List<OrganicityEntity> entities = importer.process(this.getClass().getResource("/entityImport/TransportApiTrainStations.json").getFile());
+        List<OrganicityEntity> entities = importer.process(this.getClass().getResource("/entityImport/TransportApiTrainStationsTest.json").getFile());
 
         assertEquals(2, entities.size());
 

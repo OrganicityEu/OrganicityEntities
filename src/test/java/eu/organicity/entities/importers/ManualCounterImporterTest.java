@@ -15,7 +15,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Created by bsigurbjornsson on 13/05/2016.
+ * 
  */
 public class ManualCounterImporterTest {
 
@@ -33,11 +33,11 @@ public class ManualCounterImporterTest {
     public void testProcess() throws Exception {
         ManualCounterImporter importer = new ManualCounterImporter();
 
-        String jsonFileName = this.getClass().getResource("/entityImport/organicity-traffic-counts.json").getPath();
+        String jsonFileName = this.getClass().getResource("/entityImport/organicity-traffic-counts-test.json").getPath();
 
         List<OrganicityEntity> entities = importer.process(jsonFileName);
 
-        assertEquals(1848, entities.size());
+        assertEquals(6, entities.size());
 
         // Get an example traffic counter
         OrganicityEntity entity = entities.stream()
@@ -56,21 +56,12 @@ public class ManualCounterImporterTest {
         assertNotNull(attribute);
         assertEquals("urn:oc:attributeType:trafficCount:dailyLightGoodsVehicleCount", attribute.getAttribute().getType());
         assertEquals("trafficCount:dailyLightGoodsVehicleCount", attribute.getAttribute().getName());
-        assertEquals("91.0", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
+        assertEquals("657.0", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
         Metadata timestamp = attribute.getMetadatas().stream()
                 .filter(m -> "TimeInstant".equals(m.getName()))
                 .findAny()
                 .orElse(null);
-        assertEquals("2003-12-31T23:59:59", timestamp.getValue());  // NOTE: This value can change if we update the json file
-
-
-        // Get Heavy goods vehicle count
-        // NOTE: The current data has no values ... but this might change in the future
-        Attribute nullAttribute = entity.getAttributes().stream()
-                .filter(a -> OrganicityAttributeTypes.Types.DAILY_HEAVY_GOODS_VEHICLE_COUNT.equals(a.getAttributeType()))
-                .findAny()
-                .orElse(null);
-        assertNull(nullAttribute);
+        assertEquals("2015-12-31T23:59:59", timestamp.getValue());  // NOTE: This value can change if we update the json file
     }
 
     @Test

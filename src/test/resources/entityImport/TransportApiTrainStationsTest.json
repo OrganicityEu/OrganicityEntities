@@ -1,0 +1,25 @@
+{
+  "source": "http://fcc.transportapi.com/v3/uk/train/stations/near.json?lat=51.507222&lon=-0.1275",
+  "stations": [
+    {
+      "station_code": "CHX",
+      "atcocode": null,
+      "tiploc_code": "CHRX",
+      "name": "London Charing Cross",
+      "mode": "train",
+      "longitude": -0.124802,
+      "latitude": 51.508026,
+      "distance": 207
+    },
+    {
+      "station_code": "SAC",
+      "atcocode": null,
+      "tiploc_code": "STALBCY",
+      "name": "St Albans",
+      "mode": "train",
+      "longitude": -0.327538,
+      "latitude": 51.750471,
+      "distance": 30369
+    }
+  ]
+}
