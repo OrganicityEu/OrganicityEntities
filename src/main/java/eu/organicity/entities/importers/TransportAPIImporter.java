@@ -2,7 +2,6 @@ package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
 import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.attributes.Origin;

@@ -3,7 +3,6 @@ package eu.organicity.entities.importers;
 import com.amaxilatis.orion.model.Metadata;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import eu.organicity.entities.handler.attributes.Attribute;
-import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import org.geojson.Feature;

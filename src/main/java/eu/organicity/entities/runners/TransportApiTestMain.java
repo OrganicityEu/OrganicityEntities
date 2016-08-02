@@ -1,4 +1,4 @@
-package eu.organicity.entities;
+package eu.organicity.entities.runners;
 
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.importers.TransportAPIImporter;

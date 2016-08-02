@@ -1,10 +1,13 @@
+package eu.organicity.entities.runners;
+
 import eu.organicity.entities.handler.attributes.*;
 import eu.organicity.entities.handler.entities.IoTDevice;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import org.geojson.Point;
 
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class IoTDeviceDatasourceInternal {
 
@@ -30,7 +33,9 @@ public class IoTDeviceDatasourceInternal {
         iot.setTimestamp(new Date());
 
         // Adding Origin
-        a = new Origin("http://organicity.eu/cities/london/");
+        List<String> urls = new ArrayList<>();
+        urls.add("http://organicity.eu/cities/london/");
+        a = new Origin("Weather station ...",urls);
         iot.addAttribute(a);
 
         // Adding Datasource

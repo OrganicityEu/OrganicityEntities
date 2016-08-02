@@ -1,16 +1,12 @@
+package eu.organicity.entities.runners;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.importers.BoroughProfileImporter;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.List;
-import java.util.zip.GZIPOutputStream;
 
 public class BoroughProfileJson {
 
