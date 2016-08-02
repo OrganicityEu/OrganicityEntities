@@ -146,7 +146,7 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
 
         // Add station status
         Attribute performanceIndicator = new Attribute(
-                OrganicityAttributeTypes.Types.PERFORMANCE_INDICATOR,
+                OrganicityAttributeTypes.Types.TRANSPORT_SERVICE_PERFORMANCE,
                 String.valueOf(getStatus(stationLate, stationTotal))
         );
         Metadata time = new Metadata("TimeInstant", "ISO8601", (String) stationLiveObject.get("request_time"));

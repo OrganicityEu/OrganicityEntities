@@ -37,7 +37,7 @@ public class TransportAPIImporterTest {
         assertEquals(1, entities.size());
 
         OrganicityEntity entity = entities.get(0);
-        Attribute performanceIndicator = entity.getAttributes().stream().filter(w -> w.getAttributeType() == OrganicityAttributeTypes.Types.PERFORMANCE_INDICATOR).findFirst().get();
+        Attribute performanceIndicator = entity.getAttributes().stream().filter(w -> w.getAttributeType() == OrganicityAttributeTypes.Types.TRANSPORT_SERVICE_PERFORMANCE).findFirst().get();
         assertEquals("0.24", performanceIndicator.getAttribute().getValue());
 
         // Station Name: Farringdon
@@ -66,7 +66,7 @@ public class TransportAPIImporterTest {
         assertEquals(2, entity.getAttributes().size());
 
         // Make sure that the performance indicator is a double
-        Attribute performanceIndicator = entity.getAttributes().stream().filter(w -> w.getAttributeType() == OrganicityAttributeTypes.Types.PERFORMANCE_INDICATOR).findFirst().get();
+        Attribute performanceIndicator = entity.getAttributes().stream().filter(w -> w.getAttributeType() == OrganicityAttributeTypes.Types.TRANSPORT_SERVICE_PERFORMANCE).findFirst().get();
         assertTrue(Double.valueOf(performanceIndicator.getAttribute().getValue()) <= 1.0d);
 
         // Check source

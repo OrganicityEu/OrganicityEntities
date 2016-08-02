@@ -1,0 +1,114 @@
+{"type":"FeatureCollection","features": [
+   {"type":"Feature",
+     "geometry" : {
+      "type":"MultiPolygon",
+      "coordinates":[[[[-0.174,51.538],[-0.1234,51.4929],[-0.1986,51.5307],[-0.174,51.538]]]]
+     },
+     "properties":{
+       "id":"urn:oc:entity:london:boroughProfile:uk.gov.london:E09000033",
+       "latitude":51.51344419842173,
+       "longitude":-0.16046708992656883,
+       "type":"urn:oc:entityType:dataset:boroughProfile",
+       "label":"E09000033",
+       "name":"Westminster",
+       "attributes":{
+         "populationDensity":{
+           "name":"Population density (per hectare) 2015",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:populationDensity"
+           },
+           "values":{
+             "2015-12-31T23:59:59":109.36855714483839
+           }
+         },
+         "householdIncome":{
+           "name":"Modelled Household median income estimates 2012/13",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:householdIncome"
+           },
+           "values":{"2013-12-31T23:59:59":80760.0}
+         },
+         "medianHousePrice":{
+           "name":"Median House Price, 2014",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:medianHousePrice"
+           },
+           "values":{"2014-12-31T23:59:59":875000.0}
+         },
+         "proportionGreenspace":{
+           "name":"% of area that is Greenspace, 2005",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:proportionGreenspace"
+           },
+           "values":{"2005-12-31T23:59:59":38.2}
+         },
+         "carbonEmission":{
+           "name":"Total carbon emissions (2013)",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:carbonEmission"
+           },
+           "values":{"2013-12-31T23:59:59":3048.3800403941455}
+         },
+         "carsPerHousehold":{
+           "name":"Number of cars per household, (2011 Census)",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:carsPerHousehold"
+           },
+           "values":{"2011-12-31T23:59:59":0.46146428166244374}
+         },
+         "walk5xWeek":{
+           "name":"Walk 5x Week",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:walk5xWeek"
+           },
+           "values":{
+             "2011-12-31T23:59:59":25.0,
+             "2012-12-31T23:59:59":25.0,
+             "2013-12-31T23:59:59":57.18537627497621,
+             "2014-12-31T23:59:59":67.97235635674944
+           }
+         },
+         "cycle1xWeek":{
+           "name":"Cycle 1x Week",
+           "provider":"London Datastore - Greater London Authority",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:cycle1xWeek"
+           },
+           "values":{
+             "2011-12-31T23:59:59":13.0,
+             "2012-12-31T23:59:59":13.0,
+             "2013-12-31T23:59:59":13.484316784811009,
+             "2014-12-31T23:59:59":11.650237623521692}
+         },
+         "proportionObese":{
+           "name":"% Obese",
+           "provider":"Public Health England",
+           "attributes":{
+             "urn":"urn:oc:attributeType:boroughProfile:proportionObese"
+           },
+           "values":{"2014-12-31T23:59:59":16.396314602572584}
+         }
+       }
+     }
+   },
+  {"type":"Feature",
+    "geometry" : {
+      "type":"MultiPolygon",
+      "coordinates":[[[[-0.0967,51.5232],[-0.0969,51.5094],[-0.1065,51.5182],[-0.0967,51.5232]]]]},
+    "properties":{
+      "id":"urn:oc:entity:london:boroughProfile:uk.gov.london:E09000001",
+      "latitude":51.51441380989648,
+      "longitude":-0.09243808489605701,
+      "type":"urn:oc:entityType:dataset:boroughProfile",
+      "label":"E09000001",
+      "name":"City of London",
+      "attributes":{"populationDensity":{"name":"Population density (per hectare) 2015","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:populationDensity"},"values":{"2015-12-31T23:59:59":28.237556363195576}},"householdIncome":{"name":"Modelled Household median income estimates 2012/13","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:householdIncome"},"values":{"2013-12-31T23:59:59":99390.0}},"medianHousePrice":{"name":"Median House Price, 2014","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:medianHousePrice"},"values":{"2014-12-31T23:59:59":765000.0}},"proportionGreenspace":{"name":"% of area that is Greenspace, 2005","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:proportionGreenspace"},"values":{"2005-12-31T23:59:59":4.8}},"carbonEmission":{"name":"Total carbon emissions (2013)","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:carbonEmission"},"values":{"2013-12-31T23:59:59":1417.533467243865}},"carsPerHousehold":{"name":"Number of cars per household, (2011 Census)","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:carsPerHousehold"},"values":{"2011-12-31T23:59:59":0.38586088939566704}},"walk5xWeek":{"name":"Walk 5x Week","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:walk5xWeek"},"values":{"2011-12-31T23:59:59":31.0,"2012-12-31T23:59:59":31.0,"2013-12-31T23:59:59":51.77333644434861,"2014-12-31T23:59:59":56.742620705731525}},"cycle1xWeek":{"name":"Cycle 1x Week","provider":"London Datastore - Greater London Authority","attributes":{"urn":"urn:oc:attributeType:boroughProfile:cycle1xWeek"},"values":{"2011-12-31T23:59:59":30.0,"2012-12-31T23:59:59":16.0,"2013-12-31T23:59:59":7.717821282333759,"2014-12-31T23:59:59":7.42154491680993}},"proportionObese":{"name":"% Obese","provider":"Public Health England","attributes":{"urn":"urn:oc:attributeType:boroughProfile:proportionObese"},"values":{"2014-12-31T23:59:59":18.007064529688857}}}}},
+]
+}

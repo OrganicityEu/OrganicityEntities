@@ -23,14 +23,14 @@ public class BoroughProfileImporterTest {
         OrganicityEntity entity = importer.initialiseEntity("idString");
 
         assertEquals("idString", entity.getId());
-        assertEquals(OrganicityEntityTypes.EntityType.BOROUGH, entity.getEntityType());
+        assertEquals(OrganicityEntityTypes.EntityType.DISTRICT_PROFILE, entity.getEntityType());
     }
 
     @Test
     public void testProcess() throws Exception{
         BoroughProfileImporter importer = new BoroughProfileImporter();
 
-        String jsonFileName = this.getClass().getResource("/entityImport/organicity-borough-profiles.json").getPath();
+        String jsonFileName = this.getClass().getResource("/entityImport/organicity-borough-profiles-test.json").getPath();
 
         List<OrganicityEntity> entities = importer.process(jsonFileName);
 
@@ -43,7 +43,7 @@ public class BoroughProfileImporterTest {
                 .orElse(null);
         assertNotNull(entity);
         assertEquals("urn:oc:entity:london:boroughProfile:uk.gov.london:E09000033",entity.getId());
-        assertEquals(OrganicityEntityTypes.EntityType.BOROUGH, entity.getEntityType());
+        assertEquals(OrganicityEntityTypes.EntityType.DISTRICT_PROFILE, entity.getEntityType());
 
         // Get Fraction Greenspace
         Attribute attribute = entity.getAttributes().stream()

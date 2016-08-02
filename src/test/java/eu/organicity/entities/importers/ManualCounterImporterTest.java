@@ -26,7 +26,7 @@ public class ManualCounterImporterTest {
         OrganicityEntity entity = importer.initialiseEntity("idString");
 
         assertEquals("idString", entity.getId());
-        assertEquals(OrganicityEntityTypes.EntityType.MANUAL_COUNTER, entity.getEntityType());
+        assertEquals(OrganicityEntityTypes.EntityType.TRAFFIC_STATS, entity.getEntityType());
     }
 
     @Test
@@ -46,11 +46,11 @@ public class ManualCounterImporterTest {
                 .orElse(null);
         assertNotNull(entity);
         assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6879", entity.getId());
-        assertEquals(OrganicityEntityTypes.EntityType.MANUAL_COUNTER, entity.getEntityType());
+        assertEquals(OrganicityEntityTypes.EntityType.TRAFFIC_STATS, entity.getEntityType());
 
         // Get Light goods vehicle count
         Attribute attribute = entity.getAttributes().stream()
-                .filter(a -> OrganicityAttributeTypes.Types.DAILY_LIGHT_GOODS_VEHICLE_COUNT.equals(a.getAttributeType()))
+                .filter(a -> OrganicityAttributeTypes.Types.TRAFFIC_INTENSITY_LGV.equals(a.getAttributeType()))
                 .findAny()
                 .orElse(null);
         assertNotNull(attribute);
