@@ -4,6 +4,7 @@ package eu.organicity.entities.importers;
 import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.BoroughProfile;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +15,8 @@ import java.util.List;
 public class BoroughProfileImporter extends GeoJsonImporter implements OrganicityEntityImporter {
 
     @Override
-    public OrganicityEntity initialiseEntity(String id) {
-        return new BoroughProfile(id);
+    public OrganicityEntity initialiseEntity(String label) {
+        return new BoroughProfile("urn:oc:entity:london:districtProfile:uk.gov.london:"+label);
     }
 
     @Override

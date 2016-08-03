@@ -22,7 +22,7 @@ public class BoroughProfileImporterTest {
 
         OrganicityEntity entity = importer.initialiseEntity("idString");
 
-        assertEquals("idString", entity.getId());
+        assertEquals("urn:oc:entity:london:districtProfile:uk.gov.london:idString", entity.getId());
         assertEquals(OrganicityEntityTypes.EntityType.DISTRICT_PROFILE, entity.getEntityType());
     }
 
@@ -34,15 +34,15 @@ public class BoroughProfileImporterTest {
 
         List<OrganicityEntity> entities = importer.process(jsonFileName);
 
-        assertEquals(33, entities.size());  // NOTE: This value can change if we update the json file
+        assertEquals(2, entities.size());
 
         // Get Borough E09000033
         OrganicityEntity entity = entities.stream()
-                .filter(e -> "urn:oc:entity:london:boroughProfile:uk.gov.london:E09000033".equals(e.getId()))
+                .filter(e -> "urn:oc:entity:london:districtProfile:uk.gov.london:E09000001".equals(e.getId()))
                 .findAny()
                 .orElse(null);
         assertNotNull(entity);
-        assertEquals("urn:oc:entity:london:boroughProfile:uk.gov.london:E09000033",entity.getId());
+        assertEquals("urn:oc:entity:london:districtProfile:uk.gov.london:E09000001",entity.getId());
         assertEquals(OrganicityEntityTypes.EntityType.DISTRICT_PROFILE, entity.getEntityType());
 
         // Get Fraction Greenspace
@@ -51,13 +51,13 @@ public class BoroughProfileImporterTest {
                 .findAny()
                 .orElse(null);
         assertNotNull(attribute);
-        assertEquals("urn:oc:attributeType:boroughProfile:proportionGreenspace", attribute.getAttribute().getType());
-        assertEquals("boroughProfile:proportionGreenspace", attribute.getAttribute().getName());
-        assertEquals("38.2", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
+        assertEquals("urn:oc:attributeType:greenspace", attribute.getAttribute().getType());
+        assertEquals("greenspace", attribute.getAttribute().getName());
+        assertEquals("4.8", attribute.getAttribute().getValue());
         Metadata timestamp = attribute.getMetadatas().stream()
                 .filter(m -> "TimeInstant".equals(m.getName()))
                 .findAny()
                 .orElse(null);
-        assertEquals("2005-12-31T23:59:59", timestamp.getValue());  // NOTE: This value can change if we update the json file
+        assertEquals("2005-12-31T23:59:59", timestamp.getValue());
     }
 }

@@ -8,6 +8,7 @@ import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.handler.entities.TransportStation;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -134,7 +135,7 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
         String stationCode = (String) stationObject.get("station_code");
         String stationName = (String) stationObject.get("station_name");
 
-        OrganicityEntity stationEntity = new TransportStation("urn:oc:entity:london:transport:TransportAPI:"+stationCode);
+        OrganicityEntity stationEntity = initialiseEntity(stationCode);
         Double latitude = (Double) stationObject.get("latitude");
         Double longitude = (Double) stationObject.get("longitude");
         stationEntity.setPosition(latitude, longitude);
@@ -177,8 +178,8 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
     }
 
     @Override
-    public OrganicityEntity initialiseEntity(String id) {
-        return null;
+    public OrganicityEntity initialiseEntity(String label) {
+        return new TransportStation("urn:oc:entity:london:transportService:TransportAPI:"+label);
     }
 
     @Override

@@ -18,7 +18,7 @@ public interface OrganicityEntityImporter {
      */
     List<OrganicityEntity> process(String resourceFileName) throws Exception;
 
-    OrganicityEntity initialiseEntity(String id);
+    OrganicityEntity initialiseEntity(String label);
 
     Origin getOrigin();
 }

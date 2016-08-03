@@ -3,6 +3,7 @@ package eu.organicity.entities.importers;
 import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.ManualCounter;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,8 @@ import java.util.List;
 public class ManualCounterImporter extends GeoJsonImporter implements OrganicityEntityImporter{
 
     @Override
-    public OrganicityEntity initialiseEntity(String id) {
-        return new ManualCounter(id);
+    public OrganicityEntity initialiseEntity(String label) {
+        return new ManualCounter("urn:oc:entity:london:trafficCount:uk.gov.dft:"+label);
     }
 
     @Override

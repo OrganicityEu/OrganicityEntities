@@ -25,7 +25,7 @@ public class ManualCounterImporterTest {
 
         OrganicityEntity entity = importer.initialiseEntity("idString");
 
-        assertEquals("idString", entity.getId());
+        assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:"+"idString", entity.getId());
         assertEquals(OrganicityEntityTypes.EntityType.TRAFFIC_STATS, entity.getEntityType());
     }
 
@@ -37,15 +37,15 @@ public class ManualCounterImporterTest {
 
         List<OrganicityEntity> entities = importer.process(jsonFileName);
 
-        assertEquals(6, entities.size());
+        assertEquals(3, entities.size());
 
         // Get an example traffic counter
         OrganicityEntity entity = entities.stream()
-                .filter(e -> "urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6879".equals(e.getId()))
+                .filter(e -> "urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6071".equals(e.getId()))
                 .findAny()
                 .orElse(null);
         assertNotNull(entity);
-        assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6879", entity.getId());
+        assertEquals("urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6071", entity.getId());
         assertEquals(OrganicityEntityTypes.EntityType.TRAFFIC_STATS, entity.getEntityType());
 
         // Get Light goods vehicle count
@@ -54,9 +54,9 @@ public class ManualCounterImporterTest {
                 .findAny()
                 .orElse(null);
         assertNotNull(attribute);
-        assertEquals("urn:oc:attributeType:trafficCount:dailyLightGoodsVehicleCount", attribute.getAttribute().getType());
-        assertEquals("trafficCount:dailyLightGoodsVehicleCount", attribute.getAttribute().getName());
-        assertEquals("657.0", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
+        assertEquals(OrganicityAttributeTypes.Types.TRAFFIC_INTENSITY_LGV.getUrn(), attribute.getAttribute().getType());
+        assertEquals(OrganicityAttributeTypes.Types.TRAFFIC_INTENSITY_LGV.getName(), attribute.getAttribute().getName());
+        assertEquals("7788.0", attribute.getAttribute().getValue());  // NOTE: This value can change if we update the json file
         Metadata timestamp = attribute.getMetadatas().stream()
                 .filter(m -> "TimeInstant".equals(m.getName()))
                 .findAny()
