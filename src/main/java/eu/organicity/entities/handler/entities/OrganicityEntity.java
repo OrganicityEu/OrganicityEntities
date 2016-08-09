@@ -3,7 +3,6 @@ package eu.organicity.entities.handler.entities;
 import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
-import eu.organicity.entities.handler.attributes.Datasource;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.net.URLEncoder;

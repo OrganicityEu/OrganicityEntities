@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/OrganicityEu/OrganicityEntities.svg?branch=master)](https://travis-ci.org/OrganicityEu/OrganicityEntities)
+
 # OrganicityEntities
 Java library to handle Organicity Entities and Organicity Namespaces
 
@@ -34,3 +36,23 @@ To add sensor measurements and their required metadata (type, unit of measuremen
 To publish sensor information on an Orion Context Broker you need to generate from the Entity object you created before the OrionContextElement and then post it using an instance of the OrionClient.
 
     orionClient.postContextEntity(uri, phoneEntity.getContextElement());
+
+
+## Usage
+
+To use this library you need to include in your maven project the following repository:
+
+    <repositories>
+        <repository>
+            <id>organicity</id>
+            <url>https://maven.organicity.eu/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
+And also the following dependency:
+
+    <dependency>
+        <groupId>eu.organicity</groupId>
+        <artifactId>entities</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
