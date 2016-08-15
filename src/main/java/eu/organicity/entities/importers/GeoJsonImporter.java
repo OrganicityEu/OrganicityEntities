@@ -35,6 +35,7 @@ public abstract class GeoJsonImporter implements OrganicityEntityImporter {
 
             //area = compress(area);
             entity.setArea(area);
+            entity.setAreaObject(feature.getGeometry());
 
             // FIXME: Add a borough name to the boroughProfile object
             // name can be found in feature.getProperties().get("name").toString();
