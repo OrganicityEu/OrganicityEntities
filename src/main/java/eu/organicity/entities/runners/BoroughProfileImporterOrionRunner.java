@@ -10,6 +10,7 @@ import eu.organicity.entities.importers.BoroughProfileImporter;
 import org.apache.http.HttpStatus;
 import org.json.JSONObject;
 
+import java.util.Date;
 import java.util.List;
 
 public class BoroughProfileImporterOrionRunner {
@@ -31,28 +32,33 @@ public class BoroughProfileImporterOrionRunner {
         List<OrganicityEntity> profiles = importer.process(jsonInputFilename);
         int counter = 0;
         for (OrganicityEntity boroughProfile : profiles) {
+            boroughProfile.setTimestamp(new Date(System.currentTimeMillis()));
             JSONObject object = AssetToJsonObject.entityToJsonObject(boroughProfile);
-            //System.out.println(object.toString(2));
+            System.out.println(object.toString(2));
 
-            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + boroughProfile.getId() + "?type=" + boroughProfile.getEntityType())
+            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + boroughProfile.getId() + "?type=" + boroughProfile.getEntityType().getUrn())
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
-                System.out.println("Asset Deleted:"+boroughProfile.getId());
+                System.out.println("Asset Deleted:" + boroughProfile.getId());
             } else {
-                System.out.println("Asset Not Deleted:"+boroughProfile.getId());
+                System.out.println("Asset Not Deleted:" + boroughProfile.getId());
             }
 
             jsonResponse = Unirest.post(url)
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {
                 counter++;
-                System.out.println("Asset Created:"+boroughProfile.getId());
+                System.out.println("Asset Created:" + boroughProfile.getId());
             } else {
                 System.out.println(jsonResponse.getBody());
                 break;

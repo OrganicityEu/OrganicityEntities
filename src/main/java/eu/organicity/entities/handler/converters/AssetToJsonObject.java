@@ -18,7 +18,7 @@ public class AssetToJsonObject {
     public static JSONObject entityToJsonObject(OrganicityEntity a) {
         JSONObject assetObject = new JSONObject();
         assetObject.put("id", a.getId());
-        assetObject.put("type", a.getEntityType().toString());
+        assetObject.put("type", a.getEntityType().getUrn().toString());
         for (Attribute attribute : a.getAttributes()) {
             JSONObject attributeObject = new JSONObject();
             attributeObject.put("value", attribute.getValue());
