@@ -20,7 +20,7 @@ public class BoroughProfileImporterOrionRunner {
 
         if (args.length < 2) {
             System.err.println("Error: insufficient argument count!");
-            System.err.println("Usage: BoroughProfileImporter jsonInputFilename");
+            System.err.println("Usage: BoroughProfileImporter jsonInputFilename AssetDirectoryUrl");
             System.exit(1);
         }
 
@@ -31,34 +31,34 @@ public class BoroughProfileImporterOrionRunner {
         BoroughProfileImporter importer = new BoroughProfileImporter();
         List<OrganicityEntity> profiles = importer.process(jsonInputFilename);
         int counter = 0;
-        for (OrganicityEntity boroughProfile : profiles) {
-            boroughProfile.setTimestamp(new Date(System.currentTimeMillis()));
-            JSONObject object = AssetToJsonObject.entityToJsonObject(boroughProfile);
+        for (OrganicityEntity asset : profiles) {
+            asset.setTimestamp(new Date(System.currentTimeMillis()));
+            JSONObject object = AssetToJsonObject.entityToJsonObject(asset);
             System.out.println(object.toString(2));
 
-            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + boroughProfile.getId() + "?type=" + boroughProfile.getEntityType().getUrn())
+            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + asset.getId() + "?type=" + asset.getEntityType().getUrn())
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
-                    .header("Fiware-Service", "organicity")
-                    .header("Fiware-ServicePath", "/")
+                    //.header("Fiware-Service", "organicity")
+                    //.header("Fiware-ServicePath", "/")
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
-                System.out.println("Asset Deleted:" + boroughProfile.getId());
+                System.out.println("Asset Deleted:" + asset.getId());
             } else {
-                System.out.println("Asset Not Deleted:" + boroughProfile.getId());
+                System.out.println("Asset Not Deleted:" + asset.getId());
             }
 
             jsonResponse = Unirest.post(url)
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
-                    .header("Fiware-Service", "organicity")
-                    .header("Fiware-ServicePath", "/")
+                    //.header("Fiware-Service", "organicity")
+                    //.header("Fiware-ServicePath", "/")
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {
                 counter++;
-                System.out.println("Asset Created:" + boroughProfile.getId());
+                System.out.println("Asset Created:" + asset.getId());
             } else {
                 System.out.println(jsonResponse.getBody());
                 break;

@@ -11,6 +11,7 @@ import eu.organicity.entities.importers.ManualCounterImporter;
 import org.apache.http.HttpStatus;
 import org.json.JSONObject;
 
+import java.util.Date;
 import java.util.List;
 
 public class ManualCountProfileImporterOrionRunner {
@@ -20,7 +21,7 @@ public class ManualCountProfileImporterOrionRunner {
 
         if (args.length < 2) {
             System.err.println("Error: insufficient argument count!");
-            System.err.println("Usage: ManualCountImporter jsonInputFilename");
+            System.err.println("Usage: ManualCountImporter jsonInputFilename AssetDirectoryUrl");
             System.exit(1);
         }
 
@@ -31,27 +32,34 @@ public class ManualCountProfileImporterOrionRunner {
         ManualCounterImporter importer = new ManualCounterImporter();
         List<OrganicityEntity> manualCounterAssets = importer.process(jsonInputFilename);
         int counter = 0;
-        for (OrganicityEntity manualCountAsset : manualCounterAssets) {
-            JSONObject object = AssetToJsonObject.entityToJsonObject(manualCountAsset);
-            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + manualCountAsset.getId() + "?type=" + manualCountAsset.getEntityType())
+        for (OrganicityEntity asset : manualCounterAssets) {
+            asset.setTimestamp(new Date(System.currentTimeMillis()));
+            JSONObject object = AssetToJsonObject.entityToJsonObject(asset);
+            System.out.println(object.toString(2));
+
+            HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + asset.getId() + "?type=" + asset.getEntityType().getUrn())
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
-                System.out.println("Asset Deleted:"+manualCountAsset.getId());
+                System.out.println("Asset Deleted:" + asset.getId());
             } else {
-                System.out.println("Asset Not Deleted:"+manualCountAsset.getId());
+                System.out.println("Asset Not Deleted:" + asset.getId());
             }
 
             jsonResponse = Unirest.post(url)
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {
                 counter++;
-                System.out.println("Asset Created:"+manualCountAsset.getId());
+                System.out.println("Asset Created:" + asset.getId());
             } else {
                 System.out.println(jsonResponse.getBody());
                 break;
