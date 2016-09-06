@@ -39,8 +39,8 @@ public class BoroughProfileImporterOrionRunner {
             HttpResponse<JsonNode> jsonResponse = Unirest.delete(url + "/" + asset.getId() + "?type=" + asset.getEntityType().getUrn())
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
-                    //.header("Fiware-Service", "organicity")
-                    //.header("Fiware-ServicePath", "/")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
@@ -52,8 +52,8 @@ public class BoroughProfileImporterOrionRunner {
             jsonResponse = Unirest.post(url)
                     .header("accept", "application/json")
                     .header("Content-Type", "application/json")
-                    //.header("Fiware-Service", "organicity")
-                    //.header("Fiware-ServicePath", "/")
+                    .header("Fiware-Service", "organicity")
+                    .header("Fiware-ServicePath", "/")
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {
