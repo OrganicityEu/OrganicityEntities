@@ -33,6 +33,7 @@ public class OrganicityUnits {
         VEHICLE_PER_MINUTE("vehiclePerMinute", "urn:oc:uom:vehiclePerMinute"),
         WATT_PER_SQUARE_METER("wattPerSquareMeter", "urn:oc:uom:wattPerSquareMeter"),
         LAT_LONG_POSITION("coords", "coords"),
+        LONG_LAT_POSITION("coords", "coords"),
         NOT_APPLIED("NOT_APPLIED", "NOT_APPLIED"),
         PEOPLE_PER_HECTARE("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),  // FIXME: Replace with peoplePerSquareKilometer
         MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds"),

@@ -1,9 +1,11 @@
 package eu.organicity.entities.runners;
 
 import eu.organicity.entities.handler.attributes.*;
+import eu.organicity.entities.handler.converters.AssetToJsonObject;
 import eu.organicity.entities.handler.entities.IoTDevice;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import org.geojson.Point;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -35,7 +37,7 @@ public class IoTDeviceDatasourceInternal {
         // Adding Origin
         List<String> urls = new ArrayList<>();
         urls.add("http://organicity.eu/cities/london/");
-        a = new Origin("Weather station ...",urls);
+        a = new Origin("Weather station ...", urls);
         iot.addAttribute(a);
 
         // Adding Datasource
@@ -51,7 +53,8 @@ public class IoTDeviceDatasourceInternal {
         iot.addAttribute(a);
 
         System.out.println(iot.toString());
-
         System.out.println(new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(iot.getContextElement()));
+        JSONObject object = AssetToJsonObject.entityToJsonObject(iot);
+        System.out.println(object.toString(2));
     }
 }

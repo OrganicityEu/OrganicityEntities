@@ -30,6 +30,17 @@ public class OrganicityEntity {
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
+    public OrganicityEntity() {
+        this.id = null;
+        this.entityType = null;
+        this.date = null;
+        this.latitude = null;
+        this.longitude = null;
+        this.area = null;
+
+    }
+
+
     public OrganicityEntity(OrganicityEntityTypes.EntityType entityType) {
         this.id = null;
         this.entityType = entityType;
@@ -115,6 +126,9 @@ public class OrganicityEntity {
         attributes.add(a);
     }
 
+    public void setEntityType(String urn) {
+        this.entityType = OrganicityEntityTypes.EntityType.byUrn(urn);
+    }
 
     @Override
     public String toString() {
@@ -169,7 +183,7 @@ public class OrganicityEntity {
         this.longitude = longitude;
     }
 
-    public OrganicityEntityTypes.EntityType getEntityType(){
+    public OrganicityEntityTypes.EntityType getEntityType() {
         return entityType;
     }
 }

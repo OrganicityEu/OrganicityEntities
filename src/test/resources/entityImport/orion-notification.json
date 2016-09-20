@@ -1,0 +1,19 @@
+{
+  id: "urn:oc:entity:london:trafficCount:uk.gov.dft:DfT-TrafficCounter-6000",
+  type: "urn:oc:entityType:trafficstats",
+  location: {
+    type: "geo:point",
+    value: "-0.23795282516501054,51.587519079277754",
+    metadata: {}
+  },
+  origin: {
+    type: "urn:oc:attributeType:origin",
+    value: "Street-level traffic count data from UK Department for Transport.",
+    metadata: {
+      unit: {
+        type: "NOT_APPLIED",
+        value: "NOT_APPLIED"
+      }
+    }
+  }
+}
