@@ -19,15 +19,15 @@ public class TransportAssetImporterOrionRunner {
 
     public static void main(String[] args) throws Exception {
 
-        if (args.length < 2) {
+        if (args.length < 3) {
             System.err.println("Error: insufficient argument count!");
-            System.err.println("Usage: TransportImporter jsonInputFilename AssetDirectoryUrl");
+            System.err.println("Usage: TransportImporter jsonInputFilename AssetDirectoryUrl authToken");
             System.exit(1);
         }
 
         String jsonInputFilename = args[0];
         String url = args[1];
-
+        String authToken=args[2];
 
         TransportAPIImporter importer = new TransportAPIImporter();
         List<OrganicityEntity> transportAssets = importer.process(jsonInputFilename);
@@ -42,6 +42,7 @@ public class TransportAssetImporterOrionRunner {
                     .header("Content-Type", "application/json")
                     .header("Fiware-Service", "organicity")
                     .header("Fiware-ServicePath", "/")
+                    .header("x-organicity-london-auth", authToken)
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
@@ -55,6 +56,7 @@ public class TransportAssetImporterOrionRunner {
                     .header("Content-Type", "application/json")
                     .header("Fiware-Service", "organicity")
                     .header("Fiware-ServicePath", "/")
+                    .header("x-organicity-london-auth", authToken)
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {

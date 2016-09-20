@@ -19,15 +19,15 @@ public class ManualCountProfileImporterOrionRunner {
 
     public static void main(String[] args) throws Exception {
 
-        if (args.length < 2) {
+        if (args.length < 3) {
             System.err.println("Error: insufficient argument count!");
-            System.err.println("Usage: ManualCountImporter jsonInputFilename AssetDirectoryUrl");
+            System.err.println("Usage: ManualCountImporter jsonInputFilename AssetDirectoryUrl authToken");
             System.exit(1);
         }
 
         String jsonInputFilename = args[0];
         String url = args[1];
-
+        String authToken=args[2];
 
         ManualCounterImporter importer = new ManualCounterImporter();
         List<OrganicityEntity> manualCounterAssets = importer.process(jsonInputFilename);
@@ -42,6 +42,7 @@ public class ManualCountProfileImporterOrionRunner {
                     .header("Content-Type", "application/json")
                     .header("Fiware-Service", "organicity")
                     .header("Fiware-ServicePath", "/")
+                    .header("x-organicity-london-auth", authToken)
                     .asJson();
 
             if (jsonResponse.getStatus() == HttpStatus.SC_NO_CONTENT) {
@@ -55,6 +56,7 @@ public class ManualCountProfileImporterOrionRunner {
                     .header("Content-Type", "application/json")
                     .header("Fiware-Service", "organicity")
                     .header("Fiware-ServicePath", "/")
+                    .header("x-organicity-london-auth", authToken)
                     .body(object)
                     .asJson();
             if (jsonResponse.getStatus() == HttpStatus.SC_CREATED) {
