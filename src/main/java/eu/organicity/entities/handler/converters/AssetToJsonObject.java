@@ -9,7 +9,10 @@ import org.geojson.MultiPolygon;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * Created by etheodor on 09/08/2016.
@@ -47,10 +50,8 @@ public class AssetToJsonObject {
             GeoJsonObject geoJson = a.getAreaObject();
             if (geoJson instanceof MultiPolygon) {
                 JSONObject attributeObject = new JSONObject();
-
                 LngLatAlt p = null;
-
-                List<LngLatAlt> points=new ArrayList<>();
+                List<LngLatAlt> points = new ArrayList<>();
                 for (Object c : ((MultiPolygon) geoJson).getCoordinates().get(0).get(0).toArray()) {
                     LngLatAlt l = (LngLatAlt) c;
                     if (p != null) {
@@ -58,18 +59,17 @@ public class AssetToJsonObject {
                             //System.out.println("\t"+l.toString());
                             continue;
                         }
-
                     }
                     //System.out.println(l.toString());
                     points.add(l);
                     p = l;
                 }
-                List<List<LngLatAlt>> polygons=polygonToComponentPolygon(points);
+                List<List<LngLatAlt>> polygons = polygonToComponentPolygon(points);
                 JSONArray multipolygon = new JSONArray();
-               for (List<LngLatAlt> poly: polygons){
-                     JSONArray coordPackaging = new JSONArray();
+                for (List<LngLatAlt> poly : polygons) {
+                    JSONArray coordPackaging = new JSONArray();
                     JSONArray coords = new JSONArray();
-                    for (LngLatAlt point:poly){
+                    for (LngLatAlt point : poly) {
                         JSONArray coord = new JSONArray();
                         coord.put(point.getLongitude());
                         coord.put(point.getLatitude());
@@ -82,17 +82,15 @@ public class AssetToJsonObject {
                 multiPolygon.put("type", "MultiPolygon");
                 multiPolygon.put("coordinates", multipolygon);
                 attributeObject.put("value", multiPolygon);
-                attributeObject.put("type", "json");
-                assetObject.put("area", attributeObject);
+                attributeObject.put("type", "oc:geo:json");
+                assetObject.put("geometry", attributeObject);
             }
-
         }
-
         return assetObject;
     }
 
 
-    public static  List<List<LngLatAlt>> polygonToComponentPolygon(List<LngLatAlt> polygon) {
+    public static List<List<LngLatAlt>> polygonToComponentPolygon(List<LngLatAlt> polygon) {
         List<List<LngLatAlt>> polygons = new ArrayList<>();
 
         HashMap<String, String> memory = new HashMap<>();
@@ -118,8 +116,6 @@ public class AssetToJsonObject {
                     polygons.add(newRing);
                 }
             }
-
-
         }
         return polygons;
     }
