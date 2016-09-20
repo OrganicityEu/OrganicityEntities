@@ -92,10 +92,8 @@ public class AssetToJsonObject {
 
     public static List<List<LngLatAlt>> polygonToComponentPolygon(List<LngLatAlt> polygon) {
         List<List<LngLatAlt>> polygons = new ArrayList<>();
-
         HashMap<String, String> memory = new HashMap<>();
         Stack<LngLatAlt> stack = new Stack<>();
-
         for (LngLatAlt point : polygon) {
             if (memory.get(point.toString()) == null) {
                 stack.push(point);
