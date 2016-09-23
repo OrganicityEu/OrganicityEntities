@@ -29,6 +29,8 @@ public class OrganicityAttributeTypes {
         PARTICLES25("chemicalAgentAtmosphericConcentration:airParticlesPM25", "urn:oc:attributeType:chemicalAgentAtmosphericConcentration:airParticlesPM25", OrganicityUnits.Units.MILIGRAM_PER_CUBIC_METRE, OrganicityDatatypes.DATATYPES.NUMERIC),
         ELECTRICAL_CURRENT("electricalCurrent", "urn:oc:attributeType:electricalCurrent", OrganicityUnits.Units.AMPERE, OrganicityDatatypes.DATATYPES.NUMERIC),
         POWER_CONSUMPTION("powerConsumption", "urn:oc:attributeType:powerConsumption", OrganicityUnits.Units.KWH, OrganicityDatatypes.DATATYPES.NUMERIC),
+        FREE_BIKES("freeBikes", "urn:oc:attributeType:freeBikes", OrganicityUnits.Units.BIKE, OrganicityDatatypes.DATATYPES.NUMERIC),
+        FREE_SPACES("freeSpaces", "urn:oc:attributeType:freeSpaces", OrganicityUnits.Units.BIKE, OrganicityDatatypes.DATATYPES.NUMERIC),
 
         // Boroughs
         POPULATION_DENSITY("boroughProfile:populationDensity", "urn:oc:attributeType:boroughProfile:populationDensity", OrganicityUnits.Units.POPULATION_DENSITY, OrganicityDatatypes.DATATYPES.NUMERIC),

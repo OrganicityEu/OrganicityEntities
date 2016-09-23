@@ -36,7 +36,8 @@ public class OrganicityUnits {
         POPULATION_DENSITY("peoplePerHectare", "urn:oc:uom:peoplePerHectare"),
         MONETARY_VALUE_POUNDS("monetayValuePounds", "urn:oc:uom:monetaryValuePounds"),
         AMPERE("ampere", "urn:oc:uom:ampere"),
-        KWH("kWh", "urn:oc:uom:kWh");
+        KWH("kWh", "urn:oc:uom:kWh"),
+        BIKE("bike","urn:oc:uom:bike");
 
 
         private final String name;
