@@ -3,7 +3,6 @@ package eu.organicity.entities.handler.entities;
 import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
-import eu.organicity.entities.handler.attributes.Datasource;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
 
 import java.net.URLEncoder;
@@ -62,7 +61,7 @@ public class OrganicityEntity {
             element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "ISO8601", df.format(date)));
         }
         if (latitude != null && longitude != null) {
-            element.getAttributes().add(OrionClient.createAttributeWithMetadata("position", "coords", latitude + ", " + longitude, "location", "string", "WGS84"));
+            element.getAttributes().add(OrionClient.createAttribute("location", "geo:point", latitude + ", " + longitude));
         }
         if (datasourceUrl != null && datasourceInternal != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("datasource", "urn:oc:attributeType:datasource", datasourceUrl
@@ -161,7 +160,7 @@ public class OrganicityEntity {
         this.longitude = longitude;
     }
 
-    public OrganicityEntityTypes.EntityType getEntityType(){
+    public OrganicityEntityTypes.EntityType getEntityType() {
         return entityType;
     }
 }
