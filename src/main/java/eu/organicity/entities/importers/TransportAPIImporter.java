@@ -191,6 +191,6 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
     }
 
     public double getStatus(int late, int total){
-        return (double)(total - late)/(double)total;
+        return ((double)(total - late)/(double)total)*100.0d;
     }
 }
