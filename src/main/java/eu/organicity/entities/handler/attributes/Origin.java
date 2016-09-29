@@ -5,6 +5,7 @@ import eu.organicity.entities.namespace.OrganicityAttributeTypes;
 import eu.organicity.entities.namespace.OrganicityDatatypes;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Origin of an OrganiCity Asset is a text description about the origin of the asset or data exposed in the asset.
@@ -15,14 +16,8 @@ public class Origin extends Attribute {
     public Origin(String description, List<String> urls) {
         super(OrganicityAttributeTypes.Types.ORIGIN, description);
         if (urls != null) {
-            int urlCounter = 0;
-            for (String url : urls) {
-                urlCounter++;
-                this.addMetadata(new Metadata(
-                        OrganicityAttributeTypes.Types.ORIGIN.getName()+":url:"+urlCounter,
-                        OrganicityDatatypes.DATATYPES.URL.getName(),
-                        url));
-            }
+            String urlsString = urls.stream().collect(Collectors.joining(","));
+            this.addMetadata(new Metadata("urls",OrganicityDatatypes.DATATYPES.URL.getName(),urlsString));
         }
     }
 }
