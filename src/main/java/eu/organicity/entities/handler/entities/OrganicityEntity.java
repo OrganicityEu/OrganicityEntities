@@ -37,9 +37,7 @@ public class OrganicityEntity {
         this.latitude = null;
         this.longitude = null;
         this.area = null;
-
     }
-
 
     public OrganicityEntity(OrganicityEntityTypes.EntityType entityType) {
         this.id = null;
@@ -74,7 +72,7 @@ public class OrganicityEntity {
             element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:attributeType:ISO8601", df.format(date)));
         }
         if (latitude != null && longitude != null) {
-            element.getAttributes().add(OrionClient.createAttribute("location", "geo:point", longitude + ", " + longitude));
+            element.getAttributes().add(OrionClient.createAttribute("location", "geo:point", longitude + ", " + latitude));
         }
         if (datasourceUrl != null && datasourceInternal != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("datasource", "urn:oc:attributeType:datasource", datasourceUrl
