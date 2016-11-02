@@ -13,10 +13,6 @@
             <url>https://maven.organicity.eu/content/repositories/snapshots</url>
         </repository>
         <repository>
-            <id>sparkworks</id>
-            <url>http://nexus.sparkworks.net/nexus/content/repositories/snapshots</url>
-        </repository>
-        <repository>
             <id>amaxilatis</id>
             <url>http://maven.amaxilatis.com/nexus/content/repositories/snapshots</url>
         </repository>
