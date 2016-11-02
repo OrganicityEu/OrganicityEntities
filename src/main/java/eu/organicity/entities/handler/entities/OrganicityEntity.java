@@ -58,10 +58,10 @@ public class OrganicityEntity {
             element.getAttributes().add(attribute.getAttribute());
         }
         if (date != null) {
-            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "ISO8601", df.format(date)));
+            element.getAttributes().add(OrionClient.createAttribute("TimeInstant", "urn:oc:attributeType:ISO8601", df.format(date)));
         }
         if (latitude != null && longitude != null) {
-            element.getAttributes().add(OrionClient.createAttribute("location", "geo:point", latitude + ", " + longitude));
+            element.getAttributes().add(OrionClient.createAttribute("location", "geo:point", longitude + ", " + longitude));
         }
         if (datasourceUrl != null && datasourceInternal != null) {
             element.getAttributes().add(OrionClient.createAttributeWithMetadata("datasource", "urn:oc:attributeType:datasource", datasourceUrl
