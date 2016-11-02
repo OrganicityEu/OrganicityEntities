@@ -2,13 +2,13 @@ package eu.organicity.entities.importers;
 
 import com.amaxilatis.orion.model.Metadata;
 import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.handler.attributes.Origin;
 import eu.organicity.entities.handler.entities.OrganicityEntity;
 import eu.organicity.entities.handler.entities.TransportStation;
 import eu.organicity.entities.namespace.OrganicityAttributeTypes;
+import eu.organicity.entities.namespace.OrganicityEntityTypes;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -135,20 +135,19 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
         String stationCode = (String) stationObject.get("station_code");
         String stationName = (String) stationObject.get("station_name");
 
-        OrganicityEntity stationEntity = new TransportStation("urn:oc:entity:london:transport:TransportAPI:"+stationCode);
+        OrganicityEntity stationEntity = initialiseEntity(stationCode);
         Double latitude = (Double) stationObject.get("latitude");
         Double longitude = (Double) stationObject.get("longitude");
         stationEntity.setPosition(latitude, longitude);
 
-        Origin origin = new Origin("http://organicity.eu/cities/london/");
-        stationEntity.addAttribute(origin);
+        stationEntity.addAttribute(getOrigin());
 
         // Adding last update
         stationEntity.setTimestamp(new Date());
 
         // Add station status
         Attribute performanceIndicator = new Attribute(
-                OrganicityAttributeTypes.Types.PERFORMANCE_INDICATOR,
+                OrganicityAttributeTypes.Types.TRANSPORT_SERVICE_PERFORMANCE,
                 String.valueOf(getStatus(stationLate, stationTotal))
         );
         Metadata time = new Metadata("TimeInstant", "ISO8601", (String) stationLiveObject.get("request_time"));
@@ -179,11 +178,19 @@ public class TransportAPIImporter implements OrganicityEntityImporter {
     }
 
     @Override
-    public OrganicityEntity initialiseEntity(String id) {
-        return null;
+    public OrganicityEntity initialiseEntity(String label) {
+        return new TransportStation("urn:oc:entity:london:transportService:TransportAPI:"+label);
+    }
+
+    @Override
+    public Origin getOrigin() {
+        List<String> urls = new ArrayList<>();
+        urls.add("http://fcc.transportapi.com/");
+        return new Origin("Train station performance indicators from the TransportAPI",
+                urls);
     }
 
     public double getStatus(int late, int total){
-        return (double)(total - late)/(double)total;
+        return ((double)(total - late)/(double)total)*100.0d;
     }
 }

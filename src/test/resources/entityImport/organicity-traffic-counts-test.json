@@ -1,0 +1,206 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.238,
+          51.5875
+        ]
+      },
+      "properties": {
+        "latitude": 51.587519079277754,
+        "name": "M1 (A406 to M1 spur)",
+        "attributes": {
+          "urn:oc:attributeType:trafficIntensity:bicycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 0.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Pedal Cycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:bus": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 320.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Bus and Coach Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:lightGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 7204.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Light Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:heavyGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 3271.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Heavy Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:motorcycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 493.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Motorcycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:car": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 35237.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Car and Taxi Count"
+          }
+        },
+        "label": "DfT-TrafficCounter-6000",
+        "type": "urn:oc:entityType:trafficstats",
+        "longitude": -0.23795282516501054
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0099,
+          51.5182
+        ]
+      },
+      "properties": {
+        "latitude": 51.51822679923978,
+        "name": "A12 (A13 to A11)",
+        "attributes": {
+          "urn:oc:attributeType:trafficIntensity:bicycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 23.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Pedal Cycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:bus": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 198.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Bus and Coach Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:lightGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 7788.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Light Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:heavyGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 2638.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Heavy Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:motorcycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 896.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Motorcycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:car": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 33045.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Car and Taxi Count"
+          }
+        },
+        "label": "DfT-TrafficCounter-6071",
+        "type": "urn:oc:entityType:trafficstats",
+        "longitude": -0.009865960884574667
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1175,
+          51.5566
+        ]
+      },
+      "properties": {
+        "latitude": 51.55660381032363,
+        "name": "A1 (A503 Camden Road to A503 Seven Sisters\/Parkhurst Road)",
+        "attributes": {
+          "urn:oc:attributeType:trafficIntensity:bicycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 108.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Pedal Cycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:bus": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 69.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Bus and Coach Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:lightGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 180.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Light Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:heavyGoodsVehicle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 61.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Heavy Goods Vehicle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:motorcycle": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 76.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Motorcycle Count"
+          },
+          "urn:oc:attributeType:trafficIntensity:car": {
+            "provider": "Department for Transport",
+            "values": {
+              "value": 966.0,
+              "timestamp": "2015-12-31T23:59:59"
+            },
+            "name": "Car and Taxi Count"
+          }
+        },
+        "label": "DfT-TrafficCounter-6075",
+        "type": "urn:oc:entityType:trafficstats",
+        "longitude": -0.11753938842319389
+      }
+    }
+  ]
+}

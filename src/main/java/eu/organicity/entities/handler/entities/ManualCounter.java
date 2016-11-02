@@ -8,10 +8,10 @@ import eu.organicity.entities.namespace.OrganicityEntityTypes;
 public class ManualCounter extends OrganicityEntity {
 
     public ManualCounter() {
-        super(OrganicityEntityTypes.EntityType.MANUAL_COUNTER);
+        super(OrganicityEntityTypes.EntityType.TRAFFIC_STATS);
     }
 
     public ManualCounter(String id) {
-        super(id, OrganicityEntityTypes.EntityType.MANUAL_COUNTER);
+        super(id, OrganicityEntityTypes.EntityType.TRAFFIC_STATS);
     }
 }

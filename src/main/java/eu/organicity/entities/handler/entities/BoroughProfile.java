@@ -8,10 +8,10 @@ import eu.organicity.entities.namespace.OrganicityEntityTypes;
 public class BoroughProfile extends OrganicityEntity {
 
     public BoroughProfile() {
-        super(OrganicityEntityTypes.EntityType.BOROUGH);
+        super(OrganicityEntityTypes.EntityType.DISTRICT_PROFILE);
     }
 
     public BoroughProfile(String id) {
-        super(id, OrganicityEntityTypes.EntityType.BOROUGH);
+        super(id, OrganicityEntityTypes.EntityType.DISTRICT_PROFILE);
     }
 }

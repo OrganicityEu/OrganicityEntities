@@ -4,6 +4,7 @@ import com.amaxilatis.orion.OrionClient;
 import com.amaxilatis.orion.model.OrionContextElement;
 import eu.organicity.entities.handler.attributes.Attribute;
 import eu.organicity.entities.namespace.OrganicityEntityTypes;
+import org.geojson.GeoJsonObject;
 
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
@@ -23,10 +24,22 @@ public class OrganicityEntity {
     private Double latitude; // Encoded in WGS84
     private Double longitude; // Encoded in WGS84
     private String area; //Encoded in GeoJSON
+    private GeoJsonObject areaObject; //Encoded in GeoJSON
     private String datasourceUrl;
     private Boolean datasourceInternal;
 
     SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+
+    public OrganicityEntity() {
+        this.id = null;
+        this.entityType = null;
+        this.date = null;
+        this.latitude = null;
+        this.longitude = null;
+        this.area = null;
+
+    }
+
 
     public OrganicityEntity(OrganicityEntityTypes.EntityType entityType) {
         this.id = null;
@@ -113,6 +126,9 @@ public class OrganicityEntity {
         attributes.add(a);
     }
 
+    public void setEntityType(String urn) {
+        this.entityType = OrganicityEntityTypes.EntityType.byUrn(urn);
+    }
 
     @Override
     public String toString() {
@@ -143,6 +159,13 @@ public class OrganicityEntity {
         return id;
     }
 
+    public GeoJsonObject getAreaObject() {
+        return areaObject;
+    }
+
+    public void setAreaObject(GeoJsonObject areaObject) {
+        this.areaObject = areaObject;
+    }
 
     public Double getLatitude() {
         return latitude;
