@@ -3,6 +3,7 @@ package eu.organicity.entities.namespace;
 public class OrganicityEntityTypes {
     static public enum EntityType {
         IOT_DEVICE("IotDevice", "urn:oc:entityType:iotdevice"),
+        BUS_STOP("BusStop", "urn:oc:entityType:busStop"),
         SMARTPHONE("smartphone", "urn:oc:entityType:smartphone"),
         BIKE_STATION("bikeStation", "urn:oc:entitytype:bikeStation"),
         BOROUGH("borough", "urn:oc:entityType:borough"),
